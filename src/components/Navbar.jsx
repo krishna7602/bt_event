@@ -10,7 +10,7 @@ export default function Navbar() {
     { 
       name: "About", 
       dropdown: [
-        { name: "About the Conference", path: '/' },
+        // { name: "About the Conference", path: '/' },
         { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
         { name: "Organising Committee", path: '/organizing-committee' },
         { name: "International Advisory Committee", path: '/international-advisory-committee' },
