@@ -6,49 +6,53 @@ const AboutNITJ = () => {
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-b-4 border-blue-600 inline-block pb-2">
-          About NIT Patna
+          About NIT Jalandhar
         </h2>
 
         {/* Content */}
         <div className="mt-8 space-y-6 text-gray-700 leading-relaxed text-justify">
           <p>
-            The immersion of ashes of the Father of the Nation, Mahatma Gandhi, in
-            the river Ganges is a significant historical event. The campus has a
-            picturesque river view with historic buildings, presenting a
-            spectacle of architectural delight and natural beauty.
+            Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (NIT
+            Jalandhar) is one of the premier technical institutions in India.
+            Established in 1987 as a Regional Engineering College and accorded
+            the status of National Institute of Technology in 2002, the institute
+            has been recognized as an <strong>Institute of National Importance</strong>
+            by the Government of India.
           </p>
 
           <p>
-            National Institute of Technology Patna has been declared as an
-            Institute of National Importance and has been granted fully
-            Autonomous Status by MHRD, Government of India. The Institute has also
-            been declared as a Centre of Excellence, imparting high-level
-            education, training, research, and development in science,
-            engineering technology, and humanities.
+            NIT Jalandhar is located on a sprawling and green campus along the
+            Jalandhar–Amritsar Highway in Punjab. The institute provides a
+            vibrant academic environment that fosters innovation, critical
+            thinking, and interdisciplinary research, supported by
+            state-of-the-art infrastructure and modern laboratories.
           </p>
 
           <p>
-            The institute imparts high-quality education and values at
-            Undergraduate (B.Tech), Postgraduate (M.Tech), and Doctoral (Ph.D.)
-            levels through its experienced faculty, who are well-versed in their
-            respective fields and supported by well-equipped laboratories.
+            The institute offers high-quality education at the Undergraduate
+            (B.Tech), Postgraduate (M.Tech, MBA, M.Sc.), and Doctoral (Ph.D.)
+            levels through its highly qualified and experienced faculty members.
+            Emphasis is placed on outcome-based education, industry relevance,
+            and research-driven learning.
           </p>
 
           <p>
-            At present, the Institute has seven academic disciplines, namely
-            Architecture, Civil Engineering, Computer Science & Engineering,
-            Electrical Engineering, Electronics & Communication Engineering,
-            Information Technology, and Mechanical Engineering. It also has
-            well-established departments of Physics, Mathematics, and Humanities
-            and Social Sciences.
+            NIT Jalandhar houses multiple academic departments including
+            Civil Engineering, Computer Science & Engineering, Electrical
+            Engineering, Electronics & Communication Engineering, Information
+            Technology, Instrumentation & Control Engineering, Mechanical
+            Engineering, Textile Technology, and Chemical Engineering, along
+            with well-established departments of Physics, Chemistry,
+            Mathematics, and Humanities & Management.
           </p>
 
           <p>
-            With a mission to set high standards in education and research, NIT
-            Patna is actively involved in research and development (R&D), pushing
-            the boundaries of innovation across various fields. The institute
-            holds a distinguished reputation for its long-standing record of
-            academic excellence.
+            With a strong focus on research, innovation, and entrepreneurship,
+            NIT Jalandhar actively contributes to national missions in energy,
+            sustainability, digital transformation, and advanced manufacturing.
+            The institute maintains close collaboration with industries,
+            research organizations, and global academic partners, reinforcing
+            its reputation for academic excellence and societal impact.
           </p>
         </div>
       </div>

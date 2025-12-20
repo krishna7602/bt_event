@@ -50,7 +50,7 @@ export default function App() {
         />
 
         {/* ABOUT */}
-        <Route path="/about-nit-patna" element={<AboutNITJ />} />
+        <Route path="/about-nit-jalandhar" element={<AboutNITJ />} />
         <Route path="/organizing-committee" element={<OrganizingCommittee />} />
         <Route
           path="/international-advisory-committee"

@@ -11,7 +11,7 @@ export default function Navbar() {
       name: "About", 
       dropdown: [
         { name: "About the Conference", path: '/' },
-        { name: "About NIT Patna", path: '/about-nit-patna' },
+        { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
         { name: "Organising Committee", path: '/organizing-committee' },
         { name: "International Advisory Committee", path: '/international-advisory-committee' },
         { name: "Technical Programme Committee", path: '/technical-programme-committee' },
