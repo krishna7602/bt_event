@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 // Home Sections
 import Hero from "./components/Hero";
 import About from "./components/About";
-import CallForPapers from "./components/CallForPapers";
 import ImportantDates from "./components/ImportantDates";
 
 // Pages
@@ -34,7 +33,7 @@ import Contact from "./components/Contact";
 
 export default function App() {
   return (
-    <Router>
+    <>
       <Navbar />
 
       <Routes>
@@ -45,7 +44,6 @@ export default function App() {
             <>
               <Hero />
               <About />
-              {/* <CallForPapers /> */}
               <ImportantDates />
             </>
           }
@@ -93,6 +91,6 @@ export default function App() {
       </Routes>
 
       <Footer />
-    </Router>
+    </>
   );
 }
