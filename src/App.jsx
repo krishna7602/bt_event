@@ -30,6 +30,7 @@ import CMTacknowldgement from "./Pages/CMTacknowldgement";
 import Paperpublication from "./Pages/Paperpublication";
 import Venue from "./components/Venue";
 import Contact from "./components/Contact";
+import ObjectivesConference from "./Pages/ObjectivesConference";
 
 export default function App() {
   return (
@@ -51,6 +52,7 @@ export default function App() {
 
         {/* ABOUT */}
         <Route path="/about-nit-jalandhar" element={<AboutNITJ />} />
+        <Route path="/objectives-conference" element={<ObjectivesConference />} />
         <Route path="/organizing-committee" element={<OrganizingCommittee />} />
         <Route
           path="/international-advisory-committee"
