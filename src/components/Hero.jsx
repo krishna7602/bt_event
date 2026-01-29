@@ -78,7 +78,7 @@ const Hero = () => {
             <p className="text-lg font-semibold">
               Conference Dates:{" "}
               <span className="text-green-600">
-                To Be Announced
+                May 8-9, 2026
               </span>
             </p>
           </div>

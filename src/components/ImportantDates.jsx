@@ -4,42 +4,42 @@ export default function ImportantDates() {
   const dates = [
     {
       event: "Paper Submission Start Date",
-      date: "June 16, 2025",
+      date: "February 8, 2026",
       description: "Start date to submit research papers for review."
     },
     {
       event: "Paper Submission Deadline",
-      date: "December 18, 2025 (extended)",
+      date: "March 31, 2026",
       description: "Final date to submit research papers for review."
     },
     {
       event: "Notification of Acceptance",
-      date: "December 29, 2025",
+      date: "To be Announced",
       description: "Authors will receive acceptance or rejection notifications."
     },
     {
       event: "Early Bird Registration",
-      date: "January 25, 2026",
+      date: "To be Announced",
       description: "Deadline for early bird registration for the conference."
     },
     {
       event: "Camera-Ready Submission",
-      date: "February 16, 2026",
+      date: "To be Announced",
       description: "Final versions of accepted papers must be submitted."
     },
     {
       event: "Last Date of Registration",
-      date: "February 23, 2026",
+      date: "To be Announced",
       description: "Final date for all participants to register for the conference."
     },
     {
       event: "Conference Start Date",
-      date: "March 6, 2026",
+      date: "May 8, 2026",
       description: "The official start of the International Conference."
     },
     {
       event: "Conference End Date",
-      date: "March 8, 2026",
+      date: "May 9, 2026",
       description: "The final day of the conference."
     }
   ];
