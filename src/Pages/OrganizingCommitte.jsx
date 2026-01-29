@@ -88,18 +88,18 @@ const OrganizingCommittee = () => {
           title="Chairman"
           members={[
             {
+              name: "Prof. Rohit Mehra",
+              designation: "Dean Research & Consultancy",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electrical Engineering",
+              photo: rohitMehraPhoto,
+            },
+            {
               name: "Prof. S. K. Pahuja",
               designation: "Head of Department",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
               photo: skPahujaPhoto,
-            },
-            {
-              name: "Prof. Rohit Mehra",
-              designation: "Dean Research & Consultancy",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Physics",
-              photo: rohitMehraPhoto,
             },
           ]}
         />
