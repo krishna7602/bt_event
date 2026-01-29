@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import logo from '../assets/logo.png';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -51,13 +52,8 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="flex items-center gap-8 mb-10">
             {/* Logo */}
-            <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">NZ</div>
-                <div className="text-xs text-gray-700 font-semibold">
-                  ENERGY
-                </div>
-              </div>
+            <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden">
+              <img src={logo} alt="NOE SYSTEM Logo" className="w-full h-full object-contain p-2" />
             </div>
 
             {/* Title */}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -27,9 +28,12 @@ const Footer = () => {
 
           {/* About Conference */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-              Net-Zero Energy Systems
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src={logo} alt="NOE SYSTEM Logo" className="w-10 h-10 object-contain" />
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                NOE SYSTEM
+              </h3>
+            </div>
             <p className="text-gray-400 mb-4">
               National Conference on Net-Zero Energy Systems
             </p>

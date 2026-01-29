@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -70,10 +71,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">NZ</span>
-            </div>
-            <span className="text-sm font-semibold text-blue-900">NZ Energy</span>
+            <img src={logo} alt="NOE SYSTEM Logo" className="w-12 h-12 object-contain" />
+            <span className="text-sm font-semibold text-blue-900">NOE SYSTEM</span>
           </div>
 
           {/* Desktop Navigation */}
