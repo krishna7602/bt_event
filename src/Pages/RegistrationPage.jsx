@@ -116,8 +116,8 @@ const RegistrationPage = () => {
             <li>Paper presentation and publication</li>
             <li>Conference certificate</li>
             <li>Registration kit</li>
-            <li>High-Tea & Lunch (6th–8th March 2026)</li>
-            <li>Gala Dinner (7th March 2026)</li>
+            <li>High-Tea & Lunch (8th–9th May 2026)</li>
+            <li>Gala Dinner (8th May 2026)</li>
           </ul>
         </div>
 

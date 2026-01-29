@@ -14,22 +14,22 @@ export default function ImportantDates() {
     },
     {
       event: "Notification of Acceptance",
-      date: "To be Announced",
+      date: "April 20, 2026",
       description: "Authors will receive acceptance or rejection notifications."
     },
     {
       event: "Early Bird Registration",
-      date: "To be Announced",
+      date: "April 25, 2026",
       description: "Deadline for early bird registration for the conference."
     },
     {
       event: "Camera-Ready Submission",
-      date: "To be Announced",
+      date: "April 30, 2026",
       description: "Final versions of accepted papers must be submitted."
     },
     {
       event: "Last Date of Registration",
-      date: "To be Announced",
+      date: "April 30, 2026",
       description: "Final date for all participants to register for the conference."
     },
     {

@@ -14,7 +14,7 @@ const SponsoreExhebition = () => {
           Department of Electrical Engineering, National Institute of Technology (NIT),
           Patna is pleased to announce the <strong>International Conference on
           Next-Generation Adaptive Research and Innovations (ICNARI-2026)</strong>,
-          scheduled during <strong>6–8 March 2026</strong> at NIT Patna.
+          scheduled during <strong>8–9 May 2026</strong> at NIT Jalandhar.
         </p>
 
         {/* Call to Action */}
