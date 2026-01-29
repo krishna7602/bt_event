@@ -1,104 +1,143 @@
 import React from "react";
+import goldenTempleDay from "../assets/gallery/golden_temple_day.jpg";
+import goldenTempleNight from "../assets/gallery/golden_temple_night.jpg";
+import jallianwalaBagh from "../assets/gallery/jallianwala_bagh.png";
+import scienceCity from "../assets/gallery/science_city.jpg";
+import haveli from "../assets/gallery/haveli.png";
+import durgianaMandir from "../assets/gallery/durgiana_mandir.jpg";
+import ramTirath from "../assets/gallery/ram_tirath.jpg";
+import gurudwara from "../assets/gallery/gurudwara.jpg";
+import statue from "../assets/gallery/statue.png";
 
 const toursData = [
   {
-    title: "Mahabodhi Temple, Bodh Gaya",
-    photo: "https://source.unsplash.com/600x400/?mahabodhi,bodhgaya",
+    title: "Golden Temple, Amritsar",
+    photo: goldenTempleDay,
     description:
-      "The Mahabodhi Temple Complex at Bodh Gaya is one of the four holy sites associated with Lord Buddha’s life and enlightenment. Originally built by Emperor Ashoka in the 3rd century BC, the present structure dates to the Gupta period. The brick-built temple rises to 55 meters and is surrounded by ancient stone railings.",
+      "The Harmandir Sahib, also known as the Golden Temple, is the preeminent spiritual site of Sikhism. Located in Amritsar, it is famous for its stunning golden dome and the surrounding Amrit Sarovar (holy tank). It is open to people of all faiths.",
   },
   {
-    title: "Takhat Sri Harimandir Ji, Patna Sahib",
-    photo: "https://source.unsplash.com/600x400/?patna,sikh,gurudwara",
+    title: "Jallianwala Bagh, Amritsar",
+    photo: jallianwalaBagh,
     description:
-      "Takhat Sri Harimandir Ji, also known as Patna Sahib Gurudwara, is the birthplace of Guru Gobind Singh. Built in 1666 by Maharaja Ranjit Singh, it is one of the five Takhts of Sikhism and houses sacred relics of the tenth Sikh Guru.",
+      "A memorial of national importance, Jallianwala Bagh commemorates the hundreds of innocent civilians killed by British troops in 1919. The site preserves bullet marks on the walls and the historic well within the park.",
   },
   {
-    title: "Nalanda Mahavihara",
-    photo: "https://source.unsplash.com/600x400/?nalanda,ruins,bihar",
+    title: "Pushpa Gujral Science City, Kapurthala",
+    photo: scienceCity,
     description:
-      "Nalanda Mahavihara was one of the world’s first residential universities, flourishing between the 5th and 12th centuries CE. It attracted scholars from across Asia and was declared a UNESCO World Heritage Site in 2016.",
+      "Located near Jalandhar, this science city is one of the largest in North India. It features a planetarium, flight simulator, earthquake simulator, and various interactive galleries exploring physical, liquid, and life sciences.",
   },
   {
-    title: "Vishwa Shanti Stupa, Rajgir",
-    photo: "https://source.unsplash.com/600x400/?rajgir,peace,stupa",
+    title: "Haveli, Jalandhar",
+    photo: haveli,
     description:
-      "The Vishwa Shanti Stupa is a white peace pagoda built through Indo-Japanese collaboration in 1969. Located atop Ratnagiri Hill, it offers panoramic views and features four golden Buddha statues depicting key events of his life.",
+      "Haveli is a renowned heritage restaurant and museum that offers a deep dive into traditional Punjabi village culture. It features authentic décor, traditional cuisine, and various artifacts showcasing the rural lifestyle of Punjab.",
   },
   {
-    title: "Valmiki National Park",
-    photo: "https://source.unsplash.com/600x400/?forest,wildlife,india",
+    title: "Durgiana Temple, Amritsar",
+    photo: durgianaMandir,
     description:
-      "Valmiki National Park is Bihar’s only national park, spread across 880 sq. km in the Himalayan Terai region. It is home to Bengal tigers, leopards, diverse bird species, and rich forest biodiversity.",
+      "Dedicated to Goddess Durga, this temple's architecture is inspired by the Golden Temple. It is built in the middle of a sacred lake and is famous for its exquisite silver doors, earning it the name 'Silver Temple'.",
   },
   {
-    title: "Vikramshila University",
-    photo: "https://source.unsplash.com/600x400/?ancient,university,ruins",
+    title: "Bhagwan Valmiki Tirath Sthal (Ram Tirath)",
+    photo: ramTirath,
     description:
-      "Established in the 8th century by King Dharampala, Vikramshila was a major center of Buddhist learning during the Pala Empire. The ruins lie along the banks of the river Ganga in Bhagalpur district.",
+      "An ancient temple complex believed to be the birthplace of Luv and Kush. It is deeply associated with the Ramayana and features a large holy sarovar and beautifully designed monuments.",
   },
   {
-    title: "Vikramshila Gangetic Dolphin Sanctuary",
-    photo: "https://source.unsplash.com/600x400/?ganges,river,dolphin",
+    title: "Wagah Border, Amritsar",
+    photo: statue, // Using the statue image as a symbolic represention
     description:
-      "This sanctuary stretches 50 km along the Ganges River and was established to protect the endangered Gangetic Dolphin. Boat safaris offer opportunities to observe dolphins and other aquatic species.",
+      "Famous for its ceremonial 'Beating Retreat' ceremony, the Wagah border between India and Pakistan is a major attraction. The event is marked by patriotic fervor and synchronized military maneuvers.",
   },
   {
-    title: "Pawapuri",
-    photo: "https://source.unsplash.com/600x400/?jain,temple,pond",
+    title: "Jalandhar City Landmarks",
+    photo: gurudwara,
     description:
-      "Pawapuri is a sacred Jain pilgrimage site where Lord Mahavira attained Nirvana. The Jal Mandir, built in white marble amidst a lotus pond, marks the cremation site and attracts devotees from across the world.",
+      "Jalandhar boasts several historic Gurudwaras and monuments. The city is a hub of traditional and modern Punjabi culture, offering a unique blend of heritage and contemporary development.",
   },
   {
-    title: "Lauriya Nandangarh",
-    photo: "https://source.unsplash.com/600x400/?ashoka,pillar,india",
+    title: "Golden Temple (Night View)",
+    photo: goldenTempleNight,
     description:
-      "Lauriya Nandangarh is renowned for its Ashokan Pillar and ancient burial mounds. The pillar bears inscriptions in Brahmi script and reflects the architectural brilliance of the Mauryan period.",
-  },
-  {
-    title: "Tomb of Sher Shah Suri",
-    photo: "https://source.unsplash.com/600x400/?sher+shah+suri,tomb",
-    description:
-      "Located in Sasaram, this red sandstone mausoleum is a masterpiece of Indo-Islamic architecture. Built in the 16th century, it stands in the middle of an artificial lake and influenced later Mughal designs.",
-  },
-  {
-    title: "Navlakha Palace, Rajnagar",
-    photo: "https://source.unsplash.com/600x400/?palace,heritage,bihar",
-    description:
-      "Navlakha Palace was built in the 19th century by the Maharaja of Darbhanga. Though partially damaged in the 1934 earthquake, its ruins reflect the grandeur of Mithila’s royal architectural heritage.",
+      "The Golden Temple takes on a magical glow after sunset. The illuminated reflections on the sarovar offer a serene and deeply moving spiritual experience for visitors from around the world.",
   },
 ];
 
 const Tours = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-gray-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">
-          Tours
-        </h2>
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+            Explore <span className="text-blue-600">Punjab</span>
+          </h2>
+          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Discover the rich heritage, spiritual landmarks, and vibrant culture of Jalandhar and Amritsar during your conference visit.
+          </p>
+        </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Tours Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {toursData.map((tour, index) => (
             <div
               key={index}
-              className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+              className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col"
             >
-              <img
-                src={tour.photo}
-                alt={tour.title}
-                className="w-full h-48 object-cover"
-              />
+              {/* Image Container */}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={tour.photo}
+                  alt={tour.title}
+                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white font-medium">View Location</span>
+                </div>
+              </div>
 
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              {/* Content */}
+              <div className="p-8 flex-grow">
+                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
                   {tour.title}
                 </h3>
-                <p className="text-sm text-gray-700 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                   {tour.description}
                 </p>
               </div>
+
+              {/* Footer/Action */}
+              <div className="px-8 pb-8">
+                <div className="w-full h-px bg-gray-100 mb-6"></div>
+                <button className="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2 transition-colors">
+                  Learn More
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </button>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Travel Information */}
+        <div className="mt-20 bg-blue-900 rounded-3xl p-10 text-white shadow-xl relative overflow-hidden">
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="max-w-2xl text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Plan Your Visit</h3>
+              <p className="text-blue-100 text-lg">
+                Complimentary guided tours for conference delegates can be arranged upon request. Please visit the registration desk for coordination and transport details.
+              </p>
+            </div>
+            <button className="bg-white text-blue-900 font-bold py-4 px-10 rounded-full hover:bg-blue-50 transition-colors shadow-lg whitespace-nowrap">
+              Contact Organizing Committee
+            </button>
+          </div>
+          {/* Decorative backdrop */}
+          <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-blue-800 rounded-full opacity-50"></div>
+          <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-48 h-48 bg-blue-800 rounded-full opacity-50"></div>
         </div>
       </div>
     </section>
