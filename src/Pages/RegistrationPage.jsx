@@ -28,7 +28,7 @@ const RegistrationPage = () => {
             </p>
             <div className="space-y-4 text-gray-600">
               <p>
-                <strong>Confirmation:</strong> After successful payment, send an email to <a href="mailto:ICATSE2026@nitj.ac.in" className="text-blue-600 font-semibold hover:underline">ICATSE2026@nitj.ac.in</a> containing the transaction number and relevant details.
+                <strong>Confirmation:</strong> After successful payment, kindly fill the Google Form (link will be provided soon) with your transaction number and other relevant details.
               </p>
               <p>
                 <strong>Full Paper:</strong> After the conference, a link will be sent to participants for submission of full-length papers.
