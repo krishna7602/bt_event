@@ -9,7 +9,8 @@ const keynoteSpeakers = [
     designation: "Associate Professor",
     department: "Department of Electrical Engineering",
     photo: anupShuklaPhoto,
-    bio: "Dr. Anup Shukla (Senior Member IEEE, Power and Energy Society, Industry Applications Society, IEEE Young Professionals). From June 2016 to Dec 2016, He was with the Department of Electrical Engineering, Indian Institute of Technology Kanpur as Senior Project Engineer. From Jan 2017 to Aug. 2017, He was with the Department of Electrical Engineering and Computer Science Engineering, Howard University, USA as post-doctorate. He is currently working as Visiting Faculty at Loughborough University from October 2023 to April 2024. He is currently working as an Associate Professor with the Department of Electrical Engineering, Indian Institute of Technology Jammu, India. He was the recipient of POSOCO Power System Award, 2017 and Dr. P.S. Nigam Power Sector Award, 2013."
+    bio: "Dr. Anup Shukla (Senior Member IEEE, Power and Energy Society, Industry Applications Society, IEEE Young Professionals). From June 2016 to Dec 2016, He was with the Department of Electrical Engineering, Indian Institute of Technology Kanpur as Senior Project Engineer. From Jan 2017 to Aug. 2017, He was with the Department of Electrical Engineering and Computer Science Engineering, Howard University, USA as post-doctorate. He is currently working as Visiting Faculty at Loughborough University from October 2023 to April 2024. He is currently working as an Associate Professor with the Department of Electrical Engineering, Indian Institute of Technology Jammu, India. He was the recipient of POSOCO Power System Award, 2017 and Dr. P.S. Nigam Power Sector Award, 2013.",
+    link: "https://iitjammu.ac.in/faculty/~anupshukla"
   },
   {
     name: "Dr. Asha Sharma",
@@ -17,7 +18,8 @@ const keynoteSpeakers = [
     designation: "Assistant Professor",
     department: "Department of Electrical Engineering",
     photo: ashaSharmaPhoto,
-    bio: "Dr. Asha Sharma is an Assistant Professor in the Electrical Engineering Department at the Indian Institute of Technology Roorkee. Her research interests include high voltage engineering, insulation systems, dielectric materials, and power system applications. She is actively involved in teaching undergraduate and postgraduate courses in electrical engineering and supervises research students at the M.Tech and Ph.D. levels. Dr. Sharma has received several honours and awards for her academic and research contributions and has published research papers in reputed international journals and conferences. She also participates in professional and academic activities related to electrical engineering education and research."
+    bio: "Dr. Asha Sharma is an Assistant Professor in the Electrical Engineering Department at the Indian Institute of Technology Roorkee. Her research interests include high voltage engineering, insulation systems, dielectric materials, and power system applications. She is actively involved in teaching undergraduate and postgraduate courses in electrical engineering and supervises research students at the M.Tech and Ph.D. levels. Dr. Sharma has received several honours and awards for her academic and research contributions and has published research papers in reputed international journals and conferences. She also participates in professional and academic activities related to electrical engineering education and research.",
+    link: "https://www.iitr.ac.in/Departments/Electrical%20Engineering%20Department/People/Faculty/101050.html"
   }
 ];
 
@@ -49,9 +51,22 @@ const SpeakerCard = ({ speaker, reverse }) => {
 
         <div className="relative">
           <div className="absolute -left-4 top-0 bottom-0 w-1 bg-blue-600/30 rounded-full hidden md:block"></div>
-          <p className="text-gray-700 leading-relaxed text-justify md:pl-4">
+          <p className="text-gray-700 leading-relaxed text-justify md:pl-4 mb-4">
             {speaker.bio}
           </p>
+          {speaker.link && (
+            <div className="md:pl-4">
+              <a 
+                href={speaker.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-blue-600 font-semibold hover:underline flex items-center gap-1"
+              >
+                View Full Profile
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
