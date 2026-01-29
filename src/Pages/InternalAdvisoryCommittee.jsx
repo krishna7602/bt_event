@@ -3,7 +3,7 @@ import akankshaPhoto from '../assets/committee/advisory/akanksha_shukla.jpg';
 import chandraSekharPhoto from '../assets/committee/advisory/chandra_sekhar_obbu.jpg';
 import manojKumawatPhoto from '../assets/committee/advisory/manoj_kumawat.jpg';
 import naveenKumarPhoto from '../assets/committee/advisory/naveen_kumar_sharma.png';
-import neerajKumarPhoto from '../assets/committee/advisory/neeraj_kumar.jpg';
+import deshDeepakPhoto from '../assets/committee/advisory/desh_deepak_sharma.jpg';
 import satishSharmaPhoto from '../assets/committee/advisory/satish_sharma.png';
 import sreenuSreekumarPhoto from '../assets/committee/advisory/sreenu_sreekumar.png';
 import surenderHansPhoto from '../assets/committee/advisory/surender_hans.png';
@@ -13,17 +13,19 @@ const MemberCard = ({ name, institute, department, photo }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex gap-4 items-start hover:shadow-lg transition">
       {/* Photo */}
-      <img
-        src={photo || "https://via.placeholder.com/100"}
-        alt={name}
-        className="w-20 h-20 rounded-full object-cover border"
-      />
+      <div className="flex-shrink-0">
+        <img
+          src={photo || "https://via.placeholder.com/100"}
+          alt={name}
+          className="w-20 h-20 rounded-full object-cover border shadow-sm"
+        />
+      </div>
 
       {/* Details */}
-      <div>
-        <h4 className="text-lg font-semibold text-gray-800">{name}</h4>
-        <p className="text-sm text-gray-600">{institute}</p>
-        <p className="text-sm text-gray-500">{department}</p>
+      <div className="flex-grow">
+        <h4 className="text-lg font-bold text-gray-900 leading-tight mb-1">{name}</h4>
+        <p className="text-sm font-semibold text-blue-700 mb-1">{institute}</p>
+        {department && <p className="text-xs text-gray-500 uppercase tracking-wider">{department}</p>}
       </div>
     </div>
   );
@@ -88,14 +90,19 @@ const InternalAdvisoryCommittee = () => {
     },
     {
       name: "Dr. Vivek Prakash",
-      institute: "Banasthali Vidyapith (B.V.)",
+      institute: "Banasthali Vidyapith (B. V.)",
       department: "Electrical Engineering",
     },
     {
       name: "Dr. Neeraj Kumar",
       institute: "Manipal University Jaipur (M.U.J.)",
       department: "Electrical Engineering",
-      photo: neerajKumarPhoto,
+    },
+    {
+      name: "Dr. Desh Deepak Sharma",
+      institute: "MJP Rohilkhand University Bareilly (MJPRUB)",
+      department: "Electrical Engineering",
+      photo: deshDeepakPhoto,
     },
     {
       name: "Dr. Vivek Sharma",
@@ -117,21 +124,27 @@ const InternalAdvisoryCommittee = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
+    <div className="bg-gray-50 min-h-screen py-16 px-4 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
-          Internal Advisory Committee
-        </h2>
+        {/* Title Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            Internal Advisory <span className="text-blue-600">Committee</span>
+          </h2>
+          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
+          <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+            Our esteemed internal advisory committee members from various prestigious institutes across the country.
+          </p>
+        </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {members.map((member, index) => (
             <MemberCard key={index} {...member} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
