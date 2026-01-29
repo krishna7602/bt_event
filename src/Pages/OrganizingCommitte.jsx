@@ -91,7 +91,7 @@ const OrganizingCommittee = () => {
               name: "Prof. Rohit Mehra",
               designation: "Dean Research & Consultancy",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
+              department: "Physics",
               photo: rohitMehraPhoto,
             },
             {
