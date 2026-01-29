@@ -1,12 +1,31 @@
 import React from "react";
+import directorPhoto from '../assets/director.jpg';
+import skPahujaPhoto from '../assets/committee/sk_pahuja.png';
+import rohitMehraPhoto from '../assets/committee/rohit_mehra.jpg';
+import kcSharmaPhoto from '../assets/committee/kc_sharma.jpg';
+import maheshKumarPhoto from '../assets/committee/mahesh_kumar.jpg';
+
+import harimuruganPhoto from '../assets/committee/tech_harimurugan.jpg';
+import madanKDasPhoto from '../assets/committee/tech_madan_k_das.jpg';
+import pRamakrishnaPhoto from '../assets/committee/tech_p_ramakrishna.jpg';
+import arunRathorePhoto from '../assets/committee/tech_arun_rathore.jpg';
+import bnRaoPhoto from '../assets/committee/tech_b_n_rao.jpeg';
+import sounakNandiPhoto from '../assets/committee/tech_sounak_nandi.png';
+import debottamMukherjeePhoto from '../assets/committee/tech_debottam_mukherjee.png';
+import swetaMahajanPhoto from '../assets/committee/tech_sweta_mahajan.jpg';
+import neelamRaniPhoto from '../assets/committee/tech_neelam_rani.jpg';
+import karanJainPhoto from '../assets/committee/tech_karan_jain.jpg';
+import nishaChaurasiaPhoto from '../assets/committee/tech_nisha_chaurasia.jpeg';
+import anilKumarYadavPhoto from '../assets/committee/tech_anil_kumar_yadav.jpg';
+import kundanKumarPhoto from '../assets/committee/tech_kundan_kumar.jpg';
 
 /* Reusable Card */
-const MemberCard = ({ name, designation, institute, department }) => {
+const MemberCard = ({ name, designation, institute, department, photo }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex gap-4 items-start hover:shadow-lg transition">
-      {/* Dummy Photo */}
+      {/* Photo */}
       <img
-        src="https://via.placeholder.com/100"
+        src={photo || "https://via.placeholder.com/100"}
         alt={name}
         className="w-20 h-20 rounded-full object-cover border"
       />
@@ -55,10 +74,11 @@ const OrganizingCommittee = () => {
           title="Patron & General Chair"
           members={[
             {
-              name: "Prof. Pradip K. Jain",
+              name: "Prof. Binod Kumar Kanaujia",
               designation: "Director",
-              institute: "NIT Patna",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electronics and Communication Engineering",
+              photo: directorPhoto,
             },
           ]}
         />
@@ -68,14 +88,18 @@ const OrganizingCommittee = () => {
           title="Chairman"
           members={[
             {
-              name: "Prof. Ramesh Kumar",
-              institute: "NIT Patna",
+              name: "Prof. S. K. Pahuja",
+              designation: "Head of Department",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
+              photo: skPahujaPhoto,
             },
             {
-              name: "Dr. Rajib Kumar Mandal",
-              institute: "NIT Patna",
-              department: "Electrical Engineering",
+              name: "Prof. Rohit Mehra",
+              designation: "Dean Research & Consultancy",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Physics",
+              photo: rohitMehraPhoto,
             },
           ]}
         />
@@ -85,9 +109,16 @@ const OrganizingCommittee = () => {
           title="Organizing Chair / Convenor"
           members={[
             {
-              name: "Dr. Amitesh Kumar",
-              institute: "NIT Patna",
+              name: "Dr. Kailash Chand Sharma",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
+              photo: kcSharmaPhoto,
+            },
+            {
+              name: "Dr. Mahesh Kumar",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electrical Engineering",
+              photo: maheshKumarPhoto,
             },
           ]}
         />
@@ -206,6 +237,96 @@ const OrganizingCommittee = () => {
               name: "Dr. Trilochan Penthia",
               institute: "NIT Patna",
               department: "Electrical Engineering",
+            },
+          ]}
+        />
+
+        {/* Technical Programme Committee */}
+        <CommitteeSection
+          title="Technical Programme Committee"
+          members={[
+            {
+              name: "Dr. Harimurugan",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: harimuruganPhoto,
+            },
+            {
+              name: "Dr. Madan K. Das",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: madanKDasPhoto,
+            },
+            {
+              name: "Dr. P. Ramakrishna",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: pRamakrishnaPhoto,
+            },
+            {
+              name: "Dr. Arun Rathore",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: arunRathorePhoto,
+            },
+            {
+              name: "Dr. B. N Rao",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: bnRaoPhoto,
+            },
+            {
+              name: "Dr. Sounak Nandi",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: sounakNandiPhoto,
+            },
+            {
+              name: "Dr. Debottam Mukherjee",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: debottamMukherjeePhoto,
+            },
+            {
+              name: "Dr. Sweta Mahajan",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: swetaMahajanPhoto,
+            },
+            {
+              name: "Dr. Neelam Rani",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+              photo: neelamRaniPhoto,
+            },
+            {
+              name: "Dr. Karan Jain",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Instrumentation and Control Engineering",
+              photo: karanJainPhoto,
+            },
+            {
+              name: "Dr. Gagandeep Singh Dua",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "",
+            },
+            {
+              name: "Dr. Nisha Chaurasia",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Information Technology",
+              photo: nishaChaurasiaPhoto,
+            },
+            {
+              name: "Dr. Anil Kumar Yadav",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Instrumentation and Control Engineering",
+              photo: anilKumarYadavPhoto,
+            },
+            {
+              name: "Dr. Kundan Kumar",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electronics and Communication Engineering",
+              photo: kundanKumarPhoto,
             },
           ]}
         />
