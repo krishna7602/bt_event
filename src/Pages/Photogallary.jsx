@@ -1,16 +1,26 @@
 import React from "react";
 
+import goldenTempleDay from '../assets/gallery/golden_temple_day.jpg';
+import goldenTempleNight from '../assets/gallery/golden_temple_night.jpg';
+import durgianaMandir from '../assets/gallery/durgiana_mandir.jpg';
+import statue from '../assets/gallery/statue.png';
+import jallianwalaBagh from '../assets/gallery/jallianwala_bagh.png';
+import scienceCity from '../assets/gallery/science_city.jpg';
+import ramTirath from '../assets/gallery/ram_tirath.jpg';
+import haveli from '../assets/gallery/haveli.png';
+import gurudwara from '../assets/gallery/gurudwara.jpg';
+
 const Photogallary = () => {
   const photos = [
-    "https://source.unsplash.com/600x400/?conference",
-    "https://source.unsplash.com/600x400/?seminar",
-    "https://source.unsplash.com/600x400/?university",
-    "https://source.unsplash.com/600x400/?auditorium",
-    "https://source.unsplash.com/600x400/?research",
-    "https://source.unsplash.com/600x400/?technology",
-    "https://source.unsplash.com/600x400/?engineering",
-    "https://source.unsplash.com/600x400/?presentation",
-    "https://source.unsplash.com/600x400/?campus",
+    goldenTempleDay,
+    goldenTempleNight,
+    durgianaMandir,
+    statue,
+    jallianwalaBagh,
+    scienceCity,
+    ramTirath,
+    haveli,
+    gurudwara
   ];
 
   return (
