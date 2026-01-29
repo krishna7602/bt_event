@@ -12,7 +12,6 @@ import ImportantDates from "./components/ImportantDates";
 // Pages
 import AboutNITJ from "./Pages/AboutNITJ";
 import OrganizingCommittee from "./Pages/OrganizingCommitte";
-import InternationalAdvisoryCommittee from "./Pages/InternationalAdvisoryCommittee";
 import InternalAdvisoryCommittee from "./Pages/InternalAdvisoryCommittee";
 import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommittee";
 import Accommodation from "./Pages/Accomodation";
@@ -56,10 +55,6 @@ export default function App() {
         <Route path="/about-nit-jalandhar" element={<AboutNITJ />} />
         <Route path="/objectives-conference" element={<ObjectivesConference />} />
         <Route path="/organizing-committee" element={<OrganizingCommittee />} />
-        <Route
-          path="/international-advisory-committee"
-          element={<InternationalAdvisoryCommittee />}
-        />
         <Route
           path="/internal-advisory-committee"
           element={<InternalAdvisoryCommittee />}
