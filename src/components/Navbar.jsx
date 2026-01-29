@@ -15,6 +15,7 @@ export default function Navbar() {
         { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
         { name: "Organising Committee", path: '/organizing-committee' },
         { name: "International Advisory Committee", path: '/international-advisory-committee' },
+        { name: "Internal Advisory Committee", path: '/internal-advisory-committee' },
         { name: "Technical Programme Committee", path: '/technical-programme-committee' },
         { name: "Venue and Travels", path: '/venue' },
         { name: "Accommodations", path: '/accommodation' },

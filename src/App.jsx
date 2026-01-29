@@ -13,6 +13,7 @@ import ImportantDates from "./components/ImportantDates";
 import AboutNITJ from "./Pages/AboutNITJ";
 import OrganizingCommittee from "./Pages/OrganizingCommitte";
 import InternationalAdvisoryCommittee from "./Pages/InternationalAdvisoryCommittee";
+import InternalAdvisoryCommittee from "./Pages/InternalAdvisoryCommittee";
 import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommittee";
 import Accommodation from "./Pages/Accomodation";
 import Photogallary from "./Pages/Photogallary";
@@ -57,6 +58,10 @@ export default function App() {
         <Route
           path="/international-advisory-committee"
           element={<InternationalAdvisoryCommittee />}
+        />
+        <Route
+          path="/internal-advisory-committee"
+          element={<InternalAdvisoryCommittee />}
         />
         <Route
           path="/technical-programme-committee"
