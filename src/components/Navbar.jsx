@@ -17,6 +17,7 @@ export default function Navbar() {
         { name: "International Advisory Committee", path: '/international-advisory-committee' },
         { name: "Internal Advisory Committee", path: '/internal-advisory-committee' },
         { name: "Technical Programme Committee", path: '/technical-programme-committee' },
+        { name: "Paper Review Committee", path: '/paper-review-committee' },
         { name: "Venue and Travels", path: '/venue' },
         { name: "Accommodations", path: '/accommodation' },
         { name: "PhotoGallery", path: '/gallery' }

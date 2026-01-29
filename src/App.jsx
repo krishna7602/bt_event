@@ -31,6 +31,7 @@ import CMTacknowldgement from "./Pages/CMTacknowldgement";
 import Paperpublication from "./Pages/Paperpublication";
 import Venue from "./components/Venue";
 import Contact from "./components/Contact";
+import PaperReviewCommittee from "./Pages/PaperReviewCommittee";
 import ObjectivesConference from "./Pages/ObjectivesConference";
 
 export default function App() {
@@ -66,6 +67,10 @@ export default function App() {
         <Route
           path="/technical-programme-committee"
           element={<TechnicalProgrammeCommittee />}
+        />
+        <Route
+          path="/paper-review-committee"
+          element={<PaperReviewCommittee />}
         />
 
         {/* FACILITIES */}
