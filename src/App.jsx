@@ -24,7 +24,6 @@ import GuidelinesToAuthors from "./Pages/GuidelinesToAuthors";
 import PaperSubmission from "./Pages/PaperSubmission";
 import RegistrationPage from "./Pages/RegistrationPage";
 import BestStudentAward from "./Pages/BestStudentAward";
-import FinancialSupport from "./Pages/FinancialSupport";
 import CMTAcknowledgement from "./Pages/CMTAcknowledgement";
 import PaperPublication from "./Pages/PaperPublication";
 import Venue from "./components/Venue";
@@ -73,7 +72,6 @@ export default function App() {
         <Route path="/paper-submission" element={<PaperSubmission />} />
         <Route path="/publication" element={<PaperPublication />} />
         <Route path="/best-student-award" element={<BestStudentAward />} />
-        <Route path="/financial-support" element={<FinancialSupport />} />
         <Route path="/cmt-acknowledgement" element={<CMTAcknowledgement />} />
 
         {/* PROGRAMS */}

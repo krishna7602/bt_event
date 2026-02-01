@@ -28,7 +28,6 @@ export default function Navbar() {
         { name: "Paper Submission", path: '/paper-submission' },
         { name: "Paper Publication", path: '/publication' },
         { name: "Best Student Award", path: '/best-student-award' },
-        { name: "Financial Support", path: '/financial-support' },
         { name: "CMT Acknowledgement", path: '/cmt-acknowledgement' }
       ]
     },
