@@ -41,18 +41,18 @@ const MemberCard = ({ name, institute, department, photo }) => {
 const TechnicalProgrammeCommittee = () => {
   const members = [
     // Technical Team
-    {
-      name: "Prof. S. K. Pahuja",
-      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-      department: "Electrical Engineering",
-      photo: skPahujaPhoto,
-    },
-    {
-      name: "Prof. Rohit Mehra",
-      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-      department: "Physics",
-      photo: rohitMehraPhoto,
-    },
+    // {
+    //   name: "Prof. S. K. Pahuja",
+    //   institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+    //   department: "Electrical Engineering",
+    //   photo: skPahujaPhoto,
+    // },
+    // {
+    //   name: "Prof. Rohit Mehra",
+    //   institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+    //   department: "Physics",
+    //   photo: rohitMehraPhoto,
+    // },
     {
       name: "Dr. Kailash Chand Sharma",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
