@@ -11,10 +11,12 @@ const SponsoreExhebition = () => {
 
         {/* Intro */}
         <p className="text-gray-700 text-center max-w-4xl mx-auto mb-8">
-          Department of Electrical Engineering, National Institute of Technology (NIT),
-          Patna is pleased to announce the <strong>International Conference on
-          Next-Generation Adaptive Research and Innovations (ICNARI-2026)</strong>,
-          scheduled during <strong>8–9 May 2026</strong> at NIT Jalandhar.
+          Department of Electrical Engineering, Dr. B. R. Ambedkar National
+          Institute of Technology (NIT), Jalandhar is pleased to announce the{" "}
+          <strong>
+            National Conference on Net-Zero Energy Systems (NZES-2026)
+          </strong>
+          , scheduled during <strong>8–9 May 2026</strong> at NIT Jalandhar.
         </p>
 
         {/* Call to Action */}
@@ -121,8 +123,8 @@ const SponsoreExhebition = () => {
 
         <div className="bg-white border rounded-lg p-6 text-gray-700 max-w-lg">
           <p><strong>Bank Name:</strong> Indian Bank</p>
-          <p><strong>Branch:</strong> NIT Patna Campus</p>
-          <p><strong>Account Name:</strong> NIT Patna CF Account</p>
+          <p><strong>Branch:</strong> NIT Jalandhar Campus</p>
+          <p><strong>Account Name:</strong> NIT Jalandhar CF Account</p>
           <p><strong>Account Number:</strong> 50433562364</p>
           <p><strong>IFSC Code:</strong> IDIB000B810</p>
           <p><strong>MICR Code:</strong> 800019027</p>

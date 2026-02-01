@@ -16,7 +16,7 @@ const Footer = () => {
     { name: "Author Guidelines", href: "#" },
     { name: "Review Process", href: "#" },
     { name: "Publication Policy", href: "#" },
-    { name: "Contact Secretariat", href: "#" }
+    { name: "Contact Secretariat", href: "/contact" }
   ];
 
   return (

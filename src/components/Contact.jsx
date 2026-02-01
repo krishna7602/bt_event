@@ -20,9 +20,9 @@ export default function Contact() {
             <h3 className="font-semibold text-gray-800 mb-1">Location</h3>
             <p className="text-gray-700 leading-relaxed">
               Department of Electrical Engineering,<br />
-              National Institute of Technology Patna,<br />
-              Ashok Rajpath, Mahendru,<br />
-              Patna, Bihar – 800005, India
+              Dr. B. R. Ambedkar National Institute of Technology Jalandhar,<br />
+              G.T. Road, Amritsar Bypass,<br />
+              Jalandhar, Punjab - 144008, India
             </p>
           </div>
 
@@ -30,10 +30,10 @@ export default function Contact() {
             <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
             <p className="text-gray-700">
               <a
-                href="mailto:nasl@nitp.ac.in"
+                href="mailto:nzes2026@nitj.ac.in"
                 className="text-blue-600 hover:underline"
               >
-                nasl@nitp.ac.in
+                nzes2026@nitj.ac.in
               </a>
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Contact() {
           <div>
             <h3 className="font-semibold text-gray-800 mb-1">Call</h3>
             <p className="text-gray-700">
-              +91-7840809129, +91-9635102410, +91-9304640178
+              +91-9816803936, +91-8449118090
             </p>
           </div>
         </div>
