@@ -1,6 +1,6 @@
 import React from "react";
 
-const Paperpublication = () => {
+const PaperPublication = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -82,4 +82,4 @@ const Paperpublication = () => {
   );
 };
 
-export default Paperpublication;
+export default PaperPublication;

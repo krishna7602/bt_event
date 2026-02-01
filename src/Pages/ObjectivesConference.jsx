@@ -227,12 +227,9 @@ const ObjectivesConference = () => {
               </div>
             ))}
           </div>
-
-          {/* Call to Action */}
-          
-            </div>
-          </div>
         </div>
+      </div>
+    </div>
   );
 };
 

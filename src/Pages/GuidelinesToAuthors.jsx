@@ -97,8 +97,10 @@ const GuidelinesToAuthors = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://drive.google.com/uc?export=download&id=1rgNgJ_GFefkJtQBE4OkOdw4K5p9Usu4S"
                 className="text-blue-600 font-medium hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LaTeX Formatting Macros (TEX)
               </a>

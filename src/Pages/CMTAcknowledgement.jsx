@@ -1,6 +1,6 @@
 import React from "react";
 
-const CMTacknowldgement = () => {
+const CMTAcknowledgement = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-5xl mx-auto px-6">
@@ -30,4 +30,4 @@ const CMTacknowldgement = () => {
   );
 };
 
-export default CMTacknowldgement;
+export default CMTAcknowledgement;

@@ -13,12 +13,12 @@ export default function Navbar() {
       dropdown: [
         { name: "Objectives of the Conference", path: '/objectives-conference' },
         { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
-        { name: "Organising Committee", path: '/organizing-committee' },
+        { name: "Organizing Committee", path: '/organizing-committee' },
         { name: "Technical Programme Committee", path: '/technical-programme-committee' },
         { name: "Paper Review Committee", path: '/paper-review-committee' },
         { name: "Venue and Travels", path: '/venue' },
         { name: "Accommodations", path: '/accommodation' },
-        { name: "PhotoGallery", path: '/gallery' }
+        { name: "Photo Gallery", path: '/gallery' }
       ]
     },
     { 
@@ -71,8 +71,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>
-            <img src={logo} alt="NOE SYSTEM Logo" className="w-12 h-12 object-contain" />
-            <span className="text-sm font-semibold text-blue-900">NOE SYSTEM</span>
+            <img src={logo} alt="NZES-2026 Logo" className="w-12 h-12 object-contain" />
+            <span className="text-sm font-semibold text-blue-900">NZES-2026</span>
           </div>
 
           {/* Desktop Navigation */}

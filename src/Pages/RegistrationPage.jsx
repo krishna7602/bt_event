@@ -99,7 +99,7 @@ const RegistrationPage = () => {
                   <td className="px-8 py-5 text-blue-600 font-semibold">₹ 4,000</td>
                 </tr>
                 <tr className="hover:bg-blue-50 transition-colors">
-                  <td className="px-8 py-5 font-medium">Co-Author / Listener / Accomp. Person</td>
+                  <td className="px-8 py-5 font-medium">Co-author / Listener / Accompanying Person</td>
                   <td className="px-8 py-5">₹ 1,500</td>
                   <td className="px-8 py-5 text-blue-600 font-semibold">₹ 1,000</td>
                 </tr>

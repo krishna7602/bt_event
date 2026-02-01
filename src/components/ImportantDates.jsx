@@ -35,7 +35,7 @@ export default function ImportantDates() {
     {
       event: "Conference Start Date",
       date: "May 8, 2026",
-      description: "The official start of the International Conference."
+      description: "The official start of the National Conference."
     },
     {
       event: "Conference End Date",
@@ -45,7 +45,7 @@ export default function ImportantDates() {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section id="registration" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-8 text-blue-900 text-center">Important Dates</h2>
         

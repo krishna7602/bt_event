@@ -1,6 +1,6 @@
 import React from "react";
 
-const BenifitsSponsorship = () => {
+const BenefitsSponsorship = () => {
   const benefits = [
     {
       title: "Logo Recognition on Website",
@@ -51,4 +51,4 @@ const BenifitsSponsorship = () => {
   );
 };
 
-export default BenifitsSponsorship;
+export default BenefitsSponsorship;

@@ -1,12 +1,12 @@
 import React from "react";
 
-const SponsoreExhebition = () => {
+const SponsorshipExhibition = () => {
   return (
     <section className="bg-gray-50 py-16 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Sponsorship & Exhibitions
+          Sponsorship & Exhibition
         </h2>
 
         {/* Intro */}
@@ -134,4 +134,4 @@ const SponsoreExhebition = () => {
   );
 };
 
-export default SponsoreExhebition;
+export default SponsorshipExhibition;

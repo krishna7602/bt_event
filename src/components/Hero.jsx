@@ -48,12 +48,12 @@ const Hero = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <div className="pt-20 bg-gradient-to-b from-slate-900 to-slate-800 text-white">
+      <div id="home" className="pt-20 bg-gradient-to-b from-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="flex items-center gap-8 mb-10">
             {/* Logo */}
             <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden">
-              <img src={logo} alt="NOE SYSTEM Logo" className="w-full h-full object-contain p-2" />
+              <img src={logo} alt="NZES-2026 Logo" className="w-full h-full object-contain p-2" />
             </div>
 
             {/* Title */}
@@ -93,7 +93,7 @@ const Hero = () => {
       </div>
 
       {/* IMAGE CAROUSEL */}
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div id="tracks" className="max-w-7xl mx-auto px-6 py-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Conference Themes
         </h2>

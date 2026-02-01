@@ -21,7 +21,7 @@ const culturalEventsData = [
   },
 ];
 
-const Culturalevents = () => {
+const CulturalEvents = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
@@ -61,4 +61,4 @@ const Culturalevents = () => {
   );
 };
 
-export default Culturalevents;
+export default CulturalEvents;

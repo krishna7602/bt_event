@@ -10,7 +10,7 @@ import ramTirath from '../assets/gallery/ram_tirath.jpg';
 import haveli from '../assets/gallery/haveli.png';
 import gurudwara from '../assets/gallery/gurudwara.jpg';
 
-const Photogallary = () => {
+const PhotoGallery = () => {
   const photos = [
     goldenTempleDay,
     goldenTempleNight,
@@ -51,4 +51,4 @@ const Photogallary = () => {
   );
 };
 
-export default Photogallary;
+export default PhotoGallery;

@@ -73,7 +73,7 @@ const SpeakerCard = ({ speaker, reverse }) => {
   );
 };
 
-const Speakerspage = () => {
+const KeynoteSpeakers = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">
       <div className="max-w-6xl mx-auto px-6">
@@ -81,7 +81,7 @@ const Speakerspage = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="inline-block px-8 py-3 bg-blue-900 text-white text-3xl md:text-4xl font-bold rounded-lg shadow-xl mb-4 transform -skew-x-6">
-            Key Note Speakers
+            Keynote Speakers
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
@@ -108,4 +108,4 @@ const Speakerspage = () => {
   );
 };
 
-export default Speakerspage;
+export default KeynoteSpeakers;

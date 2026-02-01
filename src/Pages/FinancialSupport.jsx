@@ -1,6 +1,6 @@
 import React from "react";
 
-const Financialsupprot = () => {
+const FinancialSupport = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -11,9 +11,9 @@ const Financialsupprot = () => {
 
         {/* Intro */}
         <p className="text-gray-700 mb-8 leading-relaxed">
-          ICNARI provides financial support to eligible students and faculty
-          members from non-centrally funded technical institutes (CFTIs) in India,
-          based on recommendations from subject experts.
+          The conference provides financial support to eligible students and
+          faculty members from non-centrally funded technical institutes (CFTIs)
+          in India, based on recommendations from subject experts.
         </p>
 
         {/* Eligibility Criteria */}
@@ -23,14 +23,14 @@ const Financialsupprot = () => {
           </h3>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Students who are authors of papers submitted to ICNARI.</li>
+            <li>Students who are authors of papers submitted to NZES-2026.</li>
             <li>
               Students enrolled in Ph.D., M.S. (by Research), M.Tech, M.E.,
               B.Tech, or B.E. programs at Indian institutions.
             </li>
             <li>
               Applicants must remain students until at least{" "}
-              <strong>December 31, 2025</strong>.
+              <strong>May 31, 2026</strong>.
             </li>
             <li>
               Faculty members from non-CFTIs working in systems and control.
@@ -75,7 +75,7 @@ const Financialsupprot = () => {
           </h3>
 
           <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Selected applicants must register for ICNARI.</li>
+            <li>Selected applicants must register for NZES-2026.</li>
             <li>
               Reimbursement of registration, accommodation, and travel expenses
               will be processed after conference participation.
@@ -104,4 +104,4 @@ const Financialsupprot = () => {
   );
 };
 
-export default Financialsupprot;
+export default FinancialSupport;
