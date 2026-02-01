@@ -28,7 +28,16 @@ const RegistrationPage = () => {
             </p>
             <div className="space-y-4 text-gray-600">
               <p>
-                <strong>Confirmation:</strong> After successful payment, kindly fill the Google Form (link will be provided soon) with your transaction number and other relevant details.
+                <strong>Confirmation:</strong> After successful payment, kindly fill the{" "}
+                <a 
+                  href="https://forms.gle/f8NiW2Ly4HtgT7nQ6" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-bold hover:underline"
+                >
+                  Google Form
+                </a>{" "}
+                with your transaction number and other relevant details.
               </p>
               <p>
                 <strong>Full Paper:</strong> After the conference, a link will be sent to participants for submission of full-length papers.
@@ -120,13 +129,18 @@ const RegistrationPage = () => {
 
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-12 text-white shadow-2xl">
-          <h3 className="text-3xl font-bold mb-4">Ready to Register?</h3>
+          <h3 className="text-3xl font-bold mb-4">Complete Your Registration</h3>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            The registration portal will be updated shortly. Please keep your transaction details ready after making the payment via the upcoming portal link.
+            After making the payment through the official portal, please submit your details via the Google Form to confirm your registration.
           </p>
-          <div className="inline-block bg-white text-blue-900 font-extrabold py-4 px-12 rounded-full shadow-lg cursor-not-allowed opacity-80">
-            Registration Coming Soon
-          </div>
+          <a 
+            href="https://forms.gle/f8NiW2Ly4HtgT7nQ6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-white text-blue-900 font-extrabold py-4 px-12 rounded-full shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105"
+          >
+            Submit Google Form
+          </a>
         </div>
       </div>
     </section>
