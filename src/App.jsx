@@ -10,16 +10,16 @@ import About from "./components/About";
 import ImportantDates from "./components/ImportantDates";
 
 // Pages
-import AboutNITJ from "./Pages/AboutNITJ";
-import OrganizingCommittee from "./Pages/OrganizingCommittee";
-import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommittee";
-import Accommodation from "./Pages/Accommodation";
-import PhotoGallery from "./Pages/PhotoGallery";
+import AboutNITJ from "./Pages/AboutNITJPage";
+import OrganizingCommittee from "./Pages/OrganizingCommitteePage";
+import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommitteePage";
+import Accommodation from "./Pages/AccommodationPage";
+import PhotoGallery from "./Pages/PhotoGalleryPage";
 import KeynoteSpeakers from "./Pages/KeynoteSpeakers";
-import Tours from "./Pages/Tours";
-import CulturalEvents from "./Pages/CulturalEvents";
+import Tours from "./Pages/ToursPage";
+import CulturalEvents from "./Pages/CulturalEventsPage";
 import GuidelinesToAuthors from "./Pages/GuidelinesToAuthors";
-import PaperSubmission from "./Pages/PaperSubmission";
+import PaperSubmission from "./Pages/PaperSubmissionPage";
 import RegistrationPage from "./Pages/RegistrationPage";
 import BestStudentAward from "./Pages/BestStudentAward";
 import CMTAcknowledgement from "./Pages/CMTAcknowledgement";
