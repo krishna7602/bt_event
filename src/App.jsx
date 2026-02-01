@@ -15,8 +15,6 @@ import OrganizingCommittee from "./Pages/OrganizingCommittee";
 import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommittee";
 import Accommodation from "./Pages/Accommodation";
 import PhotoGallery from "./Pages/PhotoGallery";
-import SponsorshipExhibition from "./Pages/SponsorshipExhibition";
-import BenefitsSponsorship from "./Pages/BenefitsSponsorship";
 import KeynoteSpeakers from "./Pages/KeynoteSpeakers";
 import Tours from "./Pages/Tours";
 import CulturalEvents from "./Pages/CulturalEvents";
@@ -79,9 +77,6 @@ export default function App() {
         <Route path="/tours" element={<Tours />} />
         <Route path="/cultural-events" element={<CulturalEvents />} />
 
-        {/* SPONSORS */}
-        <Route path="/sponsorship" element={<SponsorshipExhibition />} />
-        <Route path="/sponsorship-benefits" element={<BenefitsSponsorship />} />
 
         {/* REGISTRATION */}
         <Route path="/registration" element={<RegistrationPage />} />

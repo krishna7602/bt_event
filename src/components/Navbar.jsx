@@ -39,13 +39,6 @@ export default function Navbar() {
         { name: "Cultural Events", path: '/cultural-events' }
       ]
     },
-    { 
-      name: "Sponsors", 
-      dropdown: [
-        { name: "Sponsorship & Exhibition", path: '/sponsorship' },
-        { name: "Benefits of Sponsorship", path: '/sponsorship-benefits' }
-      ]
-    },
     { name: "Registration", dropdown: null, path: '/registration' },
     { name: "Contact", dropdown: null, path: '/contact' }
   ];
