@@ -1,17 +1,9 @@
 import React from "react";
-import arunRathorePhoto from '../assets/committee/tech_arun_rathore.jpg';
-import pRamakrishnaPhoto from '../assets/committee/tech_p_ramakrishna.jpg';
-import bnRaoPhoto from '../assets/committee/tech_b_n_rao.jpeg';
 
 /* Reusable Member Card */
-const MemberCard = ({ name, institute, department, photo }) => {
+const MemberCard = ({ name, institute, department }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex gap-4 items-start hover:shadow-lg transition">
-      <img
-        src={photo || "https://via.placeholder.com/100"}
-        alt={name}
-        className="w-20 h-20 rounded-full object-cover border"
-      />
       <div>
         <h4 className="text-lg font-semibold text-gray-800">{name}</h4>
         <p className="text-sm text-gray-600">{institute}</p>
@@ -27,19 +19,16 @@ const PaperReviewCommittee = () => {
       name: "Dr. Arun Rathore",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",
-      photo: arunRathorePhoto,
     },
     {
       name: "Dr. P. Ramakrishna",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",
-      photo: pRamakrishnaPhoto,
     },
     {
       name: "Dr. B. N. Rao",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",
-      photo: bnRaoPhoto,
     },
     {
       name: "Dr. Gagandeep Singh Dua",
