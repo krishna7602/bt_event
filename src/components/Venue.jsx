@@ -19,9 +19,9 @@ export default function Venue() {
 
   const attractions = [
     "Pushpa Gujral Science City, Kapurthala",
-    "Devi Talab Mandir",
-    "Wonderland Theme Park",
-    "Rangla Punjab Haveli"
+    "Golden Temple, Amritsar",
+    "Wagah Border, Amritsar",
+    "Devi Talab Mandir, Jalandhar"
   ];
 
   return (

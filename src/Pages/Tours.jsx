@@ -28,12 +28,7 @@ const toursData = [
     description:
       "Located near Jalandhar, this science city is one of the largest in North India. It features a planetarium, flight simulator, earthquake simulator, and various interactive galleries exploring physical, liquid, and life sciences.",
   },
-  {
-    title: "Haveli, Jalandhar",
-    photo: haveli,
-    description:
-      "Haveli is a renowned heritage restaurant and museum that offers a deep dive into traditional Punjabi village culture. It features authentic décor, traditional cuisine, and various artifacts showcasing the rural lifestyle of Punjab.",
-  },
+
   {
     title: "Durgiana Temple, Amritsar",
     photo: durgianaMandir,
@@ -51,6 +46,12 @@ const toursData = [
     photo: statue, // Using the statue image as a symbolic represention
     description:
       "Famous for its ceremonial 'Beating Retreat' ceremony, the Wagah border between India and Pakistan is a major attraction. The event is marked by patriotic fervor and synchronized military maneuvers.",
+  },
+  {
+    title: "Devi Talab Mandir, Jalandhar",
+    photo: gurudwara, // Using a symbolic place of worship image
+    description:
+      "One of the most sacred Hindu temples in North India, Devi Talab Mandir is dedicated to Goddess Durga. It is believed to be more than 200 years old and features a sacred pool (talab) that is older than the temple itself.",
   },
   {
     title: "Jalandhar City Landmarks",
