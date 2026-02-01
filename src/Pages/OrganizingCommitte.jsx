@@ -79,7 +79,6 @@ const OrganizingCommittee = () => {
               name: "Prof. Binod Kumar Kanaujia",
               designation: "Director",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electronics and Communication Engineering",
               photo: directorPhoto,
             },
           ]}
