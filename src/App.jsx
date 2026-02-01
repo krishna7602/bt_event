@@ -23,7 +23,7 @@ import PaperSubmission from "./Pages/PaperSubmissionPage";
 import RegistrationPage from "./Pages/RegistrationPage";
 import BestStudentAward from "./Pages/BestStudentAward";
 import CMTAcknowledgement from "./Pages/CMTAcknowledgement";
-import PaperPublication from "./Pages/PaperPublication";
+import PaperPublication from "./Pages/PaperPublicationPage";
 import Venue from "./components/Venue";
 import Contact from "./components/Contact";
 import PaperReviewCommittee from "./Pages/PaperReviewCommittee";
