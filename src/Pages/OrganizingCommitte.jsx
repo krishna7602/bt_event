@@ -24,11 +24,13 @@ const MemberCard = ({ name, designation, institute, department, photo }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex gap-4 items-start hover:shadow-lg transition">
       {/* Photo */}
-      <img
-        src={photo || "https://via.placeholder.com/100"}
-        alt={name}
-        className="w-20 h-20 rounded-full object-cover border"
-      />
+      {photo && (
+        <img
+          src={photo}
+          alt={name}
+          className="w-20 h-20 rounded-full object-cover border"
+        />
+      )}
 
       {/* Details */}
       <div>
@@ -236,6 +238,93 @@ const OrganizingCommittee = () => {
             {
               name: "Dr. Trilochan Penthia",
               institute: "NIT Patna",
+              department: "Electrical Engineering",
+            },
+          ]}
+        />
+
+        {/* Internal Advisory Committee */}
+        <CommitteeSection
+          title="Internal Advisory Committee"
+          members={[
+            {
+              name: "Dr. Sachin Kumar Jain",
+              institute: "IIIT Jabalpur",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Pankaj Kumar",
+              institute: "NIT Srinagar",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Manoj Kumawat",
+              institute: "NIT Delhi",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Satish Sharma",
+              institute: "MNIT Jaipur",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Rajvir Kaur",
+              institute: "NIT Puducherry",
+              department: "Electrical & Electronics Engineering",
+            },
+            {
+              name: "Dr. Akanksha Shukla",
+              institute: "SVNIT Surat",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Krishanu Nath",
+              institute: "NIT Agartala",
+              department: "Electronics and Instrumentation Engineering",
+            },
+            {
+              name: "Dr. Chandra Sekhar Obbu",
+              institute: "NIT Delhi",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Surender Hans",
+              institute: "MNIT Jaipur",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Nisha",
+              institute: "Amity University Haryana (AUH)",
+              department: "Electronics and Communication Engineering",
+            },
+            {
+              name: "Dr. Vivek Prakash",
+              institute: "Banasthali Vidyapith (B. V.)",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Neeraj Kumar",
+              institute: "Manipal University Jaipur (M.U.J.)",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Desh Deepak Sharma",
+              institute: "MJP Rohilkhand University Bareilly (MJPRUB)",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Vivek Sharma",
+              institute: "NIT Hamirpur",
+              department: "Instrumentation and Control Engineering",
+            },
+            {
+              name: "Dr. Naveen Kumar Sharma",
+              institute: "Punjab Technical University (PTU)",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Sreenu Sreekumar",
+              institute: "NIT Silchar",
               department: "Electrical Engineering",
             },
           ]}
