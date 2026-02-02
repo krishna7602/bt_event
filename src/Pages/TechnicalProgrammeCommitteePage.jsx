@@ -17,6 +17,16 @@ const MemberCard = ({ name, institute, department }) => {
 const TechnicalProgrammeCommittee = () => {
   const members = [
     {
+      name: "Prof. Dilbag Singh",
+      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+      department: "Instrumentation and Control Engineering",
+    },
+    {
+      name: "Prof. Mamta Khosla",
+      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+      department: "Electronics and Communication Engineering",
+    },
+    {
       name: "Dr. Kailash Chand Sharma",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",

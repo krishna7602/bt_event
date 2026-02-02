@@ -131,8 +131,28 @@ const OrganizingCommittee = () => {
           title="Internal Advisory Committee"
           members={[
             {
+              name: "Dr. Sanjoy Parida",
+              institute: "IIT Patna",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Ankush Sharma",
+              institute: "IIT Kanpur",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. R.K. Singh",
+              institute: "IIT BHU",
+              department: "Electrical Engineering",
+            },
+            {
               name: "Dr. Sachin Kumar Jain",
               institute: "IIIT Jabalpur",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Shubhendu Dutta",
+              institute: "IIT Delhi",
               department: "Electrical Engineering",
             },
             {
@@ -176,9 +196,39 @@ const OrganizingCommittee = () => {
               department: "Electrical Engineering",
             },
             {
+              name: "Dr. Sreenu Sreekumar",
+              institute: "NIT Silchar",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Vivek Sharma",
+              institute: "NIT Hamirpur",
+              department: "Instrumentation and Control Engineering",
+            },
+            {
+              name: "Dr. Sanjeev Kr. Mallik",
+              institute: "NIT Patna",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. Naveen Kumar Sharma",
+              institute: "Punjab Technical University (PTU)",
+              department: "Electrical Engineering",
+            },
+            {
               name: "Dr. Nisha",
               institute: "Amity University Haryana (AUH)",
               department: "Electronics and Communication Engineering",
+            },
+            {
+              name: "Dr. Abhinav Gupta",
+              institute: "Amity University Haryana (AUH)",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Dr. S. C. Jain",
+              institute: "Amity University Haryana (AUH)",
+              department: "Electrical Engineering",
             },
             {
               name: "Dr. Vivek Prakash",
@@ -191,23 +241,50 @@ const OrganizingCommittee = () => {
               department: "Electrical Engineering",
             },
             {
+              name: "Dr. H.P. Singh",
+              institute: "Amity University (AUUP), Noida",
+              department: "Electrical Engineering",
+            },
+            {
               name: "Dr. Desh Deepak Sharma",
               institute: "MJP Rohilkhand University Bareilly (MJPRUB)",
               department: "Electrical Engineering",
             },
+          ]}
+        />
+
+        {/* Hospitality Committee */}
+        <CommitteeSection
+          title="Hospitality Committee"
+          members={[
             {
-              name: "Dr. Vivek Sharma",
-              institute: "NIT Hamirpur",
-              department: "Instrumentation and Control Engineering",
+              name: "Dr. Kailash Chand Sharma",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electrical Engineering",
+              photo: kcSharmaPhoto,
             },
             {
-              name: "Dr. Naveen Kumar Sharma",
-              institute: "Punjab Technical University (PTU)",
+              name: "Mr. Mohammed Alim",
+              designation: "Technical Assistant",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
             },
             {
-              name: "Dr. Sreenu Sreekumar",
-              institute: "NIT Silchar",
+              name: "Mr. Pankaj Kumar Maurya",
+              designation: "Technical Assistant",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Mr. Mohit Kumar",
+              designation: "Technical Assistant",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              department: "Electrical Engineering",
+            },
+            {
+              name: "Mr. Sukhminder Singh",
+              designation: "Technical Assistant",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
             },
           ]}
