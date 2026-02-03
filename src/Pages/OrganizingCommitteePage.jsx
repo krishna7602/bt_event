@@ -261,7 +261,6 @@ const OrganizingCommittee = () => {
               name: "Dr. Kailash Chand Sharma",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
-              photo: kcSharmaPhoto,
             },
             {
               name: "Mr. Mohammed Alim",
