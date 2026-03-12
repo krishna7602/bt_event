@@ -57,6 +57,16 @@ export default function About() {
           </ul>
         </div>
 
+        {/* Who Can Attend */}
+        <div id="who-can-attend" className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl shadow-lg p-8 border border-green-100 mb-12">
+          <h2 className="text-3xl font-bold mb-4 text-green-700">
+            Who can attend?
+          </h2>
+          <p className="text-lg text-gray-800 leading-relaxed font-medium">
+            Faculty members from colleges, universities, and technical institutes, students (UG/PG), research scholars, and industry professionals working in related fields are allowed to participate.
+          </p>
+        </div>
+
         {/* About NIT Jalandhar */}
         <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
           <h2 className="text-4xl font-bold mb-6 text-green-700">

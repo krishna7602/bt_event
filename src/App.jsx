@@ -28,6 +28,7 @@ import Venue from "./components/Venue";
 import Contact from "./components/Contact";
 import PaperReviewCommittee from "./Pages/PaperReviewCommittee";
 import ObjectivesConference from "./Pages/ObjectivesConference";
+import ResearchAreaTracksPage from "./Pages/ResearchAreaTracksPage";
 
 export default function App() {
   return (
@@ -58,6 +59,10 @@ export default function App() {
         <Route
           path="/paper-review-committee"
           element={<PaperReviewCommittee />}
+        />
+        <Route
+          path="/research-area-tracks"
+          element={<ResearchAreaTracksPage />}
         />
 
         {/* FACILITIES */}

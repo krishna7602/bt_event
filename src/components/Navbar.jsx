@@ -16,6 +16,7 @@ export default function Navbar() {
         { name: "Organizing Committee", path: '/organizing-committee' },
         { name: "Technical Programme Committee", path: '/technical-programme-committee' },
         { name: "Paper Review Committee", path: '/paper-review-committee' },
+        { name: "Research Area Tracks", path: '/research-area-tracks' },
         { name: "Venue and Travels", path: '/venue' },
         { name: "Accommodations", path: '/accommodation' },
         { name: "Photo Gallery", path: '/gallery' }

@@ -92,7 +92,7 @@ const OrganizingCommittee = () => {
 
         {/* Chief-Patron */}
         <CommitteeSection
-          title="Chief-Patron"
+          title="Chief Patron"
           members={[
             {
               name: "Prof. B. K. Kanaujia",
@@ -114,8 +114,8 @@ const OrganizingCommittee = () => {
               photo: rohitMehraPhoto,
             },
             {
-              name: "Prof. B. S. Saini",
-              designation: "HOD, EED",
+              name: "Dr. B. S. Saini",
+              designation: "HOD",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               photo: bsSainiPhoto,
             },
@@ -124,18 +124,16 @@ const OrganizingCommittee = () => {
 
         {/* Secretary / Organizing Chair */}
         <CommitteeSection
-          title="Secretary"
+          title="Organizing Secretary"
           members={[
             {
               name: "Dr. Mahesh Kumar",
-              designation: "Secretary",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
               photo: maheshKumarPhoto,
             },
             {
               name: "Dr. K. C. Sharma",
-              designation: "Secretary",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
               photo: kcSharmaPhoto,
@@ -147,9 +145,9 @@ const OrganizingCommittee = () => {
         <SimpleSection
           title="Organizing Committee Members"
           members={[
-            { name: "Prof. B.S. Saini (HOD EE)" },
-            { name: "Dr. Mahesh Kumar", role: "Secretary" },
-            { name: "Dr. Kailash Chand Sharma", role: "Secretary" },
+            { name: "Dr. B.S. Saini (HOD)" },
+            { name: "Dr. Mahesh Kumar", role: "Organizing Secretary" },
+            { name: "Dr. Kailash Chand Sharma", role: "Organizing Secretary" },
             { name: "Dr. Harimurugan" },
             { name: "Dr. P. Ramakrishna" },
             { name: "Dr. B.N. Rao" },
