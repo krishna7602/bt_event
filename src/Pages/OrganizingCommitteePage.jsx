@@ -74,6 +74,11 @@ const SimpleSection = ({ title, members }) => {
           <div key={index} className="bg-white shadow-sm rounded-lg p-4 hover:shadow-md transition">
             <p className="font-semibold text-gray-800">{member.name}</p>
             {member.role && <p className="text-sm text-blue-600">{member.role}</p>}
+            {member.email && (
+              <p className="text-sm text-gray-600 mt-1">
+                Email: <a href={`mailto:${member.email}`} className="text-blue-600 hover:underline">{member.email}</a>
+              </p>
+            )}
           </div>
         ))}
       </div>
@@ -217,6 +222,19 @@ const OrganizingCommittee = () => {
             { name: "Dr. Nisha Chaurasia", institute: "NIT Jalandhar" },
             { name: "Dr. Kundan Kumar", institute: "NIT Jalandhar" },
             { name: "Dr. D. D. Sharma", institute: "MJPRU Bareilly" },
+          ]}
+        />
+
+        {/* Hospitality Committee */}
+        <SimpleSection
+          title="Hospitality Committee"
+          members={[
+            { name: "Dr. Kailash Chand Sharma" },
+            { name: "Mr. Sukhminder Singh", email: "sukhmindersingh@nitj.ac.in" },
+            { name: "Mr. Mohammed Alim", email: "mdalim@nitj.ac.in" },
+            { name: "Dr. Mohit Kumar", email: "mohitk@nitj.ac.in" },
+            { name: "Mr. Pankaj Kumar Maurya", email: "pankajkm@nitj.ac.in" },
+            { name: "Mr. Vikas Kumar", email: "vikasraibaruni@gmail.com" },
           ]}
         />
 
