@@ -1,12 +1,13 @@
 import React from "react";
 
 /* Reusable Member Card */
-const MemberCard = ({ name, institute, department }) => {
+const MemberCard = ({ name, designation, institute, department }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-5 flex gap-4 items-start hover:shadow-lg transition">
       {/* Details */}
       <div>
         <h4 className="text-lg font-semibold text-gray-800">{name}</h4>
+        {designation && <p className="text-sm text-blue-600 font-medium">{designation}</p>}
         <p className="text-sm text-gray-600">{institute}</p>
         <p className="text-sm text-gray-500">{department}</p>
       </div>
@@ -18,16 +19,19 @@ const TechnicalProgrammeCommittee = () => {
   const members = [
     {
       name: "Prof. Dilbag Singh",
+      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Instrumentation and Control Engineering",
     },
     {
       name: "Prof. Mamta Khosla",
+      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electronics and Communication Engineering",
     },
     {
       name: "Dr. Kailash Chand Sharma",
+      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",
     },
