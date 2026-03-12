@@ -30,8 +30,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* About Conference */}
           <div>
             <div 
@@ -93,25 +92,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Newsletter / Contact */}
-          <div>
-            <h4 className="text-lg font-bold mb-4">Stay Connected</h4>
-            <p className="text-gray-400 mb-4 text-sm">
-              Get updates on submissions, schedules, and announcements.
-            </p>
-
-            <div className="flex flex-col gap-3">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none text-white placeholder-gray-500"
-              />
-              <button className="px-6 py-2 bg-gradient-to-r from-green-500 to-blue-600 rounded-lg font-semibold hover:shadow-lg transition-all">
-                Subscribe
-              </button>
-            </div>
           </div>
         </div>
 
