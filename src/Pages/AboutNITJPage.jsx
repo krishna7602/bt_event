@@ -12,47 +12,40 @@ const AboutNITJ = () => {
         {/* Content */}
         <div className="mt-8 space-y-6 text-gray-700 leading-relaxed text-justify">
           <p>
-            Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (NIT
-            Jalandhar) is one of the premier technical institutions in India.
-            Established in 1987 as a Regional Engineering College and accorded
-            the status of National Institute of Technology in 2002, the institute
-            has been recognized as an <strong>Institute of National Importance</strong>
-            by the Government of India.
+            Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31
+            NITs established by Ministry of Education (earlier MHRD), Govt. of India. The
+            Institute came into existence in the year 1987 (earlier Regional Engineering
+            College, Jalandhar) and obtained the status "Institute of National Importance" by
+            Act of Parliament 2007.
+          </p>
+
+          <p>
+            The institute is offering B.Tech., M.Sc., M.Tech., and Ph.D. programmes in
+            various disciplines such as Biotechnology, Chemical Engineering, Civil Engineering,
+            Computer Science and Engineering, Electrical Engineering, Electronics and
+            Communication Engineering, Industrial and Production Engineering, Information
+            Technology, Instrumentation and Control Engineering, Mechanical Engineering,
+            Textile Technology, <em>etc.</em>
+          </p>
+
+          <p>
+            NIT Jalandhar has secured the <strong>46<sup>th</sup> NIRF rank</strong> in the
+            engineering category in 2023.
           </p>
 
           <p>
             NIT Jalandhar is located on a sprawling and green campus along the
-            Jalandhar–Amritsar Highway in Punjab. The institute provides a
-            vibrant academic environment that fosters innovation, critical
-            thinking, and interdisciplinary research, supported by
-            state-of-the-art infrastructure and modern laboratories.
+            Jalandhar–Amritsar Highway in Punjab. The institute provides a vibrant academic
+            environment that fosters innovation, critical thinking, and interdisciplinary
+            research, supported by state-of-the-art infrastructure and modern laboratories.
           </p>
 
           <p>
-            The institute offers high-quality education at the Undergraduate
-            (B.Tech), Postgraduate (M.Tech, MBA, M.Sc.), and Doctoral (Ph.D.)
-            levels through its highly qualified and experienced faculty members.
-            Emphasis is placed on outcome-based education, industry relevance,
-            and research-driven learning.
-          </p>
-
-          <p>
-            NIT Jalandhar houses multiple academic departments including
-            Civil Engineering, Computer Science & Engineering, Electrical
-            Engineering, Electronics & Communication Engineering, Information
-            Technology, Instrumentation & Control Engineering, Mechanical
-            Engineering, Textile Technology, and Chemical Engineering, along
-            with well-established departments of Physics, Chemistry,
-            Mathematics, and Humanities & Management.
-          </p>
-
-          <p>
-            With a strong focus on research, innovation, and entrepreneurship,
-            NIT Jalandhar actively contributes to national missions in energy,
-            sustainability, digital transformation, and advanced manufacturing.
-            The institute maintains close collaboration with industries,
-            research organizations, and global academic partners, reinforcing
-            its reputation for academic excellence and societal impact.
+            With a strong focus on research, innovation, and entrepreneurship, NIT Jalandhar
+            actively contributes to national missions in energy, sustainability, digital
+            transformation, and advanced manufacturing. The institute maintains close
+            collaboration with industries, research organizations, and global academic
+            partners, reinforcing its reputation for academic excellence and societal impact.
           </p>
         </div>
       </div>
