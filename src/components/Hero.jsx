@@ -1,29 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import logo from '../assets/logo.png';
+import track1Img from '../assets/track_1_renewable.png';
+import track2Img from '../assets/track_2_smartgrids.png';
+import track3Img from '../assets/track_3_multienergy.png';
+import track4Img from '../assets/track_4_policy.png';
+import track5Img from '../assets/track_5_intelligent.png';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const carouselImages = [
     {
-      url: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?w=1200&h=600&fit=crop",
+      url: track1Img,
       caption: "Track 1: Renewable Energy and Storage Systems"
     },
     {
-      url: "https://images.unsplash.com/photo-1581092919535-7146c38f79c5?w=1200&h=600&fit=crop",
+      url: track2Img,
       caption: "Track 2: Smart Grids, Digital Energy Platforms and Microgrids"
     },
     {
-      url: "https://images.unsplash.com/photo-1612833609274-97d4bb0a6e36?w=1200&h=600&fit=crop",
+      url: track3Img,
       caption: "Track 3: Multi-Energy Systems and Net-Zero Integration"
     },
     {
-      url: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&h=600&fit=crop",
+      url: track4Img,
       caption: "Track 4: Energy Policy, Markets, and Regulatory Frameworks"
     },
     {
-      url: "https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?w=1200&h=600&fit=crop",
+      url: track5Img,
       caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems"
     },
     {
