@@ -230,11 +230,11 @@ const OrganizingCommittee = () => {
           title="Hospitality Committee"
           members={[
             { name: "Dr. Kailash Chand Sharma" },
-            { name: "Mr. Sukhminder Singh", email: "sukhmindersingh@nitj.ac.in" },
-            { name: "Mr. Mohammed Alim", email: "mdalim@nitj.ac.in" },
-            { name: "Dr. Mohit Kumar", email: "mohitk@nitj.ac.in" },
-            { name: "Mr. Pankaj Kumar Maurya", email: "pankajkm@nitj.ac.in" },
-            { name: "Mr. Vikas Kumar", email: "vikasraibaruni@gmail.com" },
+            { name: "Mr. Sukhminder Singh" },
+            { name: "Mr. Mohammed Alim" },
+            { name: "Dr. Mohit Kumar" },
+            { name: "Mr. Pankaj Kumar Maurya" },
+            { name: "Mr. Vikas Kumar" },
           ]}
         />
 
