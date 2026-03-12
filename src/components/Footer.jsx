@@ -1,22 +1,28 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 import logo from '../assets/logo.png';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavClick = (path) => {
+    window.location.href = path;
+  };
+
   const quickLinks = [
-    { name: "Home", to: "home" },
-    { name: "About the Conference", to: "about" },
-    { name: "Objectives", to: "objectives" },
-    { name: "Conference Tracks", to: "tracks" },
-    { name: "Registration", to: "registration" }
+    { name: "Home", path: "/" },
+    { name: "About the Conference", path: "/about-nit-jalandhar" },
+    { name: "Objectives", path: "/objectives-conference" },
+    { name: "Conference Tracks", path: "/research-area-tracks" },
+    { name: "Registration", path: "/registration" }
   ];
 
   const resources = [
-    { name: "Paper Submission", href: "#" },
-    { name: "Author Guidelines", href: "#" },
-    { name: "Review Process", href: "#" },
-    { name: "Publication Policy", href: "#" },
-    { name: "Contact Secretariat", href: "/contact" }
+    { name: "Paper Submission", path: "/paper-submission" },
+    { name: "Author Guidelines", path: "/guidelines" },
+    { name: "Review Committee", path: "/paper-review-committee" },
+    { name: "Publication Policy", path: "/publication" },
+    { name: "Contact Secretariat", path: "/contact" }
   ];
 
   return (
@@ -28,7 +34,10 @@ const Footer = () => {
 
           {/* About Conference */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div 
+              className="flex items-center gap-3 mb-4 cursor-pointer" 
+              onClick={() => handleNavClick('/')}
+            >
               <img src={logo} alt="NZES-2026 Logo" className="w-10 h-10 object-contain" />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 NZES-2026
@@ -50,14 +59,16 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
-                    to={link.to}
-                    smooth={true}
-                    duration={500}
+                  <a
+                    href={link.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(link.path);
+                    }}
                     className="text-gray-400 hover:text-green-400 transition-colors cursor-pointer block"
                   >
                     {link.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -70,8 +81,12 @@ const Footer = () => {
               {resources.map((resource, index) => (
                 <li key={index}>
                   <a
-                    href={resource.href}
-                    className="text-gray-400 hover:text-green-400 transition-colors block"
+                    href={resource.path}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavClick(resource.path);
+                    }}
+                    className="text-gray-400 hover:text-green-400 transition-colors block cursor-pointer"
                   >
                     {resource.name}
                   </a>
@@ -108,15 +123,7 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
-                Terms of Use
-              </a>
-              <a href="#" className="text-gray-400 hover:text-green-400 transition-colors">
-                Code of Conduct
-              </a>
+              {/* Policy links removed as they are not present in the current navigation structure */}
             </div>
           </div>
         </div>
