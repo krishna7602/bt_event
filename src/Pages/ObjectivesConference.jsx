@@ -13,108 +13,83 @@ const ObjectivesConference = () => {
 
   const tracks = [
     {
-      id: 'A',
-      title: 'Renewable Energy Systems',
+      id: '1',
+      title: 'Renewable Energy and Storage Systems',
       icon: '☀️',
       color: 'from-yellow-400 to-orange-500',
       topics: [
-        'Solar PV, CSP, and hybrid renewable technologies',
-        'Wind energy forecasting, resource assessment, and turbine control',
-        'Bioenergy, biomass gasification, and waste-to-energy solutions',
-        'Renewable energy converters, controllers, and power electronics interfaces',
-        'Hybridization strategies for maximizing renewable penetration',
-        'Techno-economic feasibility and performance evaluation of renewable plants',
-        'Grid integration challenges under high renewable penetration'
+        'Solar PV, CSP, wind, bioenergy, biomass gasification, and hybrid renewable systems',
+        'Renewable resource assessment, forecasting, and performance analysis',
+        'Renewable energy converters and advanced power electronics interfaces',
+        'Hybrid renewable–storage configurations and system design',
+        'Battery energy storage systems (Li-ion, flow, sodium-based, and emerging technologies)',
+        'Pumped hydro, mechanical, and thermal energy storage solutions',
+        'Storage degradation modelling, lifecycle assessment, and techno-economic evaluation'
       ]
     },
     {
-      id: 'B',
-      title: 'Energy Storage and Flexible Resources',
-      icon: '🔋',
-      color: 'from-green-400 to-emerald-600',
-      topics: [
-        'Battery storage systems: Li-ion, flow batteries, sodium-based technologies',
-        'Pumped hydro storage and mechanical storage systems',
-        'Thermal energy storage technologies and applications',
-        'Vehicle-to-grid (V2G) and distributed demand-side flexibility',
-        'Storage system modelling, degradation, lifecycle and cost analysis',
-        'Optimization of storage for reliability, frequency regulation, and ancillary services',
-        'Grid-level storage planning and multi-objective scheduling'
-      ]
-    },
-    {
-      id: 'C',
-      title: 'Smart Grids and Digital Energy Platforms',
+      id: '2',
+      title: 'Smart Grids, Digital Energy Platforms and Microgrids',
       icon: '🌐',
       color: 'from-blue-400 to-indigo-600',
       topics: [
-        'Smart metering, AMI, and IoT-enabled energy management',
-        'AI/ML-based forecasting, optimization, and predictive maintenance',
-        'Digital twins for power system design, planning, and operation',
-        'Advanced distribution automation and DER coordination',
+        'Smart metering, AMI, and IoT-enabled energy management systems',
+        'AI/ML-based forecasting, predictive maintenance, and grid analytics',
+        'Digital twins and data-driven planning and operation',
+        'Distribution automation and Distributed Energy Resource (DER) coordination',
         'Cybersecurity, data privacy, and secure communication protocols',
-        'Grid monitoring, real-time data analytics, and decision support tools',
-        'ICT-enabled resilience solutions for renewable-rich grids'
+        'AC/DC/hybrid microgrid architectures and control strategies',
+        'Real-time microgrid energy management, protection, and resiliency solutions'
       ]
     },
     {
-      id: 'D',
-      title: 'Microgrids and Distributed Energy Systems',
-      icon: '⚡',
-      color: 'from-purple-400 to-pink-600',
-      topics: [
-        'AC, DC, and hybrid microgrid architectures and control',
-        'Optimal dispatch, planning, and real-time microgrid energy management',
-        'Microgrid protection, fault detection, and coordination',
-        'Islanding detection, resynchronization, and black-start strategies',
-        'Community microgrids, campus microgrids, and rural electrification',
-        'Integration of distributed renewable energy and storage systems',
-        'Microgrid economics, interoperability standards, and business models'
-      ]
-    },
-    {
-      id: 'E',
-      title: 'Power System Planning and Operation for Net-Zero',
+      id: '3',
+      title: 'Multi-Energy Systems and Net-Zero Integration',
       icon: '🏭',
-      color: 'from-red-400 to-rose-600',
+      color: 'from-green-400 to-emerald-600',
       topics: [
-        'Capacity expansion planning and resource adequacy assessments',
-        'Optimal power flow, unit commitment, and renewable-rich grid operation',
-        'Frequency stability, voltage stability, and system resilience challenges',
-        'Integration of inverter-based resources (IBRs) and advanced protection',
-        'Ancillary services, dynamic reactive power support, and flexibility needs',
-        'Reliability modelling, EMS/SCADA optimization, and contingency analysis',
-        'Market-driven operational strategies for net-zero grids'
+        'Integrated planning and operation of multi-energy systems',
+        'Capacity expansion and resource adequacy for net-zero pathways'
       ]
     },
     {
-      id: 'F',
-      title: 'Hydrogen and Novel Energy Carriers',
-      icon: '💧',
-      color: 'from-cyan-400 to-blue-600',
-      topics: [
-        'Green hydrogen production, electrolyzer technologies, and efficiency modelling',
-        'Hydrogen storage, transportation, and safety considerations',
-        'Fuel cells, hydrogen microgrids, and hybrid hydrogen-renewable systems',
-        'Sector coupling: power-to-hydrogen and hydrogen-to-power pathways',
-        'Techno-economic analysis of hydrogen value chains',
-        'Use of ammonia, methanol, and synthetic fuels as energy carriers',
-        'Integration challenges for hydrogen in industrial and energy systems'
-      ]
-    },
-    {
-      id: 'G',
-      title: 'Policies, Markets, and Regulatory Frameworks',
+      id: '4',
+      title: 'Energy Policy, Markets, and Regulatory Frameworks',
       icon: '📊',
       color: 'from-amber-400 to-orange-600',
       topics: [
-        'Carbon pricing, carbon markets, carbon credits, and REC mechanisms',
-        'Regulatory frameworks for transmission and distribution modernization',
-        'Market mechanisms for flexibility, ancillary services, and renewable integration',
-        'Energy transition policies, net-zero roadmaps, and sustainability assessments',
-        'Tariff design, DISCOM reforms, and financial sustainability',
-        'Policy impact analysis and socio-economic dimensions of net-zero systems',
-        'Energy justice, affordability, and equitable energy transitions'
+        'Carbon pricing, carbon markets, and Renewable Energy Certificate (REC) mechanisms',
+        'Market design for flexibility, ancillary services, and clean energy integration',
+        'Regulatory reforms for transmission and distribution modernization',
+        'Energy transition strategies and net-zero roadmaps',
+        'Tariff design and financial sustainability of power utilities',
+        'Socio-economic and policy impact assessment of energy transition initiatives'
+      ]
+    },
+    {
+      id: '5',
+      title: 'Intelligent Systems and Optimization for Net-Zero Energy Systems',
+      icon: '🧠',
+      color: 'from-purple-400 to-pink-600',
+      topics: [
+        'AI-driven modelling, forecasting, and optimization for net-zero systems',
+        'Intelligent energy management for renewable-rich grids',
+        'Machine learning and deep learning applications in low-carbon power systems',
+        'Multi-agent systems for distributed energy coordination and demand response',
+        'Reinforcement learning for real-time energy system control',
+        'Meta-heuristic and evolutionary optimization for planning and scheduling',
+        'Data-driven decision-support tools for carbon reduction and system resilience'
+      ]
+    },
+    {
+      id: '6',
+      title: 'Electric Vehicles and E-Mobility Systems',
+      icon: '🚗',
+      color: 'from-cyan-400 to-blue-600',
+      topics: [
+        'Electric vehicle powertrains and drivetrain technologies',
+        'EV battery technologies, Battery Management Systems (BMS), and lifecycle analysis',
+        'Charging infrastructure: AC/DC fast charging and smart charging strategies'
       ]
     }
   ];
