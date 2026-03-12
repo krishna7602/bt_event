@@ -19,19 +19,16 @@ const TechnicalProgrammeCommittee = () => {
   const members = [
     {
       name: "Prof. Dilbag Singh",
-      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Instrumentation and Control Engineering",
     },
     {
       name: "Prof. Mamta Khosla",
-      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electronics and Communication Engineering",
     },
     {
       name: "Dr. Kailash Chand Sharma",
-      designation: "HOD",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Electrical Engineering",
     },
