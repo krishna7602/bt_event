@@ -8,11 +8,11 @@ const PaperReviewCommittee = () => {
   ];
 
   const members = [
-    { name: "Ms. Priyanka Km." },
-    { name: "Mr. Devidas" },
-    { name: "Mr. Rajdeep Pandey" },
-    { name: "Mr. Rajat Goutam" },
     { name: "Ms. Navita" },
+    { name: "Mr. Rajdeep Pandey" },
+    { name: "Mr. Devidas" },
+    { name: "Mr. Rajat Goutam" },
+    { name: "Ms. Priyanka Km." },
     { name: "Mr. Mridul" },
     { name: "Ms. Prakriti" },
     { name: "Mr. Nitish Kumar Sharma" },

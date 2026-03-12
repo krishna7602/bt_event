@@ -146,8 +146,8 @@ const OrganizingCommittee = () => {
           title="Organizing Committee Members"
           members={[
             { name: "Dr. B.S. Saini (HOD)" },
-            { name: "Dr. Mahesh Kumar", role: "Organizing Secretary" },
-            { name: "Dr. Kailash Chand Sharma", role: "Organizing Secretary" },
+            { name: "Dr. Mahesh Kumar" },
+            { name: "Dr. Kailash Chand Sharma" },
             { name: "Dr. Harimurugan" },
             { name: "Dr. P. Ramakrishna" },
             { name: "Dr. B.N. Rao" },
