@@ -3,6 +3,7 @@ import directorPhoto from '../assets/director.jpg';
 import rohitMehraPhoto from '../assets/committee/rohit_mehra.jpg';
 import kcSharmaPhoto from '../assets/committee/kc_sharma.jpg';
 import maheshKumarPhoto from '../assets/committee/mahesh_kumar.jpg';
+import bsSainiPhoto from '../assets/committee/bs_saini.png';
 
 import harimuruganPhoto from '../assets/committee/tech_harimurugan.jpg';
 import madanKDasPhoto from '../assets/committee/tech_madan_k_das.jpg';
@@ -116,6 +117,7 @@ const OrganizingCommittee = () => {
               name: "Prof. B. S. Saini",
               designation: "HOD, EED",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              photo: bsSainiPhoto,
             },
           ]}
         />
