@@ -7,7 +7,7 @@ const Accommodation = () => {
     "Best Western Summerlea",
     "Hotel President",
     "Hotel Residency",
-    "Hotel Imperia Suites"
+    "Hotel Imperia Suites",
   ];
 
   return (

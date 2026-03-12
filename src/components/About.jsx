@@ -13,34 +13,15 @@ export default function About() {
 
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              The <strong>National Conference on “Net-Zero Energy Systems”</strong>,
-              proposed by the <strong>Department of Electrical Engineering</strong>,
-              aims to address the global and national imperatives of transitioning
-              from fossil-fuel-based energy systems to sustainable, low-carbon,
-              and ultimately net-zero energy solutions.
-            </p>
-
-            <p>
-              India’s commitments under the <strong>Paris Agreement</strong> and
-              its ambitious target of achieving <strong>net-zero emissions by
-              2070</strong> demand transformative technological innovation,
-              forward-looking policies, and strong collaboration among academia,
-              industry, and policymakers.
-            </p>
-
-            <p>
-              This conference will bring together researchers, scientists,
-              academicians, industry professionals, and policy experts to discuss
-              recent advancements, emerging pathways, and critical challenges in
-              clean energy technologies, smart power systems, hydrogen energy,
-              energy storage, and carbon-neutral infrastructures.
-            </p>
-
-            <p>
-              Through keynote lectures, technical sessions, and interactive
-              discussions, the conference aims to foster interdisciplinary
-              learning, promote research collaborations, and contribute
-              meaningfully to India’s sustainable energy transition.
+              The global push toward decarbonization has accelerated the transition from
+              conventional fossil-fuel-based energy systems to sustainable, low-carbon, and
+              ultimately net-zero energy solutions. India's commitments under the Paris
+              Agreement and the target of achieving net-zero emissions by 2070 call for
+              transformative innovation, policy reforms, and strategic collaborations. In this context,
+              the Department of Electrical Engineering proposes to organize a{" "}
+              <strong>National Conference on "Net-Zero Energy Systems, 2026"</strong>, bringing
+              together academia, industry, policymakers, and research organizations to discuss the
+              latest advancements and emerging pathways in clean energy technologies.
             </p>
           </div>
         </div>
@@ -77,47 +58,55 @@ export default function About() {
         </div>
 
         {/* About NIT Jalandhar */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-12">
           <h2 className="text-4xl font-bold mb-6 text-green-700">
-            About NIT Jalandhar
+            About the Institute
           </h2>
 
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              <strong>Dr. B. R. Ambedkar National Institute of Technology,
-              Jalandhar (NIT Jalandhar)</strong> is one of the premier engineering
-              institutions in India and has been declared an
-              <strong> Institute of National Importance</strong> by the
-              Government of India.
+              Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31
+              NITs established by Ministry of Education (earlier MHRD), Govt. of India. The
+              Institute came into existence in the year 1987 (earlier Regional Engineering
+              College, Jalandhar) and obtained the status "Institute of National Importance" by
+              Act of Parliament 2007. The institute is offering B.Tech., M.Sc., M.Tech., and Ph.D.
+              programmes in various disciplines such as Biotechnology, Chemical Engineering,
+              Civil Engineering, Computer Science and Engineering, Electrical Engineering,
+              Electronics and Communication Engineering, Industrial and Production Engineering,
+              Information Technology, Instrumentation and Control Engineering, Mechanical
+              Engineering, Textile Technology, <em>etc.</em> NIT Jalandhar has secured the
+              46<sup>th</sup> NIRF rank in the engineering category in 2023.
             </p>
+          </div>
+        </div>
 
+        {/* About the Department */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+          <h2 className="text-4xl font-bold mb-6 text-green-700">
+            About the Department
+          </h2>
+
+          <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              Established with the objective of imparting high-quality technical
-              education and promoting cutting-edge research, NIT Jalandhar has
-              consistently contributed to academic excellence, innovation, and
-              national development.
+              The Department of Electrical Engineering was started in the year 2013. The
+              department presently offers undergraduate programme B. Tech. in Electrical
+              Engineering and research programme Ph.D. in various specialization of Electrical
+              Engineering and allied areas. The Department aims to impart high quality education
+              to the students and carry out fundamental and industry-oriented research work. The
+              major research areas of the department are power system, control system, high
+              voltage engineering renewable energy and energy storage. The department has highly
+              qualified and competent faculty members and adequate facilities to support teaching
+              and learning activities. The alumni of Department are well placed in the top echelons
+              of industry &amp; academia both in India &amp; abroad.
             </p>
-
             <p>
-              The Institute offers undergraduate, postgraduate, and doctoral
-              programs across multiple disciplines including Electrical
-              Engineering, Computer Science & Engineering, Mechanical
-              Engineering, Civil Engineering, Electronics & Communication
-              Engineering, and allied sciences.
-            </p>
-
-            <p>
-              With well-equipped laboratories, experienced faculty, and a
-              strong emphasis on research and development, NIT Jalandhar actively
-              engages in interdisciplinary research addressing contemporary
-              challenges in energy systems, sustainability, smart infrastructure,
-              and advanced technologies.
-            </p>
-
-            <p>
-              The Institute continues to play a pivotal role in shaping skilled
-              professionals and fostering innovations aligned with India’s
-              long-term goals of sustainability and net-zero emissions.
+              The department has established a{" "}
+              <strong>
+                Centre of Excellence (CoE) in Electric Vehicles at an estimated cost of ₹6.5
+                crore, sponsored by the Ministry of Minority Affairs (MoMA), Government of India.
+              </strong>{" "}
+              The centre houses a state-of-the-art Electric Vehicle Laboratory equipped with
+              cutting-edge research facilities for postgraduate students and research scholars.
             </p>
           </div>
         </div>
