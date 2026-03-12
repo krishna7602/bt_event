@@ -1,6 +1,5 @@
 import React from "react";
 import directorPhoto from '../assets/director.jpg';
-import skPahujaPhoto from '../assets/committee/sk_pahuja.png';
 import rohitMehraPhoto from '../assets/committee/rohit_mehra.jpg';
 import kcSharmaPhoto from '../assets/committee/kc_sharma.jpg';
 import maheshKumarPhoto from '../assets/committee/mahesh_kumar.jpg';
@@ -28,7 +27,7 @@ const MemberCard = ({ name, designation, institute, department, photo }) => {
         <img
           src={photo}
           alt={name}
-          className="w-20 h-20 rounded-full object-cover border"
+          className="w-20 h-20 rounded-full object-cover border flex-shrink-0"
         />
       )}
 
@@ -62,6 +61,25 @@ const CommitteeSection = ({ title, members }) => {
   );
 };
 
+/* Simple Name-Only Grid Section */
+const SimpleSection = ({ title, members }) => {
+  return (
+    <section className="mb-14">
+      <h3 className="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-3">
+        {title}
+      </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {members.map((member, index) => (
+          <div key={index} className="bg-white shadow-sm rounded-lg p-4 hover:shadow-md transition">
+            <p className="font-semibold text-gray-800">{member.name}</p>
+            {member.role && <p className="text-sm text-blue-600">{member.role}</p>}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
 const OrganizingCommittee = () => {
   return (
     <div className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
@@ -71,12 +89,12 @@ const OrganizingCommittee = () => {
           Organizing Committee
         </h2>
 
-        {/* Patron & General Chair */}
+        {/* Chief-Patron */}
         <CommitteeSection
-          title="Patron & General Chair"
+          title="Chief-Patron"
           members={[
             {
-              name: "Prof. Binod Kumar Kanaujia",
+              name: "Prof. B. K. Kanaujia",
               designation: "Director",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               photo: directorPhoto,
@@ -84,208 +102,121 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Chairman */}
+        {/* Patron */}
         <CommitteeSection
-          title="Chairman"
+          title="Patron"
           members={[
             {
               name: "Prof. Rohit Mehra",
-              designation: "Dean Research & Consultancy",
+              designation: "Dean (R&C)",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "",
               photo: rohitMehraPhoto,
             },
             {
-              name: "Prof. S. K. Pahuja",
-              designation: "Head of Department",
+              name: "Prof. B. S. Saini",
+              designation: "HOD, EED",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-              photo: skPahujaPhoto,
             },
           ]}
         />
 
-        {/* Organizing Chair / Convenor */}
+        {/* Secretary / Organizing Chair */}
         <CommitteeSection
-          title="Organizing Chair / Convenor"
+          title="Secretary"
           members={[
             {
-              name: "Dr. Kailash Chand Sharma",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-              photo: kcSharmaPhoto,
-            },
-            {
               name: "Dr. Mahesh Kumar",
+              designation: "Secretary",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
               photo: maheshKumarPhoto,
             },
-          ]}
-        />
-
-
-
-        {/* Internal Advisory Committee */}
-        <CommitteeSection
-          title="Internal Advisory Committee"
-          members={[
             {
-              name: "Dr. Sanjoy Parida",
-              institute: "IIT Patna",
+              name: "Dr. K. C. Sharma",
+              designation: "Secretary",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Ankush Sharma",
-              institute: "IIT Kanpur",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. R.K. Singh",
-              institute: "IIT BHU",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Sachin Kumar Jain",
-              institute: "IIIT Jabalpur",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Shubhendu Dutta",
-              institute: "IIT Delhi",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Pankaj Kumar",
-              institute: "NIT Srinagar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Manoj Kumawat",
-              institute: "NIT Delhi",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Satish Sharma",
-              institute: "MNIT Jaipur",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Rajvir Kaur",
-              institute: "NIT Puducherry",
-              department: "Electrical & Electronics Engineering",
-            },
-            {
-              name: "Dr. Akanksha Shukla",
-              institute: "SVNIT Surat",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Krishanu Nath",
-              institute: "NIT Agartala",
-              department: "Electronics and Instrumentation Engineering",
-            },
-            {
-              name: "Dr. Chandra Sekhar Obbu",
-              institute: "NIT Delhi",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Surender Hans",
-              institute: "MNIT Jaipur",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Sreenu Sreekumar",
-              institute: "NIT Silchar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Vivek Sharma",
-              institute: "NIT Hamirpur",
-              department: "Instrumentation and Control Engineering",
-            },
-            {
-              name: "Dr. Sanjeev Kr. Mallik",
-              institute: "NIT Patna",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Naveen Kumar Sharma",
-              institute: "Punjab Technical University (PTU)",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Nisha",
-              institute: "Amity University Haryana (AUH)",
-              department: "Electronics and Communication Engineering",
-            },
-            {
-              name: "Dr. Abhinav Gupta",
-              institute: "Amity University Haryana (AUH)",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. S. C. Jain",
-              institute: "Amity University Haryana (AUH)",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Vivek Prakash",
-              institute: "Banasthali Vidyapith (B. V.)",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Neeraj Kumar",
-              institute: "Manipal University Jaipur (M.U.J.)",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. H.P. Singh",
-              institute: "Amity University (AUUP), Noida",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Dr. Desh Deepak Sharma",
-              institute: "MJP Rohilkhand University Bareilly (MJPRUB)",
-              department: "Electrical Engineering",
+              photo: kcSharmaPhoto,
             },
           ]}
         />
 
-        {/* Hospitality Committee */}
-        <CommitteeSection
-          title="Hospitality Committee"
+        {/* Organizing Committee Members */}
+        <SimpleSection
+          title="Organizing Committee Members"
           members={[
-            {
-              name: "Dr. Kailash Chand Sharma",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Mr. Mohammed Alim",
-              designation: "Technical Assistant",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Mr. Pankaj Kumar Maurya",
-              designation: "Technical Assistant",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Mr. Mohit Kumar",
-              designation: "Technical Assistant",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-            },
-            {
-              name: "Mr. Sukhminder Singh",
-              designation: "Technical Assistant",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              department: "Electrical Engineering",
-            },
+            { name: "Prof. B.S. Saini (HOD EE)" },
+            { name: "Dr. Mahesh Kumar", role: "Secretary" },
+            { name: "Dr. Kailash Chand Sharma", role: "Secretary" },
+            { name: "Dr. Harimurugan" },
+            { name: "Dr. P. Ramakrishna" },
+            { name: "Dr. B.N. Rao" },
+            { name: "Dr. Arun Rathore" },
+            { name: "Dr. Sounak Nandi" },
+            { name: "Dr. Gagandeep Singh Dua" },
+            { name: "Dr. Debottam Mukherjee" },
+            { name: "Dr. Madan K. Das" },
+            { name: "Dr. Mohit Kumar" },
+            { name: "Mr. Alim Mohammad" },
+            { name: "Mr. Sukhminder Singh" },
+            { name: "Mr. Pankaj Kumar Maurya" },
+            { name: "Mr. Rajdeep Pandey" },
+            { name: "Ms. Priyanka Km." },
+            { name: "Mr. Rajat Goutam" },
+            { name: "Ms. Navita" },
+            { name: "Mr. Nitish Kumar Sharma" },
+            { name: "Mr. Mridul" },
+            { name: "Ms. Sapna" },
+            { name: "Mr. Vikas" },
+          ]}
+        />
+
+        {/* Technical Advisory Committee */}
+        <CommitteeSection
+          title="Technical Advisory Committee"
+          members={[
+            { name: "Dr. Anup Shukla", institute: "IIT Jammu" },
+            { name: "Dr. Asha Sharma", institute: "IIT Roorkee" },
+            { name: "Dr. Sanjoy Parida", institute: "IIT Patna" },
+            { name: "Dr. Ankush Sharma", institute: "IIT Kanpur" },
+            { name: "Dr. R.K. Singh", institute: "IIT BHU" },
+            { name: "Dr. Sachin Kumar Jain", institute: "IIIT Jabalpur" },
+            { name: "Dr. Shubhendu Dutta", institute: "IIT Delhi" },
+            { name: "Dr. Pankaj Kumar", institute: "NIT Srinagar" },
+            { name: "Dr. Manoj Kumawat", institute: "NIT Delhi" },
+            { name: "Dr. Satish Sharma", institute: "MNIT Jaipur" },
+            { name: "Dr. Rajvir Kaur", institute: "NIT Puducherry" },
+            { name: "Dr. Akanksha Shukla", institute: "SVNIT Surat" },
+            { name: "Dr. Krishanu Nath", institute: "NIT Agartala" },
+            { name: "Dr. Chandra Sekhar Obbu", institute: "NIT Delhi" },
+            { name: "Dr. Surender Hans", institute: "MNIT Jaipur" },
+            { name: "Dr. Sreenu Sreekumar", institute: "NIT Silchar" },
+            { name: "Dr. Vivek Sharma", institute: "NIT Hamirpur" },
+            { name: "Dr. Sanjeev Kr. Mallik", institute: "NIT Patna" },
+            { name: "Dr. Naveen Kumar Sharma", institute: "PTU Jalandhar" },
+            { name: "Dr. Nisha Charya", institute: "AUH Gurugram" },
+            { name: "Dr. Abhinav Gupta", institute: "AUH Gurugram" },
+            { name: "Dr. S. C. Jain", institute: "AUH Gurugram" },
+            { name: "Dr. Vivek Prakash", institute: "B.V. Jaipur" },
+            { name: "Dr. Neeraj Kanwar", institute: "M.U. Jaipur" },
+            { name: "Dr. H.P. Singh", institute: "AUUP, Noida" },
+            { name: "Dr. Shveta Mahjan", institute: "NIT Jalandhar" },
+            { name: "Dr. Neelam Rani", institute: "NIT Jalandhar" },
+            { name: "Prof. Dilbag Singh", institute: "NIT Jalandhar" },
+            { name: "Prof. Mamta Khosla", institute: "NIT Jalandhar" },
+            { name: "Dr. Karan Jain", institute: "NIT Jalandhar" },
+            { name: "Dr. Anil Kumar Yadav", institute: "NIT Jalandhar" },
+            { name: "Dr. Harimurugan", institute: "NIT Jalandhar" },
+            { name: "Dr. Madan K. Das", institute: "NIT Jalandhar" },
+            { name: "Dr. P. Ramakrishna", institute: "NIT Jalandhar" },
+            { name: "Dr. Arun Rathore", institute: "NIT Jalandhar" },
+            { name: "Dr. B.N. Rao", institute: "NIT Jalandhar" },
+            { name: "Dr. Sounak Nandi", institute: "NIT Jalandhar" },
+            { name: "Dr. Debottam Mukherjee", institute: "NITJ" },
+            { name: "Dr. Gagandeep Singh Dua", institute: "NITJ" },
+            { name: "Dr. Nisha Chaurasia", institute: "NIT Jalandhar" },
+            { name: "Dr. Kundan Kumar", institute: "NIT Jalandhar" },
+            { name: "Dr. D. D. Sharma", institute: "MJPRU Bareilly" },
           ]}
         />
 
