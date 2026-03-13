@@ -58,7 +58,7 @@ const Hero = () => {
     <>
       {/* HERO SECTION */}
       <div id="home" className="pt-20 bg-gradient-to-b from-slate-900 to-slate-800 text-white">
-        <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="w-full px-4 md:px-8 lg:px-12 py-16">
           <div className="flex items-center gap-8 mb-10">
             {/* Logo */}
             <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden">
@@ -102,7 +102,7 @@ const Hero = () => {
       </div>
 
       {/* IMAGE CAROUSEL */}
-      <div id="tracks" className="max-w-7xl mx-auto px-6 py-12">
+      <div id="tracks" className="w-full px-4 md:px-8 lg:px-12 py-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           Conference Themes
         </h2>

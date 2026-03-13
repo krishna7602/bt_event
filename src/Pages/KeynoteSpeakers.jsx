@@ -75,8 +75,8 @@ const SpeakerCard = ({ speaker, reverse }) => {
 
 const KeynoteSpeakers = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen px-4 md:px-8 lg:px-12">
+      <div className="w-full">
         
         {/* Header */}
         <div className="text-center mb-16">

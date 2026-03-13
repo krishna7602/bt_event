@@ -2,8 +2,8 @@ import React from "react";
 
 const PaperSubmission = () => {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12 text-justify">
+      <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Paper Submission

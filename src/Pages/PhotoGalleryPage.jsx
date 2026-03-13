@@ -24,8 +24,8 @@ const PhotoGallery = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 py-16 px-4 md:px-8 lg:px-12">
+      <div className="w-full">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
           Photo Gallery

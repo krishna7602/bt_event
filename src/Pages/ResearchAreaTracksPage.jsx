@@ -87,8 +87,8 @@ const ResearchAreaTracksPage = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen">
-      <div className="container mx-auto px-6">
+    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen px-4 md:px-8 lg:px-12">
+      <div className="w-full">
         {/* Research Tracks Section */}
         <div>
           <div className="text-center mb-12">

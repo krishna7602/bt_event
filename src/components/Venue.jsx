@@ -25,8 +25,8 @@ export default function Venue() {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12 text-justify">
+      <div className="w-full">
         <h2 className="text-4xl font-bold text-blue-900 mb-8">
           Venue & Travel
         </h2>

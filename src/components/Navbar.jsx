@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import logo from '../assets/logo.png';
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -60,7 +61,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white text-gray-800 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-3">
+      <div className="w-full px-4 md:px-8 lg:px-12 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>
@@ -105,6 +106,8 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+
+
 
           {/* Mobile Menu Button */}
           <button 

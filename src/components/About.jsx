@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="w-full px-4 md:px-8 lg:px-12">
 
         {/* About the Conference */}
         <div id="about" className="mb-12">

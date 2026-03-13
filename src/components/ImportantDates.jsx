@@ -42,7 +42,7 @@ export default function ImportantDates() {
 
   return (
     <section id="registration" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="w-full px-4 md:px-8 lg:px-12">
         <h2 className="text-4xl font-bold mb-8 text-blue-900 text-center">Important Dates</h2>
         
         <div className="overflow-x-auto shadow-lg rounded-2xl">

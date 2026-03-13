@@ -2,20 +2,20 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12">
+      <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Contact Us
         </h2>
 
-        <p className="text-gray-700 mb-8">
+        <p className="text-gray-700 mb-8 max-w-4xl">
           For any queries regarding the conference, sponsorship, or participation,
           please feel free to reach out to us using the details below.
         </p>
 
         {/* Contact Details */}
-        <div className="bg-white border rounded-lg p-6 shadow-sm max-w-3xl">
+        <div className="bg-white border rounded-lg p-6 shadow-sm w-full lg:w-2/3">
           <div className="mb-5">
             <h3 className="font-semibold text-gray-800 mb-1">Location</h3>
             <p className="text-gray-700 leading-relaxed">

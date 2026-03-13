@@ -20,8 +20,8 @@ const PaperReviewCommittee = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-4 md:px-12 lg:px-24 min-h-screen">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-gray-50 py-16 px-4 md:px-8 lg:px-12 min-h-screen">
+      <div className="w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
           Paper Review Committee
         </h2>
