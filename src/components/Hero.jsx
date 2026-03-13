@@ -85,7 +85,7 @@ const Hero = () => {
           {/* Date Banner */}
           <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg mb-8">
             <p className="text-lg font-semibold">
-              Tentative date:{" "}
+              Date:{" "}
               <span className="text-green-600">
                 8 - 9 May, 2026
               </span>
