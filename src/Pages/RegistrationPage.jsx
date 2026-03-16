@@ -23,18 +23,26 @@ const RegistrationPage = () => {
               <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
               Fee Payment
             </h3>
-            <p className="text-gray-700 font-bold mb-6 p-4 bg-blue-50 border border-blue-100 rounded-lg uppercase">
-              PLEASE PAY THE REGISTRATION FEE ONLY THROUGH THE{" "}
-              <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-blue-600 underline hover:text-blue-800"
-              >
-                OFFICIAL PAYMENT PORTAL
-              </a>
-              . NO OTHER MEANS OF FEE PAYMENT WILL BE ACCEPTED.
-            </p>
+            <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6">
+              <p className="text-red-600 font-extrabold mb-4 uppercase text-sm tracking-wide">
+                PLEASE PAY THE REGISTRATION FEE ONLY THROUGH THE OFFICIAL BANK DETAILS. NO OTHER MEANS OF FEE PAYMENT WILL BE ACCEPTED.
+              </p>
+              
+              <div className="space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-blue-100 pb-2">
+                  <span className="text-gray-500 text-sm font-medium">Account Name</span>
+                  <span className="text-gray-900 font-bold">NITJ CCE</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-blue-100 pb-2">
+                  <span className="text-gray-500 text-sm font-medium">Account Number</span>
+                  <span className="text-gray-900 font-bold font-mono">50100324249116</span>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                  <span className="text-gray-500 text-sm font-medium">IFSC Code</span>
+                  <span className="text-gray-900 font-bold font-mono">HDFC0000046</span>
+                </div>
+              </div>
+            </div>
             <div className="space-y-4 text-gray-600">
               <p>
                 <strong>Confirmation:</strong> After successful payment, kindly fill the{" "}
