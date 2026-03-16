@@ -23,14 +23,23 @@ const RegistrationPage = () => {
               <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
               Fee Payment
             </h3>
-            <p className="text-gray-700 font-bold mb-6 p-4 bg-blue-50 border border-blue-100 rounded-lg">
-              PLEASE PAY THE REGISTRATION FEE ONLY THROUGH THE OFFICIAL PAYMENT PORTAL. NO OTHER MEANS OF FEE PAYMENT WILL BE ACCEPTED.
+            <p className="text-gray-700 font-bold mb-6 p-4 bg-blue-50 border border-blue-100 rounded-lg uppercase">
+              PLEASE PAY THE REGISTRATION FEE ONLY THROUGH THE{" "}
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                OFFICIAL PAYMENT PORTAL
+              </a>
+              . NO OTHER MEANS OF FEE PAYMENT WILL BE ACCEPTED.
             </p>
             <div className="space-y-4 text-gray-600">
               <p>
                 <strong>Confirmation:</strong> After successful payment, kindly fill the{" "}
                 <a
-                  href="https://forms.gle/f8NiW2Ly4HtgT7nQ6"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 font-bold hover:underline"
@@ -164,7 +173,7 @@ const RegistrationPage = () => {
             After making the payment through the official portal, please submit your details via the Google Form to confirm your registration.
           </p>
           <a
-            href="https://forms.gle/f8NiW2Ly4HtgT7nQ6"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-blue-900 font-extrabold py-4 px-12 rounded-full shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105"

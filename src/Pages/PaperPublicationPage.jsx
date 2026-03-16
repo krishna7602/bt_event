@@ -37,7 +37,7 @@ const PaperPublication = () => {
             </li>
             <li>
               Abstracts, extended abstracts, and short papers of less than
-              <strong> 4 pages</strong> are <strong>not eligible</strong> for
+              <strong> 5 pages</strong> are <strong>not eligible</strong> for
               publication.
             </li>
           </ul>
