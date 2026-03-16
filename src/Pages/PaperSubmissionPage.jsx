@@ -72,12 +72,14 @@ const PaperSubmission = () => {
             Author Templates
           </h3>
           <p className="text-gray-700 mb-4">
-            Please use the following templates for manuscript preparation. Papers must strictly adhere to the Springer formatting template.
+            Please use the following templates for manuscript preparation. Papers must strictly adhere to the prescribed formatting template.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
+              href="https://docs.google.com/document/d/1XssosM7qHqDbrxYz0ha7PDvWOy0H4iwO/edit?usp=sharing&ouid=113683214684140309598&rtpof=true&sd=true"
               className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-md transition font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12.9,14.5L11,10.5H9L12,16.5L15,10.5H13L11.1,14.5L12.9,14.5Z"/></svg>
               MS Word Template

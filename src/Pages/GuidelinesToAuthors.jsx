@@ -29,7 +29,7 @@ const GuidelinesToAuthors = () => {
           <ul className="list-disc list-inside space-y-3 text-gray-700">
             <li>
               Manuscripts must strictly adhere to the{" "}
-              <strong>Springer formatting template</strong>.
+              <strong>prescribed formatting template</strong>.
             </li>
             <li>
               <strong>Regular Paper length:</strong> 5–7 pages, clearly
@@ -89,8 +89,10 @@ const GuidelinesToAuthors = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="#"
+                href="https://docs.google.com/document/d/1XssosM7qHqDbrxYz0ha7PDvWOy0H4iwO/edit?usp=sharing&ouid=113683214684140309598&rtpof=true&sd=true"
                 className="text-blue-600 font-medium hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 MS Word Template (DOC)
               </a>

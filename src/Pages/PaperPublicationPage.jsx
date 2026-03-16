@@ -12,13 +12,11 @@ const PaperPublication = () => {
         {/* Main Description */}
         <p className="text-gray-700 mb-6 leading-relaxed">
           It is planned to publish the peer-reviewed and selected papers of the
-          conference as proceedings with <strong>Springer</strong> in their
-          prestigious <strong>Lecture Notes in Electrical Engineering (LNEE)</strong>{" "}
-          series. Selected papers will be published as a conference proceedings
-          book volume by Springer, subject to their quality standards.
+          conference as proceedings in a reputed series. Selected papers will be published as a conference proceedings
+          volume, subject to quality standards.
         </p>
 
-        {/* Springer Process */}
+        {/* Publication Process */}
         <div className="bg-white border rounded-lg p-6 shadow-sm mb-10">
           <h3 className="text-xl font-semibold text-gray-800 mb-4">
             Publication Process
@@ -26,7 +24,7 @@ const PaperPublication = () => {
 
           <ul className="list-disc list-inside space-y-3 text-gray-700">
             <li>
-              All accepted papers will undergo Springer’s internal quality
+              All accepted papers will undergo internal quality
               checks before publication.
             </li>
             <li>
@@ -34,7 +32,7 @@ const PaperPublication = () => {
               in the proceedings volume.
             </li>
             <li>
-              Springer Nature does <strong>not charge any publication fee</strong>{" "}
+              There is <strong>no publication fee</strong>{" "}
               for Non-Open Access content.
             </li>
             <li>
@@ -54,25 +52,20 @@ const PaperPublication = () => {
           <p className="text-gray-700 mb-4">
             For detailed instructions regarding manuscript preparation,
             formatting, and editorial processes for conference proceedings,
-            authors and editors are advised to refer to the official Springer
-            guidelines:
+            authors and editors are advised to refer to the official
+            guidelines provided in the templates:
           </p>
 
-          <a
-            href="https://www.springer.com/us/authors-editors/conference-proceedings"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 font-medium hover:underline"
-          >
-            Springer Conference Proceedings – Author & Editor Guidelines
-          </a>
+          <span className="text-blue-600 font-medium italic">
+            Please follow the prescribed formatting guidelines in the provided templates.
+          </span>
         </div>
 
         {/* Note */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
           <p className="text-gray-700">
             <strong>Note:</strong> Final inclusion of papers in the proceedings
-            is subject to successful peer review, compliance with Springer
+            is subject to successful peer review, compliance with 
             formatting requirements, and completion of all registration and
             camera-ready submission procedures.
           </p>
