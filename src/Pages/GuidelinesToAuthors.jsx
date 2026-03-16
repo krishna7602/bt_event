@@ -11,8 +11,8 @@ const GuidelinesToAuthors = () => {
 
         {/* Intro */}
         <p className="text-gray-700 mb-8 leading-relaxed">
-          All papers must be submitted electronically through{" "}
-          <strong>Microsoft CMT</strong>. We invite researchers, academicians,
+          All papers must be submitted electronically through the official{" "}
+          <strong>Google Form</strong>. We invite researchers, academicians,
           and industry professionals to submit original, innovative, and
           high-quality research papers aligned with the conference tracks.
           Submissions should present substantial contributions such as novel

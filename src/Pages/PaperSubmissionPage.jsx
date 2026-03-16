@@ -57,10 +57,12 @@ const PaperSubmission = () => {
           </p>
 
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSczY1J179v1kDFQD381l7IKVo6sU8iJwZVRPwgr4pq9VG2bUw/viewform?usp=sharing&ouid=113683214684140309598"
             className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Submit via Microsoft CMT
+            Submit via Google Form
           </a>
         </div>
 
