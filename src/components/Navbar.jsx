@@ -36,8 +36,8 @@ export default function Navbar() {
       name: "Programs", 
       dropdown: [
         { name: "Keynote Speakers", path: '/speakers' },
-        { name: "Tours", path: '/tours' },
-        { name: "Cultural Events", path: '/cultural-events' }
+        { name: "Tours", path: '/tours' }
+
       ]
     },
     { name: "Registration", dropdown: null, path: '/registration' },

@@ -17,7 +17,6 @@ import Accommodation from "./Pages/AccommodationPage";
 import PhotoGallery from "./Pages/PhotoGalleryPage";
 import KeynoteSpeakers from "./Pages/KeynoteSpeakers";
 import Tours from "./Pages/ToursPage";
-import CulturalEvents from "./Pages/CulturalEventsPage";
 import GuidelinesToAuthors from "./Pages/GuidelinesToAuthors";
 import PaperSubmission from "./Pages/PaperSubmissionPage";
 import RegistrationPage from "./Pages/RegistrationPage";
@@ -79,7 +78,7 @@ export default function App() {
         {/* PROGRAMS */}
         <Route path="/speakers" element={<KeynoteSpeakers />} />
         <Route path="/tours" element={<Tours />} />
-        <Route path="/cultural-events" element={<CulturalEvents />} />
+
 
 
         {/* REGISTRATION */}
