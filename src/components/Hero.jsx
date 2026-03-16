@@ -6,6 +6,7 @@ import track2Img from '../assets/track_2_smartgrids.png';
 import track3Img from '../assets/track_3_multienergy.png';
 import track4Img from '../assets/track_4_policy.png';
 import track5Img from '../assets/track_5_intelligent.png';
+import track6Img from '../assets/track_6_ev.jpg';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,7 +33,7 @@ const Hero = () => {
       caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems"
     },
     {
-      url: "https://images.unsplash.com/photo-1593941707882-a5bba14938cb?w=1200&h=600&fit=crop",
+      url: track6Img,
       caption: "Track 6: Electric Vehicles and E-Mobility Systems"
     }
   ];
