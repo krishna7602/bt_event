@@ -76,7 +76,7 @@ const PaperSubmission = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://docs.google.com/document/d/1XssosM7qHqDbrxYz0ha7PDvWOy0H4iwO/edit?usp=sharing&ouid=113683214684140309598&rtpof=true&sd=true"
+              href="https://drive.google.com/uc?export=download&id=1dUuGs3lKyURRXyfAyjtfKa7Y73hXtPjp"
               className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-md transition font-medium"
               target="_blank"
               rel="noopener noreferrer"

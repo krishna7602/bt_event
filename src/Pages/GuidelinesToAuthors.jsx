@@ -89,7 +89,7 @@ const GuidelinesToAuthors = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="https://docs.google.com/document/d/1XssosM7qHqDbrxYz0ha7PDvWOy0H4iwO/edit?usp=sharing&ouid=113683214684140309598&rtpof=true&sd=true"
+                href="https://drive.google.com/uc?export=download&id=1dUuGs3lKyURRXyfAyjtfKa7Y73hXtPjp"
                 className="text-blue-600 font-medium hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"
