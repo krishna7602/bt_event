@@ -30,7 +30,7 @@ const Hero = () => {
     },
     {
       url: track5Img,
-      caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems"
+      caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems ( Hybrid Mode)"
     },
     {
       url: track6Img,
@@ -71,7 +71,7 @@ const Hero = () => {
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
                 National Conference on  
                 <span className="block text-green-400">
-                  Net-Zero Energy Systems
+                  Net-Zero Energy Systems ( Hybrid Mode)
                 </span>
               </h1>
               <p className="text-lg text-gray-300 max-w-3xl">
@@ -88,7 +88,7 @@ const Hero = () => {
             <p className="text-lg font-semibold">
               Date:{" "}
               <span className="text-green-600">
-                8 - 9 May, 2026
+                8-9 May, 2026
               </span>
             </p>
           </div>

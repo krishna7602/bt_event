@@ -35,7 +35,7 @@ export default function ImportantDates() {
     {
       event: "Conference Dates",
       date: "8–9 May, 2026",
-      description: "The official National Conference on Net-Zero Energy Systems 2026.",
+      description: "The official National Conference on Net-Zero Energy Systems ( Hybrid Mode) 2026.",
       highlight: false
     }
   ];

@@ -24,23 +24,22 @@ const PaperSubmission = () => {
 
           <ul className="space-y-3 text-gray-700">
             <li>
-              <strong>Submission Starts:</strong> February 8, 2026
+              <strong>Paper Submission Starts:</strong> 5 February, 2026
             </li>
             <li>
               <strong>Paper Submission Deadline:</strong> 10 April, 2026
-              <span className="text-red-600 font-medium"> (Final)</span>
             </li>
             <li>
-              <strong>Notification of Acceptance:</strong> April 20, 2026
+              <strong>Paper Acceptance Date:</strong> 20 April, 2026
             </li>
             <li>
-              <strong>Date of Conference:</strong> May 8 – 9, 2026
+              <strong>Camera-Ready Submission:</strong> 30 April, 2026
             </li>
             <li>
-              <strong>Early Bird Registration:</strong> April 25, 2026
+              <strong>Last Date of Registration:</strong> 30 April, 2026
             </li>
             <li>
-              <strong>Camera-Ready Submission:</strong> April 30, 2026
+              <strong>Conference Dates:</strong> 8-9 May, 2026
             </li>
           </ul>
         </div>

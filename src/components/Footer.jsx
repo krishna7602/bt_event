@@ -43,7 +43,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-gray-400 mb-4">
-              National Conference on Net-Zero Energy Systems
+              National Conference on Net-Zero Energy Systems ( Hybrid Mode)
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
               Organized by the Department of Electrical Engineering<br />
@@ -99,7 +99,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              <p>© 2026 National Conference on Net-Zero Energy Systems. All rights reserved.</p>
+              <p>© 2026 National Conference on Net-Zero Energy Systems ( Hybrid Mode). All rights reserved.</p>
               <p className="mt-2 text-gray-500 italic">
                 Developed and maintained by <span className="text-gray-400 font-medium">Ramkrishna Mondal</span> and <span className="text-gray-400 font-medium">Rajat Goutam</span>
               </p>
