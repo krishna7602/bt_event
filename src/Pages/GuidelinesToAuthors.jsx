@@ -32,7 +32,7 @@ const GuidelinesToAuthors = () => {
               <strong>prescribed formatting template</strong>.
             </li>
             <li>
-              <strong>Regular Paper length:</strong> 5 pages, clearly
+              <strong>Regular Paper length:</strong> 11 pages, clearly
               presenting the research problem, methodology, key findings, and
               conclusions.
             </li>

@@ -19,7 +19,7 @@ export default function About() {
               Agreement and the target of achieving net-zero emissions by 2070 call for
               transformative innovation, policy reforms, and strategic collaborations. In this context,
               the Department of Electrical Engineering proposes to organize a{" "}
-              <strong>National Conference on "Net-Zero Energy Systems (Hybrid Mode), 2026"</strong>, bringing
+              <strong>National Conference on "Net-Zero Energy Systems Hybrid Mode, 2026"</strong>, bringing
               together academia, industry, policymakers, and research organizations to discuss the
               latest advancements and emerging pathways in clean energy technologies.
             </p>

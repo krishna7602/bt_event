@@ -30,7 +30,7 @@ const Hero = () => {
     },
     {
       url: track5Img,
-      caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems (Hybrid Mode)"
+      caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems Hybrid Mode"
     },
     {
       url: track6Img,
@@ -73,7 +73,7 @@ const Hero = () => {
                 <span className="block text-green-400 flex flex-wrap items-center gap-x-4">
                   Net-Zero Energy Systems 
                   <span className="animate-blink inline-block px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold translate-y-[-2px]">
-                    (Hybrid Mode)
+                    Hybrid Mode
                   </span>
                 </span>
               </h1>
