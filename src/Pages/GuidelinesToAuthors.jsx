@@ -89,10 +89,9 @@ const GuidelinesToAuthors = () => {
           <ul className="space-y-2">
             <li>
               <a
-                href="https://drive.google.com/uc?export=download&id=1dUuGs3lKyURRXyfAyjtfKa7Y73hXtPjp"
+                href="/Conference_Paper_Template.zip"
+                download
                 className="text-blue-600 font-medium hover:underline"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 MS Word Template (DOC)
               </a>

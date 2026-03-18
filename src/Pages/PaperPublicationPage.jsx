@@ -56,9 +56,9 @@ const PaperPublication = () => {
             guidelines provided in the templates:
           </p>
 
-          <span className="text-blue-600 font-medium italic">
-            Please follow the prescribed formatting guidelines in the provided templates.
-          </span>
+          <p className="text-blue-600 font-medium italic">
+            Please follow the prescribed formatting guidelines in the provided <a href="/Conference_Paper_Template.zip" download className="font-bold underline hover:text-blue-800 transition-colors">Word Template</a>.
+          </p>
         </div>
 
         {/* Note */}
