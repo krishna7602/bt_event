@@ -27,7 +27,7 @@ const PaperSubmission = () => {
               <strong>Paper Submission Starts:</strong> 5 February, 2026
             </li>
             <li>
-              <strong>Paper Submission Deadline:</strong> 10 April, 2026
+              <strong>Paper Submission Deadline:</strong> 15 April, 2026
             </li>
             <li>
               <strong>Paper Acceptance Date:</strong> 20 April, 2026
