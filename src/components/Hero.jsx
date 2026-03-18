@@ -70,8 +70,11 @@ const Hero = () => {
             <div className="flex-1">
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
                 National Conference on  
-                <span className="block text-green-400">
-                  Net-Zero Energy Systems (Hybrid Mode)
+                <span className="block text-green-400 flex flex-wrap items-center gap-x-4">
+                  Net-Zero Energy Systems 
+                  <span className="animate-blink inline-block px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold translate-y-[-2px]">
+                    (Hybrid Mode)
+                  </span>
                 </span>
               </h1>
               <p className="text-lg text-gray-300 max-w-3xl">
