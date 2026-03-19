@@ -101,7 +101,7 @@ const Footer = () => {
             <div className="text-gray-400 text-sm text-center md:text-left">
               <p>© 2026 National Conference on Net-Zero Energy Systems Hybrid Mode. All rights reserved.</p>
               <p className="mt-2 text-gray-500 italic">
-                Developed and maintained by <span className="text-gray-400 font-medium">Ramkrishna Mondal</span> and <span className="text-gray-400 font-medium">Rajat Goutam</span>
+                Developed and maintained by <a href="https://www.linkedin.com/in/ramkrishna-mondal-b73b09294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Ramkrishna Mondal</a> and <a href="https://www.linkedin.com/in/rajat-goutam-487a88219?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Rajat Goutam</a>
               </p>
             </div>
 
