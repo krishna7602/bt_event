@@ -10,9 +10,9 @@ const GuidelinesToAuthors = () => {
         </h2>
 
         {/* Intro */}
-        <p className="text-gray-700 mb-8 leading-relaxed">
+        <p className="text-gray-700 mb-8 leading-relaxed text-justify">
           All papers must be submitted electronically through the official{" "}
-          <strong>Google Form</strong>. We invite researchers, academicians,
+          <strong className="text-blue-600 underline">Google Form</strong> (Microsoft CMT coming soon). We invite researchers, academicians,
           and industry professionals to submit original, innovative, and
           high-quality research papers aligned with the conference tracks.
           Submissions should present substantial contributions such as novel

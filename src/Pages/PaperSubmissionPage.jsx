@@ -55,14 +55,19 @@ const PaperSubmission = () => {
             conference submission portal.
           </p>
 
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSczY1J179v1kDFQD381l7IKVo6sU8iJwZVRPwgr4pq9VG2bUw/viewform?usp=sharing&ouid=113683214684140309598"
-            className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Submit via Google Form
-          </a>
+          <div className="space-y-4">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSczY1J179v1kDFQD381l7IKVo6sU8iJwZVRPwgr4pq9VG2bUw/viewform?usp=sharing&ouid=113683214684140309598"
+              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Submit via Google Form
+            </a>
+            <p className="text-blue-600 font-medium italic animate-pulse">
+              (Microsoft CMT coming soon)
+            </p>
+          </div>
         </div>
 
         {/* Templates */}
@@ -92,6 +97,13 @@ const PaperSubmission = () => {
               LaTeX Templates (TEX)
             </a>
           </div>
+        </div>
+
+        {/* CMT Acknowledgement */}
+        <div className="mt-12 pt-8 border-t border-gray-200">
+          <p className="text-gray-600 text-sm italic leading-relaxed">
+            <span className="font-bold not-italic">CMT Acknowledgement:</span> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+          </p>
         </div>
       </div>
     </section>
