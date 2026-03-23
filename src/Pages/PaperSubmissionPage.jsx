@@ -55,17 +55,9 @@ const PaperSubmission = () => {
             conference submission portal.
           </p>
 
-          <div className="space-y-4">
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSczY1J179v1kDFQD381l7IKVo6sU8iJwZVRPwgr4pq9VG2bUw/viewform?usp=sharing&ouid=113683214684140309598"
-              className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Submit via Google Form
-            </a>
-            <p className="text-blue-600 font-medium italic animate-pulse">
-              (Microsoft CMT coming soon)
+          <div className="bg-blue-100 border-l-4 border-blue-600 p-4 rounded-r-lg">
+            <p className="text-blue-700 font-bold italic animate-pulse">
+              Microsoft CMT Submission Portal - Coming Soon!
             </p>
           </div>
         </div>
@@ -101,9 +93,14 @@ const PaperSubmission = () => {
 
         {/* CMT Acknowledgement */}
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-gray-600 text-sm italic leading-relaxed">
-            <span className="font-bold not-italic">CMT Acknowledgement:</span> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-          </p>
+          <div className="bg-red-50 border-l-8 border-red-600 p-8 rounded-lg shadow-lg">
+            <h4 className="text-red-700 text-2xl font-extrabold mb-4 uppercase tracking-tight">
+              CMT Acknowledgement
+            </h4>
+            <p className="text-red-900 text-lg md:text-xl font-semibold leading-relaxed italic">
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+            </p>
+          </div>
         </div>
       </div>
     </section>
