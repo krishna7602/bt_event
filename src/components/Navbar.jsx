@@ -27,7 +27,7 @@ export default function Navbar() {
       name: "Authors", 
       dropdown: [
         { name: "Guidelines to Authors", path: '/guidelines' },
-        { name: "Paper Submission", path: '/paper-submission' },
+        { name: "Paper Submission", path: '/PaperSubmission.html' },
         { name: "Paper Publication", path: '/publication' },
         { name: "Best Student Award", path: '/best-student-award' }
       ]
