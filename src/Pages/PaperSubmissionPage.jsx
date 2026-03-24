@@ -56,7 +56,7 @@ const PaperSubmission = () => {
                 <div className="bg-blue-50 border-2 border-dashed border-blue-200 p-6 rounded-2xl mb-8">
                   <p className="text-slate-800 text-lg font-medium leading-relaxed">
                     All submissions need to be submitted through the CMT using the link:{" "}
-                    <span className="block mt-2 text-2xl font-black text-blue-600 animate-pulse italic">link will be updated soon</span>
+                    <span className="block mt-2 text-2xl font-black text-blue-600 animate-pulse italic"></span>
                   </p>
                 </div>
 
