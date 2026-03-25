@@ -70,7 +70,7 @@ export default function App() {
 
         {/* AUTHORS */}
         <Route path="/guidelines" element={<GuidelinesToAuthors />} />
-        <Route path="/PaperSubmission.html" element={<PaperSubmission />} />
+        <Route path="/paper-submission" element={<PaperSubmission />} />
         <Route path="/publication" element={<PaperPublication />} />
         <Route path="/best-student-award" element={<BestStudentAward />} />
 
