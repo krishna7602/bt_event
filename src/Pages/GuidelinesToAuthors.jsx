@@ -52,7 +52,7 @@ const GuidelinesToAuthors = () => {
             <ul className="space-y-4">
               {[
                 "Manuscripts must strictly adhere to the prescribed formatting template.",
-                "Regular Paper length: 11 pages minimum, including methodology and findings.",
+                "Regular Paper length: Maximum 10 pages, including methodology and findings.",
                 "All submissions must align with the conference tracks and demonstrate technical rigor.",
                 "Format using the prescribed template and submit only via the official link.",
                 "Include sufficient technical detail to facilitate a thorough peer review."

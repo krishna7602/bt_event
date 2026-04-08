@@ -73,7 +73,7 @@ const PaperPublication = () => {
                 "All accepted papers will undergo internal quality checks before publication.",
                 "Only papers that successfully pass these checks will be included in the proceedings volume.",
                 "There is no publication fee for Non-Open Access content.",
-                "Abstracts, extended abstracts, and short papers of less than 11 pages are not eligible for publication."
+                "Papers exceeding 10 pages are not eligible for publication."
               ].map((text, i) => (
                 <li key={i} className="flex gap-4 items-start group">
                   <div className="mt-2 w-2 h-2 rounded-full bg-blue-400 group-hover:bg-blue-600 transition-colors shrink-0"></div>
