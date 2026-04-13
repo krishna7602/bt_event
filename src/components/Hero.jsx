@@ -109,19 +109,16 @@ const Hero = () => {
 
             <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
               <div className="w-full max-w-52 flex flex-col items-center text-center">
-                <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] text-green-300 mb-3 font-semibold">
+                <p className="text-green-400 text-xl md:text-2xl font-bold mb-3">
                   Sponsors
                 </p>
-                <div className="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-white/80 shadow-2xl bg-white flex items-center justify-center p-3">
+                <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg flex items-center justify-center p-2">
                   <img
                     src={syngientLogo}
                     alt="Syngient"
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="mt-3 text-sm md:text-base text-gray-100 leading-snug font-medium">
-                  Syngient Information Technology Facilitators
-                </p>
               </div>
             </div>
           </div>
