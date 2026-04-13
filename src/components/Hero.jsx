@@ -109,10 +109,10 @@ const Hero = () => {
 
             <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
               <div className="w-full max-w-52 flex flex-col items-center text-center">
-                <p className="text-green-400 text-xl md:text-2xl font-bold mb-3">
+                <p className="text-green-400 text-4xl md:text-5xl font-bold leading-tight mb-3">
                   Sponsors
                 </p>
-                <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg flex items-center justify-center p-2">
+                <div className="w-40 h-40 md:w-44 md:h-44 rounded-lg flex items-center justify-center p-2">
                   <img
                     src={syngientLogo}
                     alt="Syngient"
