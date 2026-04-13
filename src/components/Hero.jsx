@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import logo from '../assets/logo.png';
+import syngientLogo from '../assets/sponsors/syngient.svg';
 import track1Img from '../assets/track_1_renewable.png';
 import track2Img from '../assets/track_2_smartgrids.png';
 import track3Img from '../assets/track_3_multienergy.png';
@@ -60,48 +61,70 @@ const Hero = () => {
       {/* HERO SECTION */}
       <div id="home" className="pt-20 bg-gradient-to-b from-slate-900 to-slate-800 text-white">
         <div className="w-full px-4 md:px-8 lg:px-12 py-16">
-          <div className="flex items-center gap-8 mb-10">
-            {/* Logo */}
-            <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden">
-              <img src={logo} alt="NZES-2026 Logo" className="w-full h-full object-contain p-2" />
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            <div className="lg:col-span-9">
+              <div className="flex items-center gap-8 mb-10">
+                {/* Logo */}
+                <div className="w-28 h-28 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden">
+                  <img src={logo} alt="NZES-2026 Logo" className="w-full h-full object-contain p-2" />
+                </div>
 
-            {/* Title */}
-            <div className="flex-1">
-              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                National Conference on  
-                <span className="block text-green-400 flex flex-wrap items-center gap-x-4">
-                  Net-Zero Energy Systems 
-                  <span className="animate-blink inline-block px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold translate-y-[-2px]">
-                    Hybrid Mode
+                {/* Title */}
+                <div className="flex-1">
+                  <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                    National Conference on  
+                    <span className="text-green-400 flex flex-wrap items-center gap-x-4">
+                      Net-Zero Energy Systems 
+                      <span className="animate-blink inline-block px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold -translate-y-0.5">
+                        Hybrid Mode
+                      </span>
+                    </span>
+                  </h1>
+                  <p className="text-lg text-gray-300 max-w-3xl">
+                    Advancing renewable energy, smart grids, energy storage, hydrogen
+                    technologies, and policy frameworks to support India’s
+                    <strong className="text-white"> Net-Zero 2070 </strong>
+                    vision.
+                  </p>
+                </div>
+              </div>
+
+              {/* Date Banner */}
+              <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg mb-8">
+                <p className="text-lg font-semibold">
+                  Date:{" "}
+                  <span className="text-green-600">
+                    8-9 May, 2026
                   </span>
-                </span>
-              </h1>
-              <p className="text-lg text-gray-300 max-w-3xl">
-                Advancing renewable energy, smart grids, energy storage, hydrogen
-                technologies, and policy frameworks to support India’s
-                <strong className="text-white"> Net-Zero 2070 </strong>
-                vision.
+                </p>
+              </div>
+
+              {/* Tagline */}
+              <p className="text-xl text-gray-200 max-w-4xl">
+                Bringing together academia, industry, policymakers, and research
+                organizations to shape sustainable, low-carbon, and resilient
+                energy systems for the future.
               </p>
             </div>
-          </div>
 
-          {/* Date Banner */}
-          <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg mb-8">
-            <p className="text-lg font-semibold">
-              Date:{" "}
-              <span className="text-green-600">
-                8-9 May, 2026
-              </span>
-            </p>
+            <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
+              <div className="w-full max-w-52 flex flex-col items-center text-center">
+                <p className="text-[11px] md:text-xs uppercase tracking-[0.2em] text-green-300 mb-3 font-semibold">
+                  Sponsors
+                </p>
+                <div className="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-white/80 shadow-2xl bg-white flex items-center justify-center p-3">
+                  <img
+                    src={syngientLogo}
+                    alt="Syngient"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="mt-3 text-sm md:text-base text-gray-100 leading-snug font-medium">
+                  Syngient Information Technology Facilitators
+                </p>
+              </div>
+            </div>
           </div>
-
-          {/* Tagline */}
-          <p className="text-xl text-gray-200 max-w-4xl">
-            Bringing together academia, industry, policymakers, and research
-            organizations to shape sustainable, low-carbon, and resilient
-            energy systems for the future.
-          </p>
         </div>
       </div>
 

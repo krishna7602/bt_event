@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Syngient sponsor logo</title>
+  <desc id="desc">Syngient Information Technology Facilitators with partner labels</desc>
+  <rect width="1200" height="420" fill="#f3f4f6"/>
+
+  <g transform="translate(35 38)">
+    <circle cx="110" cy="110" r="96" fill="none" stroke="#39ff00" stroke-width="16"/>
+    <path d="M16 121 C58 96, 128 96, 210 122" fill="none" stroke="#06a8c9" stroke-width="16" stroke-linecap="round"/>
+    <path d="M56 74 C88 36, 145 36, 174 62" fill="none" stroke="#06a8c9" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 164 C95 194, 150 191, 182 157" fill="none" stroke="#06a8c9" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="286" y="170" font-size="152" font-weight="700" fill="#03a4c7">syngient</text>
+    <text x="43" y="286" font-size="72" font-weight="700" fill="#22252b" letter-spacing="1">Information Technology Facilitators</text>
+
+    <text x="45" y="365" font-size="48" font-weight="700" fill="#e10404">SANLAB</text>
+    <text x="258" y="365" font-size="54" fill="#4b5563">|</text>
+    <text x="306" y="365" font-size="48" font-weight="700" fill="#1a7da1">ALTAIR</text>
+    <text x="517" y="365" font-size="54" fill="#4b5563">|</text>
+    <text x="565" y="365" font-size="48" font-weight="700" fill="#13a84c">EV LAB</text>
+    <text x="765" y="365" font-size="54" fill="#4b5563">|</text>
+    <text x="812" y="365" font-size="48" font-weight="700" fill="#0f9ca7">SIEMENS</text>
+    <text x="1030" y="365" font-size="54" fill="#4b5563">|</text>
+    <text x="1075" y="365" font-size="48" font-weight="700" fill="#f01212">etap</text>
+  </g>
+</svg>
