@@ -3,7 +3,7 @@ import React from "react";
 const GuidelinesToAuthors = () => {
   const deadlines = [
     { event: "Submission Opens", date: "5 February, 2026" },
-    { event: "Submission Deadline", date: "15 April, 2026", highlight: true },
+    { event: "Submission Deadline", date: "22 April, 2026", highlight: true },
   ];
 
   return (
@@ -41,7 +41,7 @@ const GuidelinesToAuthors = () => {
                 <span className={`text-xs font-black uppercase tracking-widest block mb-2 ${d.highlight ? 'text-rose-600' : 'text-slate-500'}`}>
                   {d.event}
                 </span>
-                <span className={`text-2xl font-black ${d.highlight ? 'text-rose-900' : 'text-slate-900'}`}>{d.date}</span>
+                <span className={`text-2xl font-black ${d.highlight ? 'text-rose-900 animate-blink inline-block' : 'text-slate-900'}`}>{d.date}</span>
               </div>
             ))}
           </div>

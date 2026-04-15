@@ -75,8 +75,11 @@ const Hero = () => {
                     National Conference on  
                     <span className="text-green-400 flex flex-wrap items-center gap-x-4">
                       Net-Zero Energy Systems 
-                      <span className="animate-blink inline-block px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold -translate-y-0.5">
+                      <span className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-base md:text-2xl font-bold -translate-y-0.5">
                         Hybrid Mode
+                      </span>
+                      <span className="animate-blink inline-flex items-center px-3 py-1 bg-red-500/10 border border-red-500 rounded-full text-base md:text-2xl font-bold text-red-400 -translate-y-0.5">
+                        Extended Deadline: 22 April, 2026
                       </span>
                     </span>
                   </h1>

@@ -10,8 +10,8 @@ export default function ImportantDates() {
     },
     {
       event: "Paper Submission Deadline",
-      date: "15 April, 2026",
-      description: "Final date to submit research papers for review.",
+      date: "22 April, 2026",
+      description: "Extended final date to submit research papers for review.",
       highlight: true
     },
     {
