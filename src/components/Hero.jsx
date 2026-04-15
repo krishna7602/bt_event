@@ -79,7 +79,7 @@ const Hero = () => {
                         Hybrid Mode
                       </span>
                       <span className="animate-blink inline-flex items-center px-3 py-1 bg-red-500/10 border border-red-500 rounded-full text-base md:text-2xl font-bold text-red-400 -translate-y-0.5">
-                        Extended Deadline: 22 April, 2026
+                        Extended Hard Deadline: 22 April, 2026
                       </span>
                     </span>
                   </h1>

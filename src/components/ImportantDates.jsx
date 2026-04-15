@@ -10,6 +10,13 @@ export default function ImportantDates() {
     },
     {
       event: "Paper Submission Deadline",
+      date: "15 April, 2026",
+      description: "Previous deadline to submit research papers for review.",
+      highlight: false,
+      strikethrough: true
+    },
+    {
+      event: "Extended Hard Deadline",
       date: "22 April, 2026",
       description: "Extended final date to submit research papers for review.",
       highlight: true
@@ -64,13 +71,13 @@ export default function ImportantDates() {
                       : index % 2 === 0 ? 'bg-gray-50 hover:bg-blue-50' : 'bg-white hover:bg-blue-50'
                   }`}
                 >
-                  <td className={`px-6 py-4 font-semibold ${ item.highlight ? 'text-red-700' : 'text-gray-800'}`}>
+                  <td className={`px-6 py-4 font-semibold ${item.strikethrough ? 'line-through text-gray-500' : item.highlight ? 'text-red-700' : 'text-gray-800'}`}>
                     {item.event}
                   </td>
-                  <td className={`px-6 py-4 font-medium whitespace-nowrap ${ item.highlight ? 'text-red-600 font-bold' : 'text-blue-600'}`}>
+                  <td className={`px-6 py-4 font-medium whitespace-nowrap ${item.strikethrough ? 'line-through text-gray-500' : item.highlight ? 'text-red-600 font-bold' : 'text-blue-600'}`}>
                     {item.date}
                   </td>
-                  <td className="px-6 py-4 text-gray-600">
+                  <td className={`px-6 py-4 ${item.strikethrough ? 'line-through text-gray-500' : 'text-gray-600'}`}>
                     {item.description}
                   </td>
                 </tr>
@@ -86,9 +93,9 @@ export default function ImportantDates() {
               key={index}
               className={`rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border ${ item.highlight ? 'bg-red-50 border-red-200' : 'bg-white border-gray-200'}`}
             >
-              <h3 className={`font-bold text-lg mb-2 ${ item.highlight ? 'text-red-700' : 'text-gray-800'}`}>{item.event}</h3>
-              <p className={`font-semibold mb-3 ${ item.highlight ? 'text-red-600' : 'text-blue-600'}`}>{item.date}</p>
-              <p className="text-gray-600 text-sm">{item.description}</p>
+              <h3 className={`font-bold text-lg mb-2 ${item.strikethrough ? 'line-through text-gray-500' : item.highlight ? 'text-red-700' : 'text-gray-800'}`}>{item.event}</h3>
+              <p className={`font-semibold mb-3 ${item.strikethrough ? 'line-through text-gray-500' : item.highlight ? 'text-red-600' : 'text-blue-600'}`}>{item.date}</p>
+              <p className={`text-sm ${item.strikethrough ? 'line-through text-gray-500' : 'text-gray-600'}`}>{item.description}</p>
             </div>
           ))}
         </div>
