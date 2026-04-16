@@ -23,7 +23,7 @@ export default function ImportantDates() {
     },
     {
       event: "Paper Acceptance Date",
-      date: "20 April, 2026",
+      date: "26 April, 2026",
       description: "Authors will receive acceptance or rejection notifications.",
       highlight: false
     },
