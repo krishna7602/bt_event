@@ -10,32 +10,25 @@ export default function ImportantDates() {
     },
     {
       event: "Paper Submission Deadline",
-      date: "15 April, 2026",
-      description: "Previous deadline to submit research papers for review.",
-      highlight: false,
-      strikethrough: true
-    },
-    {
-      event: "Extended Hard Deadline",
-      date: "22 April, 2026",
-      description: "Extended final date to submit research papers for review.",
+      date: "30 April, 2026",
+      description: "Final deadline to submit research papers for review.",
       highlight: true
     },
     {
       event: "Paper Acceptance Date",
-      date: "26 April, 2026",
+      date: "2 May, 2026",
       description: "Authors will receive acceptance or rejection notifications.",
       highlight: false
     },
     {
       event: "Camera-Ready Submission",
-      date: "30 April, 2026",
+      date: "3 May, 2026",
       description: "Final versions of accepted papers must be submitted.",
       highlight: false
     },
     {
       event: "Last Date of Registration",
-      date: "30 April, 2026",
+      date: "5 May, 2026",
       description: "Final date for all participants to register for the conference.",
       highlight: false
     },
