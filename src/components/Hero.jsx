@@ -116,20 +116,26 @@ const Hero = () => {
                 <p className="text-green-400 text-4xl md:text-5xl font-bold leading-tight mb-3">
                   Sponsors
                 </p>
-                <div className="flex flex-col gap-4 items-center">
-                  <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10">
-                    <img
-                      src={syngientLogo}
-                      alt="Syngient"
-                      className="w-full h-full object-contain"
-                    />
+                <div className="flex flex-col gap-6 items-center">
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-105">
+                      <img
+                        src={syngientLogo}
+                        alt="Syngient"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-gray-300 text-sm font-medium">Syngient</p>
                   </div>
-                  <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10">
-                    <img
-                      src={agmatelKeysightLogo}
-                      alt="Agmatel & Keysight"
-                      className="w-full h-full object-contain"
-                    />
+                  <div className="flex flex-col items-center gap-2">
+                    <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-105">
+                      <img
+                        src={agmatelKeysightLogo}
+                        alt="Agmatel & Keysight"
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-gray-300 text-sm font-medium text-center">Agmatel & Keysight</p>
                   </div>
                 </div>
               </div>
