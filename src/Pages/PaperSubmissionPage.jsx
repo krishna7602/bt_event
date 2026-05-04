@@ -50,7 +50,7 @@ const PaperSubmission = () => {
                   </div>
                   <div className="flex items-center gap-4">
                     <span className="text-slate-400 w-32">Deadline:</span>
-                    <span className="font-mono text-xl font-bold text-rose-400 underline decoration-rose-500/30 underline-offset-8 animate-blink inline-block">30 April, 2026</span>
+                    <span className="font-mono text-xl font-bold text-rose-400 underline decoration-rose-500/30 underline-offset-8 animate-blink inline-block">6 May, 2026</span>
                   </div>
                 </div>
               </div>

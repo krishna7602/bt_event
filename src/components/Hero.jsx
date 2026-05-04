@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import logo from '../assets/logo.png';
 import syngientLogo from '../assets/sponsors/syngient.svg';
+import agmatelKeysightLogo from '../assets/sponsors/agmatel_keysight.png';
 import track1Img from '../assets/track_1_renewable.png';
 import track2Img from '../assets/track_2_smartgrids.png';
 import track3Img from '../assets/track_3_multienergy.png';
@@ -79,7 +80,7 @@ const Hero = () => {
                         Hybrid Mode
                       </span>
                       <span className="animate-blink inline-flex items-center px-3 py-1 bg-red-500/10 border border-red-500 rounded-full text-base md:text-2xl font-bold text-red-400 -translate-y-0.5">
-                        Paper Submission Deadline: 30 April, 2026
+                        Paper Submission Deadline: 6 May, 2026
                       </span>
                     </span>
                   </h1>
@@ -97,7 +98,7 @@ const Hero = () => {
                 <p className="text-lg font-semibold">
                   Date:{" "}
                   <span className="text-green-600">
-                    8-9 May, 2026
+                    12-13 June, 2026
                   </span>
                 </p>
               </div>
@@ -115,12 +116,21 @@ const Hero = () => {
                 <p className="text-green-400 text-4xl md:text-5xl font-bold leading-tight mb-3">
                   Sponsors
                 </p>
-                <div className="w-40 h-40 md:w-44 md:h-44 rounded-lg flex items-center justify-center p-2">
-                  <img
-                    src={syngientLogo}
-                    alt="Syngient"
-                    className="w-full h-full object-contain"
-                  />
+                <div className="flex flex-col gap-4 items-center">
+                  <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10">
+                    <img
+                      src={syngientLogo}
+                      alt="Syngient"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div className="w-40 h-24 md:w-44 md:h-28 rounded-lg flex items-center justify-center p-2 bg-white/5 backdrop-blur-sm border border-white/10">
+                    <img
+                      src={agmatelKeysightLogo}
+                      alt="Agmatel & Keysight"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

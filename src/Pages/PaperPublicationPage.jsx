@@ -4,17 +4,17 @@ const PaperPublication = () => {
   const publicationDates = [
     {
       event: "Paper Acceptance Date",
-      date: "2 May, 2026",
+      date: "20 May, 2026",
       status: "Notice",
     },
     {
       event: "Camera-Ready Submission",
-      date: "3 May, 2026",
+      date: "27 May, 2026",
       status: "Deadline",
     },
     {
       event: "Last Date of Registration",
-      date: "5 May, 2026",
+      date: "30 May, 2026",
       status: "Deadline",
     }
   ];

@@ -9,32 +9,38 @@ export default function ImportantDates() {
       highlight: false
     },
     {
-      event: "Paper Submission Deadline",
-      date: "30 April, 2026",
+      event: "Final Paper Submission Deadline",
+      date: "6 May, 2026",
       description: "Final deadline to submit research papers for review.",
       highlight: true
     },
     {
       event: "Paper Acceptance Date",
-      date: "2 May, 2026",
+      date: "20 May, 2026",
       description: "Authors will receive acceptance or rejection notifications.",
       highlight: false
     },
     {
       event: "Camera-Ready Submission",
-      date: "3 May, 2026",
+      date: "27 May, 2026",
       description: "Final versions of accepted papers must be submitted.",
       highlight: false
     },
     {
       event: "Last Date of Registration",
-      date: "5 May, 2026",
+      date: "30 May, 2026",
       description: "Final date for all participants to register for the conference.",
       highlight: false
     },
     {
+      event: "Registration with Late Fee",
+      date: "4 June, 2026",
+      description: "Registration with additional fee (Actual Fee + Rs 500/- late Fee).",
+      highlight: false
+    },
+    {
       event: "Conference Dates",
-      date: "8–9 May, 2026",
+      date: "12–13 June, 2026",
       description: "The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026.",
       highlight: false
     }
