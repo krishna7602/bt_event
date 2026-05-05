@@ -41,7 +41,7 @@ export default function ImportantDates() {
     {
       event: "Conference Dates",
       date: "12–13 June, 2026",
-      description: "The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026.",
+      description: "The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026. (Conference postponed due to some administrative reasons )",
       highlight: false
     }
   ];
