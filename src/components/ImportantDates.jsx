@@ -10,7 +10,7 @@ export default function ImportantDates() {
     },
     {
       event: "Final Paper Submission Deadline",
-      date: "6 May, 2026",
+      date: "9 May, 2026",
       description: "Final deadline to submit research papers for review.",
       highlight: true
     },
@@ -41,7 +41,14 @@ export default function ImportantDates() {
     {
       event: "Conference Dates",
       date: "12–13 June, 2026",
-      description: "The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026. (Conference postponed due to some administrative reasons)",
+      description: (
+        <>
+          The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026.{" "}
+          <span className="text-red-600 font-bold">
+            (Conference postponed due to some administrative reasons)
+          </span>
+        </>
+      ),
       highlight: false
     }
   ];
