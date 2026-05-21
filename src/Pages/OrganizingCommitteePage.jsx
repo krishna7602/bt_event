@@ -109,6 +109,18 @@ const OrganizingCommittee = () => {
         />
 
         {/* Patron */}
+        <CommitteeSection
+          title="Patron"
+          members={[
+            {
+              name: "Prof. Rohit Mehra",
+              designation: "Dean (R&C)",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              photo: rohitMehraPhoto,
+            },
+          ]}
+        />
+
         {/* Conference Chair */}
         <CommitteeSection
           title="Conference Chair"
@@ -118,19 +130,6 @@ const OrganizingCommittee = () => {
               designation: "HOD",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               photo: bsSainiPhoto,
-            },
-          ]}
-        />
-
-        {/* Patron */}
-        <CommitteeSection
-          title="Patron"
-          members={[
-            {
-              name: "Prof. Rohit Mehra",
-              designation: "Dean (R&C)",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              photo: rohitMehraPhoto,
             },
           ]}
         />
