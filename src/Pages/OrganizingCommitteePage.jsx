@@ -170,18 +170,12 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Supporting Staff Committee - added after Madan K. Das */}
+        {/* Supporting Staff Committee - contains all members listed after Dr. Madan K. Das */}
         <SimpleSection
           title="Supporting Staff Committee"
           members={[
             { name: "Mr. Subash" },
             { name: "Mrs. Neha" },
-          ]}
-        />
-
-        <SimpleSection
-          title="Organizing Committee Members"
-          members={[
             { name: "Ms. Navita" },
             { name: "Dr. Harimurugan" },
             { name: "Dr. Mohit Kumar" },
