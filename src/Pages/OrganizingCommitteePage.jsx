@@ -130,9 +130,9 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Conference Chair */}
+        {/* Conference Chair Person */}
         <CommitteeSection
-          title="Conference Chair"
+          title="Conference Chair Person"
           members={[
             {
               name: "Prof. B. S. Saini",
@@ -165,13 +165,12 @@ const OrganizingCommittee = () => {
         />
 
         {/* Organizing Committee Members */}
-        {/* Organizing Committee Members - all doctors/professors */}
+        {/* Organizing Committee Members - doctors (ordered to follow table) */}
         <SimpleSection
           title="Organizing Committee Members"
           members={[
             { name: "Dr. Gagandeep Singh Dua" },
             { name: "Dr. Mahesh Kumar (Secretary)" },
-            { name: "Dr. Debottam Mukherjee" },
             { name: "Dr. Kailash Chand Sharma (Secretary)" },
             { name: "Dr. Madan K. Das" },
             { name: "Dr. Harimurugan" },
@@ -180,27 +179,11 @@ const OrganizingCommittee = () => {
             { name: "Dr. B.N. Rao" },
             { name: "Dr. Arun Rathore" },
             { name: "Dr. Sounak Nandi" },
+            { name: "Dr. Debottam Mukherjee" },
           ]}
         />
 
-        {/* Supporting Staff Committee - non-doctor members */}
-        <SimpleSection
-          title="Supporting Staff Committee"
-          members={[
-            { name: "Ms. Priyanka Km." },
-            { name: "Mr. Rajat Goutam" },
-            { name: "Mr. Subash" },
-            { name: "Mrs. Neha" },
-            { name: "Ms. Navita" },
-            { name: "Mr. Nitish Kumar Sharma" },
-            { name: "Mr. Alim Mohammad" },
-            { name: "Mr. Sukhminder Singh" },
-            { name: "Mr. Pankaj Kumar Maurya" },
-            { name: "Ms. Sapna" },
-            { name: "Mr. Rajdeep Pandey" },
-            { name: "Mr. Vikas" },
-          ]}
-        />
+        {/* Supporting Staff Committee will be rendered below Hospitality Committee */}
 
         {/* Technical Advisory Committee */}
         <CommitteeSection
@@ -261,6 +244,25 @@ const OrganizingCommittee = () => {
             { name: "Dr. Mohit Kumar" },
             { name: "Mr. Pankaj Kumar Maurya" },
             { name: "Mr. Vikas Kumar" },
+          ]}
+        />
+
+        {/* Supporting Staff Committee - non-doctor members (placed below Hospitality Committee) */}
+        <SimpleSection
+          title="Supporting Staff Committee"
+          members={[
+            { name: "Ms. Priyanka Km." },
+            { name: "Mr. Rajat Goutam" },
+            { name: "Mr. Subash" },
+            { name: "Mrs. Neha" },
+            { name: "Ms. Navita" },
+            { name: "Mr. Nitish Kumar Sharma" },
+            { name: "Mr. Alim Mohammad" },
+            { name: "Mr. Sukhminder Singh" },
+            { name: "Mr. Pankaj Kumar Maurya" },
+            { name: "Ms. Sapna" },
+            { name: "Mr. Rajdeep Pandey" },
+            { name: "Mr. Vikas" },
           ]}
         />
 
