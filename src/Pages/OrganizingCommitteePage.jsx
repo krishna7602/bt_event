@@ -130,18 +130,7 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Conference Chair Person */}
-        <CommitteeSection
-          title="Conference Chair Person"
-          members={[
-            {
-              name: "Prof. B. S. Saini",
-              designation: "HOD",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              photo: bsSainiPhoto,
-            },
-          ]}
-        />
+        {/* Conference Chair Person removed — Prof. B. S. Saini is listed in Organizing Committee Members */}
 
         {/* Secretary / Organizing Chair */}
         <CommitteeSection
@@ -168,18 +157,19 @@ const OrganizingCommittee = () => {
         {/* Organizing Committee Members - doctors (ordered to follow table) */}
         <SimpleSection
           title="Organizing Committee Members"
+          columns={3}
           members={[
-            { name: "Dr. Gagandeep Singh Dua" },
+            { name: "Prof. B. S. Saini (HOD EE)" },
             { name: "Dr. Mahesh Kumar (Secretary)" },
             { name: "Dr. Kailash Chand Sharma (Secretary)" },
-            { name: "Dr. Madan K. Das" },
             { name: "Dr. Harimurugan" },
-            { name: "Dr. Mohit Kumar" },
             { name: "Dr. P. Ramakrishna" },
             { name: "Dr. B.N. Rao" },
             { name: "Dr. Arun Rathore" },
             { name: "Dr. Sounak Nandi" },
+            { name: "Dr. Gagandeep Singh Dua" },
             { name: "Dr. Debottam Mukherjee" },
+            { name: "Dr. Madan K. Das" },
           ]}
         />
 
@@ -247,21 +237,23 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Supporting Staff Committee - non-doctor members (placed below Hospitality Committee) */}
+        {/* Supporting Staff Committee - ordered as requested */}
         <SimpleSection
           title="Supporting Staff Committee"
+          columns={3}
           members={[
-            { name: "Ms. Priyanka Km." },
-            { name: "Mr. Rajat Goutam" },
-            { name: "Mr. Subash" },
-            { name: "Mrs. Neha" },
-            { name: "Ms. Navita" },
-            { name: "Mr. Nitish Kumar Sharma" },
+            { name: "Dr. Mohit Kumar" },
             { name: "Mr. Alim Mohammad" },
             { name: "Mr. Sukhminder Singh" },
             { name: "Mr. Pankaj Kumar Maurya" },
-            { name: "Ms. Sapna" },
+            { name: "Mr. Subash" },
             { name: "Mr. Rajdeep Pandey" },
+            { name: "Ms. Priyanka Km." },
+            { name: "Mr. Rajat Goutam" },
+            { name: "Ms. Navita" },
+            { name: "Mr. Nitish Kumar Sharma" },
+            { name: "Ms. Sapna" },
+            { name: "Mrs. Neha" },
             { name: "Mr. Vikas" },
           ]}
         />
