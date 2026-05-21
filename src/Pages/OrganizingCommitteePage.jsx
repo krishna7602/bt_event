@@ -109,6 +109,20 @@ const OrganizingCommittee = () => {
         />
 
         {/* Patron */}
+        {/* Conference Chair */}
+        <CommitteeSection
+          title="Conference Chair"
+          members={[
+            {
+              name: "Prof. B. S. Saini",
+              designation: "HOD",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              photo: bsSainiPhoto,
+            },
+          ]}
+        />
+
+        {/* Patron */}
         <CommitteeSection
           title="Patron"
           members={[
@@ -117,12 +131,6 @@ const OrganizingCommittee = () => {
               designation: "Dean (R&C)",
               institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
               photo: rohitMehraPhoto,
-            },
-            {
-              name: "Prof. B. S. Saini",
-              designation: "HOD",
-              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
-              photo: bsSainiPhoto,
             },
           ]}
         />
@@ -149,10 +157,10 @@ const OrganizingCommittee = () => {
         />
 
         {/* Organizing Committee Members */}
+        {/* Organizing Committee Members (split to insert Supporting Staff Committee after Madan K. Das) */}
         <SimpleSection
           title="Organizing Committee Members"
           members={[
-            { name: "Prof. B.S. Saini (HOD EE)" },
             { name: "Dr. Gagandeep Singh Dua" },
             { name: "Ms. Priyanka Km." },
             { name: "Dr. Mahesh Kumar (Secretary)" },
@@ -160,16 +168,29 @@ const OrganizingCommittee = () => {
             { name: "Mr. Rajat Goutam" },
             { name: "Dr. Kailash Chand Sharma (Secretary)" },
             { name: "Dr. Madan K. Das" },
+          ]}
+        />
+
+        {/* Supporting Staff Committee - added after Madan K. Das */}
+        <SimpleSection
+          title="Supporting Staff Committee"
+          members={[
+            { name: "Mr. Subash" },
+            { name: "Mrs. Neha" },
+          ]}
+        />
+
+        <SimpleSection
+          title="Organizing Committee Members"
+          members={[
             { name: "Ms. Navita" },
             { name: "Dr. Harimurugan" },
             { name: "Dr. Mohit Kumar" },
             { name: "Mr. Nitish Kumar Sharma" },
             { name: "Dr. P. Ramakrishna" },
             { name: "Mr. Alim Mohammad" },
-            { name: "Mr. Mridul" },
             { name: "Dr. B.N. Rao" },
             { name: "Mr. Sukhminder Singh" },
-            { name: "Ms. Prakriti" },
             { name: "Dr. Arun Rathore" },
             { name: "Mr. Pankaj Kumar Maurya" },
             { name: "Ms. Sapna" },

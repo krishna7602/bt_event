@@ -13,8 +13,6 @@ const PaperReviewCommittee = () => {
     { name: "Mr. Devidas" },
     { name: "Mr. Rajat Goutam" },
     { name: "Ms. Priyanka Km." },
-    { name: "Mr. Mridul" },
-    { name: "Ms. Prakriti" },
     { name: "Mr. Nitish Kumar Sharma" },
     { name: "Mr. Manish" },
   ];
