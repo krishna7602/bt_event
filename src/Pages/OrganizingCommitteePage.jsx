@@ -62,16 +62,25 @@ const CommitteeSection = ({ title, members }) => {
   );
 };
 
-/* Simple Name-Only Grid Section */
-const SimpleSection = ({ title, members }) => {
+/* Simple Name-Only Grid Section (supports column-wise flow) */
+const SimpleSection = ({ title, members, columns = 3 }) => {
   return (
     <section className="mb-14">
       <h3 className="text-2xl font-bold text-gray-800 mb-6 border-l-4 border-blue-600 pl-3">
         {title}
       </h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      {/* Use CSS columns so items flow top-to-bottom within each column */}
+      <div
+        className="bg-transparent"
+        style={{ columnCount: columns, columnGap: '1rem' }}
+      >
         {members.map((member, index) => (
-          <div key={index} className="bg-white shadow-sm rounded-lg p-4 hover:shadow-md transition">
+          <div
+            key={index}
+            style={{ breakInside: 'avoid', WebkitColumnBreakInside: 'avoid' }}
+            className="bg-white shadow-sm rounded-lg p-4 hover:shadow-md transition mb-4"
+          >
             <p className="font-semibold text-gray-800">{member.name}</p>
             {member.role && <p className="text-sm text-blue-600">{member.role}</p>}
             {member.email && (
@@ -156,38 +165,38 @@ const OrganizingCommittee = () => {
         />
 
         {/* Organizing Committee Members */}
-        {/* Organizing Committee Members (split to insert Supporting Staff Committee after Madan K. Das) */}
+        {/* Organizing Committee Members - all doctors/professors */}
         <SimpleSection
           title="Organizing Committee Members"
           members={[
             { name: "Dr. Gagandeep Singh Dua" },
-            { name: "Ms. Priyanka Km." },
             { name: "Dr. Mahesh Kumar (Secretary)" },
             { name: "Dr. Debottam Mukherjee" },
-            { name: "Mr. Rajat Goutam" },
             { name: "Dr. Kailash Chand Sharma (Secretary)" },
             { name: "Dr. Madan K. Das" },
+            { name: "Dr. Harimurugan" },
+            { name: "Dr. Mohit Kumar" },
+            { name: "Dr. P. Ramakrishna" },
+            { name: "Dr. B.N. Rao" },
+            { name: "Dr. Arun Rathore" },
+            { name: "Dr. Sounak Nandi" },
           ]}
         />
 
-        {/* Supporting Staff Committee - contains all members listed after Dr. Madan K. Das */}
+        {/* Supporting Staff Committee - non-doctor members */}
         <SimpleSection
           title="Supporting Staff Committee"
           members={[
+            { name: "Ms. Priyanka Km." },
+            { name: "Mr. Rajat Goutam" },
             { name: "Mr. Subash" },
             { name: "Mrs. Neha" },
             { name: "Ms. Navita" },
-            { name: "Dr. Harimurugan" },
-            { name: "Dr. Mohit Kumar" },
             { name: "Mr. Nitish Kumar Sharma" },
-            { name: "Dr. P. Ramakrishna" },
             { name: "Mr. Alim Mohammad" },
-            { name: "Dr. B.N. Rao" },
             { name: "Mr. Sukhminder Singh" },
-            { name: "Dr. Arun Rathore" },
             { name: "Mr. Pankaj Kumar Maurya" },
             { name: "Ms. Sapna" },
-            { name: "Dr. Sounak Nandi" },
             { name: "Mr. Rajdeep Pandey" },
             { name: "Mr. Vikas" },
           ]}
