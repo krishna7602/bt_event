@@ -130,7 +130,18 @@ const OrganizingCommittee = () => {
           ]}
         />
 
-        {/* Conference Chair Person removed — Prof. B. S. Saini is listed in Organizing Committee Members */}
+        {/* Conference Chair Person */}
+        <CommitteeSection
+          title="Conference Chair Person"
+          members={[
+            {
+              name: "Prof. B. S. Saini",
+              designation: "HOD",
+              institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+              photo: bsSainiPhoto,
+            },
+          ]}
+        />
 
         {/* Secretary / Organizing Chair */}
         <CommitteeSection
@@ -159,7 +170,6 @@ const OrganizingCommittee = () => {
           title="Organizing Committee Members"
           columns={3}
           members={[
-            { name: "Prof. B. S. Saini (HOD EE)" },
             { name: "Dr. Mahesh Kumar (Secretary)" },
             { name: "Dr. Kailash Chand Sharma (Secretary)" },
             { name: "Dr. Harimurugan" },
