@@ -238,6 +238,7 @@ const OrganizingCommittee = () => {
         <SimpleSection
           title="Hospitality Committee"
           members={[
+            { name: "Dr. Mahesh Kumar" },
             { name: "Dr. Kailash Chand Sharma" },
             { name: "Mr. Sukhminder Singh" },
             { name: "Mr. Mohammed Alim" },
