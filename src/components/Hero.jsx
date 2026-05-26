@@ -109,6 +109,16 @@ const Hero = () => {
                 organizations to shape sustainable, low-carbon, and resilient
                 energy systems for the future.
               </p>
+              <div className="mt-6">
+                <a
+                  href="https://drive.google.com/file/d/19TAHeOvzk62uHBwAUG6Y2-CZ0rd5AWn1/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition"
+                >
+                  See Brochure
+                </a>
+              </div>
             </div>
 
             <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
