@@ -170,7 +170,7 @@ const RegistrationPage = () => {
 
         {/* Notes */}
         <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-5 mb-12 space-y-2 text-gray-700 text-sm">
-          <p>• <strong>18% GST</strong> need to pay for Indian delegates (other than NITJ Participants).</p>
+          <p><span className="text-red-600 font-extrabold">• 18% GST need to pay for Indian delegates (other than NITJ Participants).</span></p>
           <p>• The above fee includes all the instructional materials, internet facility and refreshments. The boarding and lodging will be provided on payment basis subjected to availability.</p>
         </div>
 
