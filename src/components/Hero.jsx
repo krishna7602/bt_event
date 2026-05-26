@@ -154,6 +154,84 @@ const Hero = () => {
         </div>
       </div>
 
+      {/* REGISTRATION FEE TABLE (copied from RegistrationPage) */}
+      <div id="fees" className="w-full px-4 md:px-8 lg:px-12 py-12">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 mb-8">
+          <div className="bg-blue-900 py-6 px-8">
+            <h3 className="text-2xl font-bold text-white">Registration Fee Structure</h3>
+          </div>
+
+          <div className="overflow-x-auto p-6">
+            <table className="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr className="bg-gray-100 text-gray-800 text-center font-bold">
+                  <th className="px-5 py-4 text-left border border-gray-200" rowSpan="2">Category</th>
+                  <th className="px-5 py-3 border border-gray-200" colSpan="2">Online Participants</th>
+                  <th className="px-5 py-3 border border-gray-200" colSpan="2">Offline Participants</th>
+                </tr>
+                <tr className="bg-gray-200 text-gray-600 text-center text-xs uppercase font-bold">
+                  <th className="px-5 py-2 border border-gray-200">1st Paper</th>
+                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
+                  <th className="px-5 py-2 border border-gray-200">1st Paper</th>
+                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-700">
+                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Students (from NITJ)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                </tr>
+                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Students (Other than NITJ)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2000 /- + GST<br/><span className="text-xs text-gray-500">=2360</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd Paper Free)</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /- + GST<br/><span className="text-xs text-gray-500">=2950</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd paper Free)</span></td>
+                </tr>
+                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (from NITJ)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /-</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /-</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                </tr>
+                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (Other than NITJ)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3000 /- + GST<br/><span className="text-xs text-gray-500">=3540</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
+                </tr>
+                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Industrial Persons</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 4500 /- + GST<br/><span className="text-xs text-gray-500">=5310</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
+                </tr>
+                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Students (International)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 100</td>
+                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                </tr>
+                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
+                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (International)</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 100</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 125</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
       {/* IMAGE CAROUSEL */}
       <div id="tracks" className="w-full px-4 md:px-8 lg:px-12 py-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
