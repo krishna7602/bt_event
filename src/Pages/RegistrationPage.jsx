@@ -123,10 +123,10 @@ const RegistrationPage = () => {
                 </tr>
                 <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
                   <td className="px-5 py-4 font-medium border border-gray-200">Students (Other than NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2000 /- + GST</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /- + GST</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2000 /- + GST<br/><span className="text-xs text-gray-500">=2360</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd Paper Free)</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /- + GST<br/><span className="text-xs text-gray-500">=2950</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd paper Free)</span></td>
                 </tr>
                 <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
                   <td className="px-5 py-4 font-medium border border-gray-200">Faculties (from NITJ)</td>
@@ -137,17 +137,17 @@ const RegistrationPage = () => {
                 </tr>
                 <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
                   <td className="px-5 py-4 font-medium border border-gray-200">Faculties (Other than NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3000 /- + GST</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /-</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /-</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3000 /- + GST<br/><span className="text-xs text-gray-500">=3540</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
                 </tr>
                 <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
                   <td className="px-5 py-4 font-medium border border-gray-200">Industrial Persons</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 4500 /- + GST</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 4500 /- + GST<br/><span className="text-xs text-gray-500">=5310</span></td>
+                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
                 </tr>
                 <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
                   <td className="px-5 py-4 font-medium border border-gray-200">Students (International)</td>
