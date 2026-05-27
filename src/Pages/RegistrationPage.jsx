@@ -108,9 +108,9 @@ const RegistrationPage = () => {
                 </tr>
                 <tr className="bg-gray-200 text-gray-600 text-center text-xs uppercase font-bold">
                   <th className="px-5 py-2 border border-gray-200">1st Paper</th>
-                  <th className="px-5 py-2 border border-gray-200">2nd Paper</th>
+                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
                   <th className="px-5 py-2 border border-gray-200">1st Paper</th>
-                  <th className="px-5 py-2 border border-gray-200">2nd Paper</th>
+                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
                 </tr>
               </thead>
               <tbody className="text-gray-700">
