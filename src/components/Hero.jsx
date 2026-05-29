@@ -156,6 +156,15 @@ const Hero = () => {
 
       {/* REGISTRATION FEE TABLE (copied from RegistrationPage) */}
       <div id="fees" className="w-full px-4 md:px-8 lg:px-12 py-12">
+        <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50/90 p-5 shadow-sm">
+          <p className="text-sm md:text-base leading-7 text-gray-800">
+            <span className="font-bold text-gray-900">Important:</span>{" "}
+            The organizing committee has decided to reduce the Registration Fee
+            (<span className="font-bold bg-amber-200 px-1.5 py-0.5 rounded">Rs 500 + GST (18%) = Rs 590/-</span>)
+            <span className="font-bold bg-yellow-200 px-1.5 py-0.5 rounded"> only for B.Tech students</span>.
+            In this case, it is <span className="font-bold bg-amber-200 px-1.5 py-0.5 rounded">mandatory</span> that first author should be B.Tech student, and the registration &amp; presentation should be done only by the same B.Tech student. At the time of registration, the B.Tech students have to upload their id card (as a proof of students) along with payment slip in a single pdf file.
+          </p>
+        </div>
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 mb-8">
           <div className="bg-blue-900 py-6 px-8">
             <h3 className="text-2xl font-bold text-white">Registration Fee Structure</h3>
