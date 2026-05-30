@@ -60,7 +60,7 @@ const RegistrationPage = () => {
                 <strong>Full Paper:</strong> After the conference, a link will be sent to participants for submission of full-length papers.
               </p>
               <p>
-                <strong>Publishing Fee:</strong> If accepted for publication after peer-review, authors may be required to pay a publishing fee as per the publisher's policy.
+                <strong>Registration Fee:</strong>  The registration fee covers conference participation, paper presentation, and publication of accepted papers.
               </p>
             </div>
           </div>
