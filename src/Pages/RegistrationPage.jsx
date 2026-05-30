@@ -84,10 +84,10 @@ const RegistrationPage = () => {
                 <span className="text-green-600 font-bold">✔</span>
                 <span><strong>Student Status:</strong> Student registrations are valid only if the first author is a full-time student.</span>
               </li>
-              <li className="flex gap-3">
+              {/* <li className="flex gap-3">
                 <span className="text-green-600 font-bold">✔</span>
                 <span><strong>Publication:</strong> Fee covers registration only; publication charges are separate.</span>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
