@@ -28,13 +28,13 @@ export default function ImportantDates() {
     },
     {
       event: "Last Date of Registration",
-      date: "30 May, 2026",
+      date: "3 June, 2026",
       description: "Final date for all participants to register for the conference.",
       highlight: false
     },
     {
       event: "Registration with Late Fee",
-      date: "4 June, 2026",
+      date: "6 June, 2026",
       description: "Registration with additional fee (Actual Fee + Rs 500/- late Fee).",
       highlight: false
     },
