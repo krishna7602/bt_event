@@ -184,7 +184,10 @@ const RegistrationPage = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-12 text-white shadow-2xl">
+        <div
+          className="text-center rounded-2xl p-12 text-white shadow-2xl"
+          style={{ backgroundImage: "linear-gradient(to right, rgb(37 99 235), rgb(67 56 202))" }}
+        >
           <h3 className="text-3xl font-bold mb-4">Complete Your Registration</h3>
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
             After making the payment through the official portal, please submit your details via the Google Form to confirm your registration.

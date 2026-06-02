@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ManagedPage from "./components/ManagedPage";
+import HomePage from "./components/HomePage";
 
 // Home Sections
 import Hero from "./components/Hero";
@@ -27,6 +29,7 @@ import Contact from "./components/Contact";
 import PaperReviewCommittee from "./Pages/PaperReviewCommittee";
 import ObjectivesConference from "./Pages/ObjectivesConference";
 import ResearchAreaTracksPage from "./Pages/ResearchAreaTracksPage";
+import AdminDashboardPage from "./Pages/AdminDashboardPage";
 
 export default function App() {
   return (
@@ -38,54 +41,52 @@ export default function App() {
         <Route
           path="/"
           element={
-            <>
-              <Hero />
-              <About />
-              <ImportantDates />
-            </>
+            <ManagedPage pageKey="home" fallback={HomePage} />
           }
         />
 
         {/* ABOUT */}
-        <Route path="/about-nit-jalandhar" element={<AboutNITJ />} />
-        <Route path="/objectives-conference" element={<ObjectivesConference />} />
-        <Route path="/organizing-committee" element={<OrganizingCommittee />} />
+        <Route path="/about-nit-jalandhar" element={<ManagedPage pageKey="about-nit-jalandhar" fallback={AboutNITJ} />} />
+        <Route path="/objectives-conference" element={<ManagedPage pageKey="objectives-conference" fallback={ObjectivesConference} />} />
+        <Route path="/organizing-committee" element={<ManagedPage pageKey="organizing-committee" fallback={OrganizingCommittee} />} />
         <Route
           path="/technical-programme-committee"
-          element={<TechnicalProgrammeCommittee />}
+          element={<ManagedPage pageKey="technical-programme-committee" fallback={TechnicalProgrammeCommittee} />}
         />
         <Route
           path="/paper-review-committee"
-          element={<PaperReviewCommittee />}
+          element={<ManagedPage pageKey="paper-review-committee" fallback={PaperReviewCommittee} />}
         />
         <Route
           path="/research-area-tracks"
-          element={<ResearchAreaTracksPage />}
+          element={<ManagedPage pageKey="research-area-tracks" fallback={ResearchAreaTracksPage} />}
         />
 
         {/* FACILITIES */}
-        <Route path="/accommodation" element={<Accommodation />} />
-        <Route path="/gallery" element={<PhotoGallery />} />
-        <Route path="/venue" element={<Venue />} />
+        <Route path="/accommodation" element={<ManagedPage pageKey="accommodation" fallback={Accommodation} />} />
+        <Route path="/gallery" element={<ManagedPage pageKey="gallery" fallback={PhotoGallery} />} />
+        <Route path="/venue" element={<ManagedPage pageKey="venue" fallback={Venue} />} />
 
         {/* AUTHORS */}
-        <Route path="/guidelines" element={<GuidelinesToAuthors />} />
-        <Route path="/paper-submission" element={<PaperSubmission />} />
-        <Route path="/publication" element={<PaperPublication />} />
-        <Route path="/best-student-award" element={<BestStudentAward />} />
+        <Route path="/guidelines" element={<ManagedPage pageKey="guidelines" fallback={GuidelinesToAuthors} />} />
+        <Route path="/paper-submission" element={<ManagedPage pageKey="paper-submission" fallback={PaperSubmission} />} />
+        <Route path="/publication" element={<ManagedPage pageKey="publication" fallback={PaperPublication} />} />
+        <Route path="/best-student-award" element={<ManagedPage pageKey="best-student-award" fallback={BestStudentAward} />} />
 
 
         {/* PROGRAMS */}
-        <Route path="/speakers" element={<KeynoteSpeakers />} />
-        <Route path="/tours" element={<Tours />} />
+        <Route path="/speakers" element={<ManagedPage pageKey="speakers" fallback={KeynoteSpeakers} />} />
+        <Route path="/tours" element={<ManagedPage pageKey="tours" fallback={Tours} />} />
 
 
 
         {/* REGISTRATION */}
-        <Route path="/registration" element={<RegistrationPage />} />
+        <Route path="/registration" element={<ManagedPage pageKey="registration" fallback={RegistrationPage} />} />
 
         {/* CONTACT */}
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ManagedPage pageKey="contact" fallback={Contact} />} />
+
+        <Route path="/admin" element={<AdminDashboardPage />} />
       </Routes>
 
       <Footer />

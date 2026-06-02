@@ -1,16 +1,30 @@
-# React + Vite
+# BT Event Conference Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo is now split into a React frontend and an Express/MongoDB backend.
 
-Currently, two official plugins are available:
+## Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The Vite app is the frontend. It reads site content from the backend config API and exposes an admin dashboard at `/admin`.
 
-## React Compiler
+Run it with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Backend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The backend lives in `backend/` and serves the site config API on port `5000`.
+
+Run it with:
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+## Admin
+
+Open `/admin`, enter the admin token, and update the conference content. The default token is `admin123` unless you override `ADMIN_PASSWORD` in the backend environment.

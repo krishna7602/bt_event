@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend": "npm --prefix backend run dev",
+    "backend:start": "npm --prefix backend start"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
