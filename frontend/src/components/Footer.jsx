@@ -13,7 +13,7 @@ const Footer = () => {
     { name: "Home", path: "/" },
     { name: "About the Conference", path: "/about-nit-jalandhar" },
     { name: "Objectives", path: "/objectives-conference" },
-    { name: "Conference Tracks", path: "/research-area-tracks" },
+    { name: "Thematic Areas", path: "/thematic-areas" },
     { name: "Registration", path: "/registration" }
   ];
 
@@ -33,20 +33,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* About Conference */}
           <div>
-            <div 
-              className="flex items-center gap-3 mb-4 cursor-pointer" 
+            <div
+              className="flex items-center gap-3 mb-4 cursor-pointer"
               onClick={() => handleNavClick('/')}
             >
-              <img src={logo} alt="NZES-2026 Logo" className="w-10 h-10 object-contain" />
+              <img src={logo} alt="RICE-WVES 2026 Logo" className="w-10 h-10 object-contain" />
               <h3 className="text-2xl font-bold bg-linear-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                NZES-2026
+                RICE-WVES 2026
               </h3>
             </div>
             <p className="text-gray-400 mb-4">
-              National Conference on Net-Zero Energy Systems Hybrid Mode
+              DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)
             </p>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Organized by the Department of Electrical Engineering<br />
+              Organized by the Department of Biotechnology<br />
               Dr. B. R. Ambedkar National Institute of Technology, Jalandhar<br />
               Punjab, India
             </p>
@@ -99,9 +99,9 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
-              <p>© 2026 National Conference on Net-Zero Energy Systems Hybrid Mode. All rights reserved.</p>
+              <p>© 2026 RICE-WVES. All rights reserved.</p>
               <p className="mt-2 text-gray-500 italic">
-                Developed and maintained by <a href="https://www.linkedin.com/in/ramkrishna-mondal-b73b09294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Ramkrishna Mondal</a> and <a href="https://www.linkedin.com/in/rajat-goutam-487a88219?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Rajat Goutam</a>
+                Developed and maintained by <a href="https://www.linkedin.com/in/ramkrishna-mondal-b73b09294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Ramkrishna Mondal</a>
               </p>
             </div>
 

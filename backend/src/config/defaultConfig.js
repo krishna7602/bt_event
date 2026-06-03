@@ -1,29 +1,27 @@
 export const defaultConfig = {
   site: {
-    title: "NZES-2026",
-    description: "National Conference on Net-Zero Energy Systems",
-    logoText: "NZES-2026",
-    brochureUrl:
-      "https://drive.google.com/file/d/19leP5fZNvffpoh4vYWtWSn7UOALJ7UHG/view?usp=sharing",
+    title: "RICE-WVES 2026",
+    description: "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
+    logoText: "RICE-WVES 2026",
+    brochureUrl: "https://www.ricewves.in",
   },
   navigation: {
-    brand: "NZES-2026",
+    brand: "RICE-WVES 2026",
     adminLabel: "Admin",
     items: [],
   },
   hero: {
-    titlePrefix: "National Conference on",
-    titleHighlight: "Net-Zero Energy Systems",
-    badge: "Hybrid Mode",
+    titlePrefix: "DBT-CTEP Sponsored National Conference on",
+    titleHighlight: "Circular Economy for Waste Valorization",
+    badge: "October 29-31, 2026",
     description:
-      "Advancing renewable energy, smart grids, energy storage, hydrogen technologies, and policy frameworks to support India’s Net-Zero 2070 vision.",
-    dateLabel: "Date",
-    dateValue: "12-13 June, 2026",
-    notice: "(Conference postponed due to some administrative reasons)",
+      "Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES) — bringing together researchers, industry, and policymakers to discuss waste valorization, circular economy, and green technologies.",
+    dateLabel: "Conference Dates",
+    dateValue: "October 29-31, 2026",
+    notice: null,
     tagline:
-      "Bringing together academia, industry, policymakers, and research organizations to shape sustainable, low-carbon, and resilient energy systems for the future.",
-    brochureUrl:
-      "https://drive.google.com/file/d/19leP5fZNvffpoh4vYWtWSn7UOALJ7UHG/view?usp=sharing",
+      "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts, oral and poster presentations welcome across thematic areas focused on waste valorization and environmental sustainability.",
+    brochureUrl: "https://www.ricewves.in",
     carouselImages: [],
     sponsors: [],
   },
@@ -42,17 +40,36 @@ export const defaultConfig = {
     heading: "Contact Us",
     description: "",
     locationHtml: "",
-    email: "nzes2026@nitj.ac.in",
+    email: "ricewves@nitj.ac.in",
     call: "",
   },
   footer: {
-    conferenceName: "National Conference on Net-Zero Energy Systems Hybrid Mode",
+    conferenceName: "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
     institutionLine:
-      "Organized by the Department of Electrical Engineering Dr. B. R. Ambedkar National Institute of Technology, Jalandhar Punjab, India",
-    copyright:
-      "© 2026 National Conference on Net-Zero Energy Systems Hybrid Mode. All rights reserved.",
+      "Organized by the Department of Biotechnology, Dr. B. R. Ambedkar National Institute of Technology, Jalandhar, Punjab, India",
+    copyright: "© 2026 RICE-WVES. All rights reserved.",
     hostNote: "Hosted by an Institute of National Importance",
     developerCredits: [],
   },
   pages: {},
+  keynoteSpeakers: [
+    {
+      name: "Dr. Lorem Ipsum",
+      institute: "IIT EXAMPLE",
+      designation: "Associate Professor",
+      department: "Department of Biotechnology",
+      photo: "https://placehold.co/400x400?text=Speaker+1",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      link: ""
+    },
+    {
+      name: "Dr. Consectetur Adipiscing",
+      institute: "NIT EXAMPLE",
+      designation: "Assistant Professor",
+      department: "Department of Environmental Sciences",
+      photo: "https://placehold.co/400x400?text=Speaker+2",
+      bio: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.",
+      link: ""
+    }
+  ],
 };

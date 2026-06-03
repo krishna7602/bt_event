@@ -5,20 +5,18 @@ import track1Img from "../assets/track_1_renewable.png";
 import track2Img from "../assets/track_2_smartgrids.png";
 import track3Img from "../assets/track_3_multienergy.png";
 import track4Img from "../assets/track_4_policy.png";
-import track5Img from "../assets/track_5_intelligent.png";
-import track6Img from "../assets/track_6_ev.jpg";
 
 export const defaultSiteConfig = {
   site: {
-    title: "NZES-2026",
-    description: "National Conference on Net-Zero Energy Systems",
-    logoText: "NZES-2026",
-    brochureUrl:
-      "https://drive.google.com/file/d/19leP5fZNvffpoh4vYWtWSn7UOALJ7UHG/view?usp=sharing",
+    title: "RICE-WVES 2026",
+    description:
+      "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
+    logoText: "RICE-WVES 2026",
+    brochureUrl: "https://www.ricewves.in",
     logoUrl: logo,
   },
   navigation: {
-    brand: "NZES-2026",
+    brand: "RICE-WVES 2026",
     adminLabel: "Admin",
     items: [
       { name: "Home", path: "/" },
@@ -28,9 +26,7 @@ export const defaultSiteConfig = {
           { name: "Objectives of the Conference", path: "/objectives-conference" },
           { name: "About NIT Jalandhar", path: "/about-nit-jalandhar" },
           { name: "Organizing Committee", path: "/organizing-committee" },
-          { name: "Technical Programme Committee", path: "/technical-programme-committee" },
-          { name: "Paper Review Committee", path: "/paper-review-committee" },
-          { name: "Research Area Tracks", path: "/research-area-tracks" },
+          { name: "Thematic Areas", path: "/thematic-areas" },
           { name: "Venue and Travels", path: "/venue" },
           { name: "Accommodations", path: "/accommodation" },
           { name: "Photo Gallery", path: "/gallery" },
@@ -57,92 +53,82 @@ export const defaultSiteConfig = {
     ],
   },
   hero: {
-    titlePrefix: "National Conference on",
-    titleHighlight: "Net-Zero Energy Systems",
-    badge: "Hybrid Mode",
+    titlePrefix: "DBT-CTEP Sponsored National Conference on",
+    titleHighlight: "Circular Economy for Waste Valorization",
+    badge: "October 29-31, 2026",
     description:
-      "Advancing renewable energy, smart grids, energy storage, hydrogen technologies, and policy frameworks to support India’s Net-Zero 2070 vision.",
-    dateLabel: "Date",
-    dateValue: "12-13 June, 2026",
-    notice: "(Conference postponed due to some administrative reasons)",
+      "Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES) — bringing together researchers, industry, and policymakers to discuss waste valorization, circular economy, and green technologies.",
+    dateLabel: "Conference Dates",
+    dateValue: "October 29-31, 2026",
+    notice: null,
     tagline:
-      "Bringing together academia, industry, policymakers, and research organizations to shape sustainable, low-carbon, and resilient energy systems for the future.",
-    brochureUrl:
-      "https://drive.google.com/file/d/19leP5fZNvffpoh4vYWtWSn7UOALJ7UHG/view?usp=sharing",
+      "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts, oral and poster presentations welcome across thematic areas focused on waste valorization and environmental sustainability.",
+    brochureUrl: "https://www.ricewves.in",
     carouselImages: [
-      { url: track1Img, caption: "Track 1: Renewable Energy and Storage Systems" },
-      { url: track2Img, caption: "Track 2: Smart Grids, Digital Energy Platforms and Microgrids" },
-      { url: track3Img, caption: "Track 3: Multi-Energy Systems and Net-Zero Integration" },
-      { url: track4Img, caption: "Track 4: Energy Policy, Markets, and Regulatory Frameworks" },
-      { url: track5Img, caption: "Track 5: Intelligent Systems and Optimization for Net-Zero Energy Systems Hybrid Mode" },
-      { url: track6Img, caption: "Track 6: Electric Vehicles and E-Mobility Systems" },
+      { url: track1Img, caption: "Waste Valorization and Bio-based Materials" },
+      { url: track2Img, caption: "Water, Wastewater and Sludge Management" },
+      { url: track3Img, caption: "Bioeconomy and Biorefinery Approaches" },
+      { url: track4Img, caption: "Emerging Technologies for Circular Economy" },
     ],
-    sponsors: [
-      { name: "Syngient", imageUrl: syngientLogo },
-      { name: "Agmatel & Keysight", imageUrl: agmatelKeysightLogo },
-    ],
+    sponsors: [],
   },
   about: {
     conferenceHtml:
-      "<p>The global push toward decarbonization has accelerated the transition from conventional fossil-fuel-based energy systems to sustainable, low-carbon, and ultimately net-zero energy solutions. India's commitments under the Paris Agreement and the target of achieving net-zero emissions by 2070 call for transformative innovation, policy reforms, and strategic collaborations. In this context, the Department of Electrical Engineering proposes to organize a <strong>National Conference on \"Net-Zero Energy Systems Hybrid Mode, 2026\"</strong>, bringing together academia, industry, policymakers, and research organizations to discuss the latest advancements and emerging pathways in clean energy technologies.</p>",
+      `<p>The <strong>DBT-CTEP-sponsored National Conference on “Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability” (RICE-WVES)</strong> is a major event scheduled to be held at NIT Jalandhar, India, bringing together researchers, academicians, industry professionals, and innovators to exchange ideas and advancements in the environmental sustainability domain. The conference aims to foster interdisciplinary dialogue and collaboration in the evolving fields of waste valorization, circular economy, biological waste treatment, wastewater treatment and resource recovery. The conference will include plenary talks, technical paper and poster presentations, and interactive sessions. It will provide an enriching experience for young researchers, faculty, and students by offering insights into various aspects of environmental sustainability aligned with the Sustainable Development Goals (SDGs). The organizing committee welcomes original research contributions that address real-world challenges and innovative solutions in the given thematic and allied areas.</p>`,
     objectives: [
-      "To provide a platform for researchers, scientists, and industry experts to present innovations in net-zero energy technologies.",
-      "To discuss challenges, policy frameworks, and future research directions required for India’s energy transition.",
-      "To encourage collaboration between academic institutions and industry stakeholders in sustainable energy domains.",
-      "To showcase emerging technologies in renewable energy, energy storage, smart grids, hydrogen systems, and carbon-neutral infrastructures.",
-      "To promote interdisciplinary learning and capacity-building among students, research scholars, and professionals.",
+      "To provide a platform for researchers, scientists, and industry experts to present innovations in waste valorization and circular economy.",
+      "To promote technologies for resource recovery, bioeconomy, and sustainable waste management.",
+      "To encourage interdisciplinary collaboration between academia, industry, and policymakers.",
+      "To support capacity building for students, research scholars, and professionals in environmental sustainability.",
     ],
     whoCanAttendHtml:
       "Faculty members from colleges, universities, and technical institutes, students (UG/PG), research scholars, and industry professionals working in related fields are allowed to participate.",
     instituteHtml:
-      "Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31 NITs established by Ministry of Education (earlier MHRD), Govt. of India. The Institute came into existence in the year 1987 (earlier Regional Engineering College, Jalandhar) and obtained the status \"Institute of National Importance\" by Act of Parliament 2007. The institute is offering B.Tech., M.Sc., M.Tech., and Ph.D. programmes in various disciplines such as Biotechnology, Chemical Engineering, Civil Engineering, Computer Science and Engineering, Electrical Engineering, Electronics and Communication Engineering, Industrial and Production Engineering, Information Technology, Instrumentation and Control Engineering, Mechanical Engineering, Textile Technology, <em>etc.</em> NIT Jalandhar has secured the 46<sup>th</sup> NIRF rank in the engineering category in 2023.",
+      `Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31 NITs established by Ministry of Education (earlier MHRD), Govt. of India. The Institute came into existence in the year 1987 (earlier Regional Engineering College, Jalandhar) and obtained the status "Institute of National Importance" by Act of Parliament 2007.
+      The institute is offering B.Tech., M.Sc., M.Tech., and Ph.D. programmes in various disciplines such as Biotechnology, Chemical Engineering, Civil Engineering, Computer Science and Engineering, Electrical Engineering, Electronics and Communication Engineering, Industrial and Production Engineering, Information Technology, Instrumentation and Control Engineering, Mechanical Engineering, Textile Technology, etc.
+      NIT Jalandhar has secured the 55th NIRF rank in the engineering category in 2025.
+      NIT Jalandhar is located on a sprawling and green campus along the Jalandhar–Amritsar Highway in Punjab. The institute provides a vibrant academic environment that fosters innovation, critical thinking, and interdisciplinary research, supported by state-of-the-art infrastructure and modern laboratories.
+      With a strong focus on research, innovation, and entrepreneurship, NIT Jalandhar actively contributes to national missions in energy, sustainability, digital transformation, and advanced manufacturing. The institute maintains close collaboration with industries, research organizations, and global academic partners, reinforcing its reputation for academic excellence and societal impact.`,
     departmentHtml:
-      "The Department of Electrical Engineering was started in the year 2013. The department presently offers undergraduate programme B. Tech. in Electrical Engineering and research programme Ph.D. in various specialization of Electrical Engineering and allied areas. The Department aims to impart high quality education to the students and carry out fundamental and industry-oriented research work. The major research areas of the department are power system, control system, high voltage engineering renewable energy and energy storage. The department has highly qualified and competent faculty members and adequate facilities to support teaching and learning activities. The alumni of Department are well placed in the top echelons of industry &amp; academia both in India &amp; abroad.<p>The department has established a <strong>Centre of Excellence (CoE) in Electric Vehicles at an estimated cost of ₹6.5 crore, sponsored by the Ministry of Minority Affairs (MoMA), Government of India.</strong> The centre houses a state-of-the-art Electric Vehicle Laboratory equipped with cutting-edge research facilities for postgraduate students and research scholars.</p>",
+      `The Department of Biotechnology is one of the fifteen academic departments of the Institute, offering undergraduate (B.Tech), postgraduate (M.Tech), and doctoral (PhD) programmes in Biotechnology. Within a span of fifteen years of commencement of B.Tech and PhD programmes, the Department has achieved results that reflect upon the growth pattern of the intellectual potential embedded with interdisciplinary knowledge, human values and professional ethics among the youth, aspirants of becoming Engineers and Technologists, so that they contribute to the field of Biotechnology in particular and to the society in general and create a niche for a successful career.`,
   },
   importantDates: {
     title: "Important Dates",
     dates: [
       {
-        event: "Paper Submission Starts",
-        date: "5 February, 2026",
-        description: "Start date to submit research papers for review.",
+        event: "Abstract submission starts",
+        date: "June 01, 2026",
+        description: "Abstract submission opens.",
         highlight: false,
       },
       {
-        event: "Final Paper Submission Deadline",
-        date: "9 May, 2026",
-        description: "Final deadline to submit research papers for review.",
+        event: "Notification of acceptance of abstract",
+        date: "Within two weeks of submission",
+        description: "Authors will be notified within two weeks.",
+        highlight: false,
+      },
+      {
+        event: "Abstract submission closes",
+        date: "September 10, 2026",
+        description: "Last date to submit abstracts.",
         highlight: true,
       },
       {
-        event: "Paper Acceptance Date",
-        date: "20 May, 2026",
-        description: "Authors will receive acceptance or rejection notifications.",
+        event: "Registration starts",
+        date: "June 10, 2026",
+        description: "Online registration opens.",
         highlight: false,
       },
       {
-        event: "Camera-Ready Submission",
-        date: "27 May, 2026",
-        description: "Final versions of accepted papers must be submitted.",
-        highlight: false,
-      },
-      {
-        event: "Last Date of Registration",
-        date: "3 June, 2026",
-        description: "Final date for all participants to register for the conference.",
-        highlight: false,
-      },
-      {
-        event: "Registration with Late Fee",
-        date: "6 June, 2026",
-        description: "Registration with additional fee (Actual Fee + Rs 500/- late Fee).",
+        event: "Registration closes",
+        date: "September 30, 2026",
+        description: "Last date for registrations.",
         highlight: false,
       },
       {
         event: "Conference Dates",
-        date: "12–13 June, 2026",
-        description:
-          "The official National Conference on Net-Zero Energy Systems Hybrid Mode 2026. (Conference postponed due to some administrative reasons)",
+        date: "October 29-31, 2026",
+        description: "RICE-WVES 2026 at NIT Jalandhar.",
         highlight: false,
       },
     ],
@@ -150,18 +136,19 @@ export const defaultSiteConfig = {
   contact: {
     heading: "Contact Us",
     description:
-      "For any queries regarding the conference, sponsorship, or participation, please feel free to reach out to us using the details below.",
+      "For queries regarding abstract submission, registration, or participation, please contact the conference coordinators or email us.",
     locationHtml:
-      "Department of Electrical Engineering,<br />Dr. B. R. Ambedkar National Institute of Technology Jalandhar,<br />G.T. Road, Amritsar Bypass,<br />Jalandhar, Punjab - 144008, India",
-    email: "nzes2026@nitj.ac.in",
-    call: "+91-9816803936, +91-8449118090",
+      "Department of Biotechnology,<br />Dr. B. R. Ambedkar National Institute of Technology Jalandhar,<br />G.T. Road, Amritsar Bypass,<br />Jalandhar, Punjab - 144008, India",
+    email: "ricewves@nitj.ac.in",
+    call:
+      "Faculty coordinators: +91-7896889045, +91-8917379390, +91-9219834655; Student coordinators: Mr. Pratyush Kumar Behera: +91-8118018300, Ms. Akshika Sharma: +91-9805723172, Ms. Anjali: +91-6397341638",
   },
   footer: {
-    conferenceName: "National Conference on Net-Zero Energy Systems Hybrid Mode",
+    conferenceName:
+      "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
     institutionLine:
-      "Organized by the Department of Electrical Engineering Dr. B. R. Ambedkar National Institute of Technology, Jalandhar Punjab, India",
-    copyright:
-      "© 2026 National Conference on Net-Zero Energy Systems Hybrid Mode. All rights reserved.",
+      "Organized by the Department of Biotechnology, Dr. B. R. Ambedkar National Institute of Technology, Jalandhar, Punjab, India",
+    copyright: "© 2026 RICE-WVES. All rights reserved.",
     hostNote: "Hosted by an Institute of National Importance",
     developerCredits: [
       {
@@ -175,4 +162,24 @@ export const defaultSiteConfig = {
     ],
   },
   pages: {},
+  keynoteSpeakers: [
+    {
+      name: "Dr. Lorem Ipsum",
+      institute: "IIT EXAMPLE",
+      designation: "Associate Professor",
+      department: "Department of Biotechnology",
+      photo: "https://placehold.co/400x400?text=Speaker+1",
+      bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      link: ""
+    },
+    {
+      name: "Dr. Consectetur Adipiscing",
+      institute: "NIT EXAMPLE",
+      designation: "Assistant Professor",
+      department: "Department of Environmental Sciences",
+      photo: "https://placehold.co/400x400?text=Speaker+2",
+      bio: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+      link: ""
+    }
+  ],
 };

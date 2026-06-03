@@ -29,8 +29,8 @@ const AboutNITJ = () => {
           </p>
 
           <p>
-            NIT Jalandhar has secured the <strong>46<sup>th</sup> NIRF rank</strong> in the
-            engineering category in 2023.
+            NIT Jalandhar has secured the <strong>55<sup>th</sup> NIRF rank</strong> in the
+            engineering category in 2025.
           </p>
 
           <p>

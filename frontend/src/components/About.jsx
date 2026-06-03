@@ -1,10 +1,9 @@
 import React from "react";
-import { useSiteConfig } from "../context/SiteConfigContext";
 import { defaultSiteConfig } from "../config/defaultSiteConfig";
 
 export default function About() {
-  const { config } = useSiteConfig();
-  const about = config.about || defaultSiteConfig.about;
+  // Static content copied from defaultSiteConfig
+  const about = defaultSiteConfig.about;
 
   return (
     <section className="py-16 bg-gray-50">

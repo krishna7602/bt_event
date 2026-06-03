@@ -2,203 +2,149 @@ import React from "react";
 
 const RegistrationPage = () => {
   return (
-    <section className="py-16 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12">
-      <div className="w-full">
+    <section className="py-20 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12">
+      <div className="w-full max-w-7xl mx-auto">
         {/* Page Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-            Registration <span className="text-blue-600">Details</span>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">
+            Registration <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Details</span>
           </h2>
-          <div className="w-24 h-1.5 bg-blue-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Guidelines, fee structure, and instructions for conference registration.
+          <div className="w-24 h-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto font-medium">
+            Guidelines, fee structure, and instructions for RICE-WVES 2026 registration.
           </p>
         </div>
 
-        {/* Instructions & Portals */}
+        {/* Info Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Fee Payment Instructions */}
-          <div className="bg-white border-l-8 border-blue-600 rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-              <span className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
-              Fee Payment
-            </h3>
-            <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-6">
-              <p className="text-red-600 font-extrabold mb-4 uppercase text-sm tracking-wide">
-                PLEASE PAY THE REGISTRATION FEE ONLY THROUGH THE OFFICIAL BANK DETAILS. NO OTHER MEANS OF FEE PAYMENT WILL BE ACCEPTED.
-              </p>
-              
-              <div className="space-y-3">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-blue-100 pb-2">
-                  <span className="text-gray-500 text-sm font-medium">Account Name</span>
-                  <span className="text-gray-900 font-bold">NITJ CCE</span>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-blue-100 pb-2">
-                  <span className="text-gray-500 text-sm font-medium">Account Number</span>
-                  <span className="text-gray-900 font-bold font-mono">50100324249116</span>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between">
-                  <span className="text-gray-500 text-sm font-medium">IFSC Code</span>
-                  <span className="text-gray-900 font-bold font-mono">HDFC0000046</span>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-4 text-gray-600">
-              <p>
-                <strong>Confirmation:</strong> After successful payment, kindly fill the{" "}
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-bold hover:underline"
-                >
-                  Google Form
-                </a>{" "}
-                with your transaction number and other relevant details.
-              </p>
-              <p>
-                <strong>Full Paper:</strong> After the conference, a link will be sent to participants for submission of full-length papers.
-              </p>
-              <p>
-                <strong>Registration Fee:</strong>  The registration fee covers conference participation, paper presentation, and publication of accepted papers.
-              </p>
+          {/* Instructions */}
+          <div className="bg-white border-l-8 border-blue-600 rounded-2xl shadow-xl p-8 flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                <span className="bg-blue-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black">1</span>
+                Instructions
+              </h3>
+              <ul className="space-y-4 text-gray-700 text-left">
+                <li className="flex gap-3 items-start">
+                  <span className="text-blue-600 font-extrabold mt-0.5">✔</span>
+                  <span><strong>Compulsory Registration:</strong> Registration is mandatory for all accepted papers to be considered for presentation and publication in the proceedings.</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-blue-600 font-extrabold mt-0.5">✔</span>
+                  <span><strong>Delegate Registration:</strong> All attending delegates must register independently.</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-blue-600 font-extrabold mt-0.5">✔</span>
+                  <span><strong>Fee Inclusion:</strong> The registration fee includes all the instructional materials, internet facility, lunch (3 days) and refreshments.</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-blue-600 font-extrabold mt-0.5">✔</span>
+                  <span><strong>Boarding & Lodging:</strong> Boarding and lodging will be provided on a payment basis, subject to availability.</span>
+                </li>
+              </ul>
             </div>
           </div>
 
-          {/* Registration Guidelines */}
-          <div className="bg-white border-l-8 border-green-600 rounded-xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-              <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
-              Instructions
-            </h3>
-            <ul className="space-y-4 text-gray-700">
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold">✔</span>
-                <span><strong>Compulsory Registration:</strong> Registration is mandatory for all papers to be considered for processing.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold">✔</span>
-                <span><strong>Delegate Registration:</strong> All attending delegates must register independently.</span>
-              </li>
-              <li className="flex gap-3">
-                <span className="text-green-600 font-bold">✔</span>
-                <span><strong>Student Status:</strong> Student registrations are valid only if the first author is a full-time student.</span>
-              </li>
-              {/* <li className="flex gap-3">
-                <span className="text-green-600 font-bold">✔</span>
-                <span><strong>Publication:</strong> Fee covers registration only; publication charges are separate.</span>
-              </li> */}
-            </ul>
+          {/* Who Can Attend */}
+          <div className="bg-white border-l-8 border-green-600 rounded-2xl shadow-xl p-8 flex flex-col justify-between">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                <span className="bg-green-600 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black">2</span>
+                Who Can Attend
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-6 text-left">
+                Faculty members from colleges, universities, and technical institutes, students (UG/PG), research scholars, and industry professionals working in circular economy, waste valorisation, green technologies, biotechnology, and environmental sustainability fields are welcome to participate.
+              </p>
+              <div className="bg-green-50 border border-green-100 rounded-xl p-4 text-left">
+                <h4 className="font-bold text-green-900 mb-2">Technical Sessions</h4>
+                <ul className="grid grid-cols-3 gap-2 text-sm text-green-800 font-bold">
+                  <li>• Invited Talks</li>
+                  <li>• Oral Presentations</li>
+                  <li>• Poster Presentations</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Fee Table Section */}
-        <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50/90 p-5 shadow-sm">
-          <p className="text-sm md:text-base leading-7 text-gray-800">
-            <span className="font-bold text-gray-900">Important:</span>{" "}
-            The organizing committee has decided to reduce the Registration Fee
-            (<span className="font-bold bg-amber-200 px-1.5 py-0.5 rounded">Rs 500 + GST (18%) = Rs 590/-</span>)
-            <span className="font-bold bg-yellow-200 px-1.5 py-0.5 rounded"> only for B.Tech students</span>.
-            In this case, it is <span className="font-bold bg-amber-200 px-1.5 py-0.5 rounded">mandatory</span> that first author should be B.Tech student, and the registration &amp; presentation should be done only by the same B.Tech student. At the time of registration, the B.Tech students have to upload their id card (as a proof of students) along with payment slip in a single pdf file.
-          </p>
-        </div>
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 mb-8">
-          <div className="bg-blue-900 py-6 px-8">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-200 mb-12">
+          <div className="bg-blue-900 py-6 px-8 text-left">
             <h3 className="text-2xl font-bold text-white">Registration Fee Structure</h3>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-sm">
-              <thead>
-                <tr className="bg-gray-100 text-gray-800 text-center font-bold">
-                  <th className="px-5 py-4 text-left border border-gray-200" rowSpan="2">Category</th>
-                  <th className="px-5 py-3 border border-gray-200" colSpan="2">Online Participants</th>
-                  <th className="px-5 py-3 border border-gray-200" colSpan="2">Offline Participants</th>
-                </tr>
-                <tr className="bg-gray-200 text-gray-600 text-center text-xs uppercase font-bold">
-                  <th className="px-5 py-2 border border-gray-200">1st Paper</th>
-                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
-                  <th className="px-5 py-2 border border-gray-200">1st Paper</th>
-                  <th className="px-5 py-2 border border-gray-200">For Every Additional Paper</th>
-                </tr>
-              </thead>
-              <tbody className="text-gray-700">
-                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Students (from NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /-</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                </tr>
-                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Students (Other than NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2000 /- + GST<br/><span className="text-xs text-gray-500">=2360</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd Paper Free)</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /- + GST<br/><span className="text-xs text-gray-500">=2950</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180 (2nd paper Free)</span></td>
-                </tr>
-                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (from NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /-</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 2500 /-</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                </tr>
-                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (Other than NITJ)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3000 /- + GST<br/><span className="text-xs text-gray-500">=3540</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1000 /- + GST<br/><span className="text-xs text-gray-500">=1180</span></td>
-                </tr>
-                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Industrial Persons</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 3500 /- + GST<br/><span className="text-xs text-gray-500">=4130</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 4500 /- + GST<br/><span className="text-xs text-gray-500">=5310</span></td>
-                  <td className="px-5 py-4 text-center border border-gray-200">Rs. 1500 /- + GST<br/><span className="text-xs text-gray-500">=1770</span></td>
-                </tr>
-                <tr className="bg-blue-100 hover:bg-blue-200 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Students (International)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 100</td>
-                  <td className="px-5 py-4 text-center text-green-700 font-semibold border border-gray-200">Free</td>
-                </tr>
-                <tr className="bg-blue-50 hover:bg-blue-100 transition-colors">
-                  <td className="px-5 py-4 font-medium border border-gray-200">Faculties (International)</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 100</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 125</td>
-                  <td className="px-5 py-4 text-center border border-gray-200">USD 50</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <div className="p-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Students Card */}
+              <div className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/50 flex flex-col justify-between text-left">
+                <div>
+                  <h4 className="text-xl font-bold text-blue-900 mb-4">Students & Research Scholars</h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <li className="flex justify-between border-b border-blue-100/30 pb-2">
+                      <span className="font-medium">From NIT Jalandhar:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 1,500</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="font-medium">Other than NITJ:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 2,000 <span className="text-[10px] text-gray-500 font-normal">(incl. GST @18%)</span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-        {/* Notes */}
-        <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-xl p-5 mb-12 space-y-2 text-gray-700 text-sm">
-          <p><span className="text-red-600 font-extrabold">• 18% GST need to pay for Indian delegates (other than NITJ Participants).</span></p>
-          <p>• The above fee includes all the instructional materials, internet facility and refreshments. The boarding and lodging will be provided on payment basis subjected to availability.</p>
+              {/* Faculty Card */}
+              <div className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/50 flex flex-col justify-between text-left">
+                <div>
+                  <h4 className="text-xl font-bold text-blue-900 mb-4">Faculty Members</h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <li className="flex justify-between border-b border-blue-100/30 pb-2">
+                      <span className="font-medium">From NIT Jalandhar:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 2,500</span>
+                    </li>
+                    <li className="flex justify-between">
+                      <span className="font-medium">Other than NITJ:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 3,000 <span className="text-[10px] text-gray-500 font-normal">(incl. GST @18%)</span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Industry Card */}
+              <div className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/50 flex flex-col justify-between text-left">
+                <div>
+                  <h4 className="text-xl font-bold text-blue-900 mb-4">Industry Participants</h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <li className="flex justify-between">
+                      <span className="font-medium">Registration Fee:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 3,500 <span className="text-[10px] text-gray-500 font-normal">(incl. GST @18%)</span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* CTA Section */}
         <div
-          className="text-center rounded-2xl p-12 text-white shadow-2xl"
+          className="text-center rounded-3xl p-12 text-white shadow-2xl relative overflow-hidden"
           style={{ backgroundImage: "linear-gradient(to right, rgb(37 99 235), rgb(67 56 202))" }}
         >
-          <h3 className="text-3xl font-bold mb-4">Complete Your Registration</h3>
-          <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-            After making the payment through the official portal, please submit your details via the Google Form to confirm your registration.
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+          <h3 className="text-3xl font-black mb-4">Ready to Submit your Abstract?</h3>
+          <p className="text-blue-100 mb-8 max-w-2xl mx-auto font-medium">
+            Abstracts can be submitted via the official Google Form. The payment and registration links will be sent to your email upon acceptance of your abstract.
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScIAO1_XLgpUpUXi1nTRnqihtyFFaxLjBdEXzZVF9YOaM0sUw/viewform"
+            href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-white text-blue-900 font-extrabold py-4 px-12 rounded-full shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105"
+            className="inline-flex items-center gap-3 bg-white text-blue-900 font-black py-4 px-12 rounded-2xl shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95"
           >
-            Submit Google Form
+            <span>Submit Abstract via Google Form</span>
+            <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
           </a>
         </div>
       </div>

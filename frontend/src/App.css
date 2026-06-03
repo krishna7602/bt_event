@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Custom helpers for conference theme */
+.hero-title-small {
+  color: #ffffff;
+}
+
+.hero-title-highlight {
+  color: #16a34a; /* tailwind green-500 */
+}
+
+.sponsor-heading {
+  color: #16a34a;
+  font-weight: 800;
+}
+
+.conference-card {
+  box-shadow: 0 10px 30px rgba(2,6,23,0.35);
+  border-radius: 18px;
+}

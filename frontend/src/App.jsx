@@ -14,7 +14,6 @@ import ImportantDates from "./components/ImportantDates";
 // Pages
 import AboutNITJ from "./Pages/AboutNITJPage";
 import OrganizingCommittee from "./Pages/OrganizingCommitteePage";
-import TechnicalProgrammeCommittee from "./Pages/TechnicalProgrammeCommitteePage";
 import Accommodation from "./Pages/AccommodationPage";
 import PhotoGallery from "./Pages/PhotoGalleryPage";
 import KeynoteSpeakers from "./Pages/KeynoteSpeakers";
@@ -26,7 +25,6 @@ import BestStudentAward from "./Pages/BestStudentAward";
 import PaperPublication from "./Pages/PaperPublicationPage";
 import Venue from "./components/Venue";
 import Contact from "./components/Contact";
-import PaperReviewCommittee from "./Pages/PaperReviewCommittee";
 import ObjectivesConference from "./Pages/ObjectivesConference";
 import ResearchAreaTracksPage from "./Pages/ResearchAreaTracksPage";
 import AdminDashboardPage from "./Pages/AdminDashboardPage";
@@ -49,17 +47,10 @@ export default function App() {
         <Route path="/about-nit-jalandhar" element={<ManagedPage pageKey="about-nit-jalandhar" fallback={AboutNITJ} />} />
         <Route path="/objectives-conference" element={<ManagedPage pageKey="objectives-conference" fallback={ObjectivesConference} />} />
         <Route path="/organizing-committee" element={<ManagedPage pageKey="organizing-committee" fallback={OrganizingCommittee} />} />
+
         <Route
-          path="/technical-programme-committee"
-          element={<ManagedPage pageKey="technical-programme-committee" fallback={TechnicalProgrammeCommittee} />}
-        />
-        <Route
-          path="/paper-review-committee"
-          element={<ManagedPage pageKey="paper-review-committee" fallback={PaperReviewCommittee} />}
-        />
-        <Route
-          path="/research-area-tracks"
-          element={<ManagedPage pageKey="research-area-tracks" fallback={ResearchAreaTracksPage} />}
+          path="/thematic-areas"
+          element={<ManagedPage pageKey="thematic-areas" fallback={ResearchAreaTracksPage} />}
         />
 
         {/* FACILITIES */}

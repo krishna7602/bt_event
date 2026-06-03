@@ -1,27 +1,5 @@
 import React from "react";
-import anupShuklaPhoto from '../assets/anup_shukla.jpg';
-import ashaSharmaPhoto from '../assets/asha_sharma.jpg';
-
-const keynoteSpeakers = [
-  {
-    name: "Dr. Anup Shukla",
-    institute: "IIT JAMMU",
-    designation: "Associate Professor",
-    department: "Department of Electrical Engineering",
-    photo: anupShuklaPhoto,
-    bio: "Dr. Anup Shukla (Senior Member IEEE, Power and Energy Society, Industry Applications Society, IEEE Young Professionals) is currently working as an Associate Professor with the Department of Electrical Engineering, Indian Institute of Technology Jammu, India. He was with the Department of Electrical Engineering, Indian Institute of Technology Kanpur as Senior Project Engineer. From Jan 2017 to Aug. 2017, He was with the Department of Electrical Engineering and Computer Science Engineering, Howard University, USA as Post-Doctorate. He was working as Visiting Faculty at Loughborough University from October 2023 to April 2024. He was the recipient of POSOCO Power System Award, 2017 and Dr. P.S. Nigam Power Sector Award, 2013. His current research interest includes Robust and efficient system operation and planning, Renewable integration in power systems, Power system security, Power System Restructuring/Deregulation, Distribution System and Micro/Smart Grid.",
-    link: "https://iitjammu.ac.in/faculty/~anupshukla"
-  },
-  {
-    name: "Dr. Asha Sharma",
-    institute: "IIT ROORKEE",
-    designation: "Assistant Professor",
-    department: "Department of Electrical Engineering",
-    photo: ashaSharmaPhoto,
-    bio: "Dr. Asha Sharma is an Assistant Professor in the Electrical Engineering Department at the Indian Institute of Technology Roorkee. Her research interests include High Voltage and its application in Power System, Insulating Materials-Nanodielectrics. She is actively involved in teaching undergraduate and postgraduate courses in electrical engineering and supervises research students at the M.Tech and Ph.D. levels. Dr. Asha Sharma has received several honours and awards for her academic and research contributions and has published research papers in reputed international journals and conferences. She also participates in professional and academic activities related to electrical engineering education and research.",
-    link: "https://www.iitr.ac.in/Departments/Electrical%20Engineering%20Department/People/Faculty/101050.html"
-  }
-];
+import { useSiteConfig } from "../context/SiteConfigContext";
 
 const SpeakerCard = ({ speaker, reverse }) => {
   return (
@@ -29,11 +7,17 @@ const SpeakerCard = ({ speaker, reverse }) => {
       {/* Photo Column */}
       <div className="flex-shrink-0">
         <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-600/20 shadow-inner">
-          <img 
-            src={speaker.photo} 
-            alt={speaker.name} 
-            className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-          />
+          {speaker.photo ? (
+            <img
+              src={speaker.photo}
+              alt={speaker.name}
+              className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+            />
+          ) : (
+            <div className="w-full h-full bg-blue-50 flex items-center justify-center text-blue-500 text-5xl font-bold">
+              {speaker.name?.charAt(0) ?? "S"}
+            </div>
+          )}
         </div>
       </div>
 
@@ -43,7 +27,7 @@ const SpeakerCard = ({ speaker, reverse }) => {
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900">{speaker.name}</h3>
           <p className="text-blue-600 font-semibold text-lg">({speaker.institute})</p>
         </div>
-        
+
         <div className="mb-6">
           <p className="text-gray-700 font-medium">{speaker.designation}</p>
           <p className="text-gray-500 italic">{speaker.department}</p>
@@ -56,14 +40,16 @@ const SpeakerCard = ({ speaker, reverse }) => {
           </p>
           {speaker.link && (
             <div className="md:pl-4">
-              <a 
-                href={speaker.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href={speaker.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 font-semibold hover:underline flex items-center gap-1"
               >
                 View Full Profile
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
               </a>
             </div>
           )}
@@ -74,10 +60,13 @@ const SpeakerCard = ({ speaker, reverse }) => {
 };
 
 const KeynoteSpeakers = () => {
+  const { config, loading } = useSiteConfig();
+  const speakers = config?.keynoteSpeakers ?? [];
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen px-4 md:px-8 lg:px-12">
       <div className="w-full">
-        
+
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="inline-block px-8 py-3 bg-blue-900 text-white text-3xl md:text-4xl font-bold rounded-lg shadow-xl mb-4 transform -skew-x-6">
@@ -86,23 +75,32 @@ const KeynoteSpeakers = () => {
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* Speakers List */}
-        <div className="space-y-16">
-          {keynoteSpeakers.map((speaker, index) => (
-            <SpeakerCard 
-              key={index} 
-              speaker={speaker} 
-              reverse={index % 2 !== 0}
-            />
-          ))}
-        </div>
+        {/* Loading state */}
+        {loading ? (
+          <div className="flex justify-center items-center py-24">
+            <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          </div>
+        ) : (
+          <>
+            {/* Speakers List */}
+            <div className="space-y-16">
+              {speakers.map((speaker, index) => (
+                <SpeakerCard
+                  key={index}
+                  speaker={speaker}
+                  reverse={index % 2 !== 0}
+                />
+              ))}
+            </div>
 
-        {/* Note Section */}
-        <div className="mt-16 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-xl">
-          <p className="text-blue-800 text-sm italic">
-            * More speakers to be announced soon. Stay tuned for updates.
-          </p>
-        </div>
+            {/* Note Section */}
+            <div className="mt-16 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-xl">
+              <p className="text-blue-800 text-sm italic">
+                * More speakers to be announced soon. Stay tuned for updates.
+              </p>
+            </div>
+          </>
+        )}
       </div>
     </section>
   );

@@ -1,36 +1,89 @@
 import React from "react";
-import { useSiteConfig } from "../context/SiteConfigContext";
-import { defaultSiteConfig } from "../config/defaultSiteConfig";
 
 export default function Contact() {
-  const { config } = useSiteConfig();
-  const contact = config.contact || defaultSiteConfig.contact;
-
   return (
     <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12">
-      <div className="w-full">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">{contact.heading}</h2>
-        <p className="text-gray-700 mb-8 max-w-4xl">{contact.description}</p>
+      <h2 className="text-3xl font-bold text-gray-800 mb-6">
+        Contact Us
+      </h2>
+      <div className="bg-white border rounded-xl p-8 shadow-sm w-full">
+        <div className="grid md:grid-cols-2 gap-8">
 
-        <div className="bg-white border rounded-lg p-6 shadow-sm w-full lg:w-2/3">
-          <div className="mb-5">
-            <h3 className="font-semibold text-gray-800 mb-1">Location</h3>
-            <p className="text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: contact.locationHtml }} />
+          {/* Faculty Coordinators */}
+          <div className="bg-gray-50 rounded-lg p-6 border">
+            <h3 className="text-xl font-bold text-blue-700 mb-5">
+              Faculty Coordinators
+            </h3>
+
+            <div className="space-y-5">
+              <div>
+                <p className="font-semibold">Dr. Pritam Kumar Dikshit</p>
+                <p className="text-gray-600">📞 +91 7896889045</p>
+              </div>
+
+              <div>
+                <p className="font-semibold">Dr. Prangya Ranjan Rout</p>
+                <p className="text-gray-600">📞 +91 8917379390</p>
+              </div>
+
+              <div>
+                <p className="font-semibold">Dr. Manoj Kumar</p>
+                <p className="text-gray-600">📞 +91 9219834655</p>
+              </div>
+            </div>
           </div>
 
-          <div className="mb-5">
-            <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-            <p className="text-gray-700">
-              <a href={`mailto:${contact.email}`} className="text-blue-600 hover:underline">
-                {contact.email}
-              </a>
-            </p>
+          {/* Student Coordinators */}
+          <div className="bg-gray-50 rounded-lg p-6 border">
+            <h3 className="text-xl font-bold text-green-700 mb-5">
+              Student Coordinators
+            </h3>
+
+            <div className="space-y-5">
+              <div>
+                <p className="font-semibold">Mr. Pratyush Kumar Behera</p>
+                <p className="text-gray-600">📞 +91 8118018300</p>
+              </div>
+
+              <div>
+                <p className="font-semibold">Ms. Akshika Sharma</p>
+                <p className="text-gray-600">📞 +91 9805723172</p>
+              </div>
+
+              <div>
+                <p className="font-semibold">Ms. Anjali</p>
+                <p className="text-gray-600">📞 +91 6397341638</p>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h3 className="font-semibold text-gray-800 mb-1">Call</h3>
-            <p className="text-gray-700">{contact.call}</p>
+        </div>
+
+        {/* Email & Website */}
+        <div className="grid md:grid-cols-2 gap-6 mt-8">
+
+          <div className="border rounded-lg p-5">
+            <h4 className="font-semibold text-lg mb-2">Email</h4>
+            <a
+              href="mailto:ricewves@nitj.ac.in"
+              className="text-blue-600 hover:underline"
+            >
+              ricewves@nitj.ac.in
+            </a>
           </div>
+
+          <div className="border rounded-lg p-5">
+            <h4 className="font-semibold text-lg mb-2">Website</h4>
+            <a
+              href="https://www.ricewves.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              www.ricewves.in
+            </a>
+          </div>
+
         </div>
       </div>
     </section>

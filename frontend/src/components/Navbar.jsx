@@ -15,9 +15,7 @@ export default function Navbar() {
         { name: "Objectives of the Conference", path: '/objectives-conference' },
         { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
         { name: "Organizing Committee", path: '/organizing-committee' },
-        { name: "Technical Programme Committee", path: '/technical-programme-committee' },
-        { name: "Paper Review Committee", path: '/paper-review-committee' },
-        { name: "Research Area Tracks", path: '/research-area-tracks' },
+        { name: "Thematic Areas", path: '/thematic-areas' },
         { name: "Venue and Travels", path: '/venue' },
         { name: "Accommodations", path: '/accommodation' },
         { name: "Photo Gallery", path: '/gallery' }
@@ -64,8 +62,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>
-            <img src={logo} alt="NZES-2026 Logo" className="w-12 h-12 object-contain" />
-            <span className="text-sm font-semibold text-blue-900">NZES-2026</span>
+            <img src={logo} alt="RICE-WVES 2026 Logo" className="w-12 h-12 object-contain" />
+            <span className="text-sm font-semibold text-blue-900">RICE-WVES 2026</span>
           </div>
 
           {/* Desktop Navigation */}
