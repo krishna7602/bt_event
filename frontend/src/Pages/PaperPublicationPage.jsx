@@ -9,7 +9,7 @@ const PaperPublication = () => {
         </h1>
 
         <p className="text-xl md:text-2xl text-slate-600">
-          Details regarding paper publication will be updated soon.
+          We are currently in discussions with several journals regarding potential special issue collaborations. We will provide updates here as soon as additional information becomes available.
         </p>
       </div>
     </section>

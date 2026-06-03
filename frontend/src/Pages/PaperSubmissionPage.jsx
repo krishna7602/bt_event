@@ -15,7 +15,7 @@ const PaperSubmission = () => {
         </div>
 
         <div className="text-center">
-          Details regarding paper submission will be updated soon.
+          We are currently in discussions with several journals regarding potential special issue collaborations. We will provide updates here as soon as additional information becomes available.
         </div>
       </div>
     </section>
