@@ -1,28 +1,11 @@
 import React from "react";
 import { defaultSiteConfig } from "../config/defaultSiteConfig";
 import logo from "../assets/logo.png";
-import track1Img from "../assets/track_1_renewable.png";
-import track2Img from "../assets/track_2_smartgrids.png";
-import track3Img from "../assets/track_3_multienergy.png";
-import track4Img from "../assets/track_4_policy.png";
-import track5Img from "../assets/track_5_intelligent.png";
-import track6Img from "../assets/track_6_ev.jpg";
-
-const defaultSlides = [
-  { url: track1Img, caption: "Waste Valorization Technologies" },
-  { url: track2Img, caption: "Energy Recovery from Waste" },
-  { url: track3Img, caption: "Water, Wastewater, and Sludge Management" },
-  { url: track4Img, caption: "Bioeconomy and Biorefinery Approaches" },
-];
+import heroPhoto from "../assets/track_1_renewable.png";
 
 export default function Hero() {
-  // Use static site config from defaultSiteConfig (static content)
   const hero = defaultSiteConfig.hero;
-  const carouselImages = hero.carouselImages?.length ? hero.carouselImages : defaultSlides;
-  const sponsors = hero.sponsors?.length ? hero.sponsors : defaultSiteConfig.hero.sponsors;
-
-  // Use the first image as a static hero image (no slideshow)
-  const currentImage = carouselImages[0] || defaultSlides[0];
+  const sponsors = hero.sponsors?.length ? hero.sponsors : [];
 
   return (
     <>
@@ -31,7 +14,7 @@ export default function Hero() {
         className="pt-20 text-white"
         style={{ backgroundImage: "linear-gradient(to bottom, #0f172a, #064e3b)" }}
       >
-        <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 py-16">
+        <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 py-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-9">
               <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 md:gap-8 mb-10">
@@ -89,17 +72,23 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
-            <div className="grid gap-0">
-              <div className="relative bg-slate-950">
-                <img src={currentImage.url} alt={currentImage.caption} className="w-full h-56 lg:h-72 object-cover opacity-95" />
-                <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(to top, rgba(2,6,23,0.6), rgba(2,6,23,0.2), transparent)" }} />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <p className="inline-block rounded-full bg-emerald-500/20 px-4 py-2 text-sm font-semibold text-emerald-200 backdrop-blur">{currentImage.caption}</p>
-                </div>
-              </div>
+          {/* Single Hero Photo */}
+          {/* <div className="mt-10 overflow-hidden rounded-3xl border border-white/10 shadow-2xl relative">
+            <img
+              src={heroPhoto}
+              alt="Waste Valorization and Circular Economy"
+              className="w-full h-120 lg:h-[600px] object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{ backgroundImage: "linear-gradient(to top, rgba(2,6,23,0.45), transparent 60%)" }}
+            />
+            <div className="absolute bottom-5 left-5">
+              <p className="inline-block rounded-full bg-emerald-500/25 px-4 py-2 text-sm font-semibold text-emerald-200 backdrop-blur-sm border border-emerald-500/20">
+                Waste Valorization and Bio-based Materials
+              </p>
             </div>
-          </div>
+          </div> */}
 
           <div id="fees" className="w-full py-12 text-gray-800">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 mb-8">
@@ -152,8 +141,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* No slideshow controls for static hero image */}
     </>
   );
 }
