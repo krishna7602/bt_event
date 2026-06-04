@@ -25,8 +25,8 @@ const MemberCard = ({ name, designation, institute, department, photo }) => {
         {designation && (
           <p className="text-sm text-blue-600 font-semibold mt-0.5">{designation}</p>
         )}
-        <p className="text-xs text-gray-600 font-medium mt-0.5">{institute}</p>
         {department && <p className="text-xs text-gray-500 font-medium">{department}</p>}
+        <p className="text-xs text-gray-600 font-medium mt-0.5">{institute}</p>
       </div>
     </div>
   );
@@ -93,66 +93,70 @@ const OrganizingCommittee = () => {
   const convenors = [
     {
       name: "Dr. Pritam Kumar Dikshit",
-      designation: "Convenor",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
+      photo: "https://nitj.ac.in/files/1770121882151-Photograph.jpg"
     },
     {
       name: "Dr. Prangya Ranjan Rout",
-      designation: "Convenor",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
+      photo: "https://v1.nitj.ac.in/images/faculty/23020279109.jpg"
     },
     {
       name: "Dr. Manoj Kumar",
-      designation: "Convenor",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
+      photo: "https://nitj.ac.in/files/1748665959579-M99.JPG"
     }
   ];
 
   const secretaries = [
     {
       name: "Dr. Nitai Basak",
-      designation: "Organizing Secretary",
+      designation: "Associate Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Mahesh Kumar Sah",
-      designation: "Organizing Secretary",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Nikhil GN",
-      designation: "Organizing Secretary",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Sumer Singh Meena",
-      designation: "Organizing Secretary",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Anee Mohanty",
-      designation: "Organizing Secretary",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Indu Chauhan",
-      designation: "Organizing Secretary",
+      designation: "Assistant Professor",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       department: "Department of Biotechnology",
     },
     {
       name: "Dr. Chandi Charan Patra",
-      designation: "Organizing Secretary",
-      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+      designation: "Assistant Professor",
       department: "Department of Biotechnology",
+      institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
+
     }
   ];
 
@@ -177,10 +181,10 @@ const OrganizingCommittee = () => {
         <CommitteeSection title="Chairperson" members={chairperson} columns={1} />
 
         {/* Convenors */}
-        <CommitteeSection title="Convenors" members={convenors} columns={3} />
+        <CommitteeSection title="Convenors and Organizing Secretaries" members={convenors} columns={3} />
 
         {/* Organizing Secretaries */}
-        <CommitteeSection title="Organizing Secretaries" members={secretaries} columns={3} />
+        <CommitteeSection title="Joint Organizing Secretaries" members={secretaries} columns={3} />
       </div>
     </section>
   );
