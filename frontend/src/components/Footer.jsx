@@ -20,8 +20,6 @@ const Footer = () => {
   const resources = [
     { name: "Paper Submission", path: "/paper-submission" },
     { name: "Author Guidelines", path: "/guidelines" },
-    { name: "Review Committee", path: "/paper-review-committee" },
-    { name: "Publication Policy", path: "/publication" },
     { name: "Contact Secretariat", path: "/contact" }
   ];
 
