@@ -9,7 +9,7 @@ const GuidelinesToAuthors = () => {
   return (
     <section className="py-20 bg-[#f8fafc] px-4 md:px-8 lg:px-24 min-h-screen">
       <div className="max-w-4xl mx-auto shadow-2xl shadow-slate-200/50 bg-white rounded-[2.5rem] p-8 md:p-16 border border-slate-100">
-        
+
         {/* Header Section */}
         <div className="mb-12 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">
@@ -24,14 +24,14 @@ const GuidelinesToAuthors = () => {
         <div className="space-y-10 text-slate-700 leading-relaxed text-lg md:text-xl text-justify text-left">
           <p>
             All abstracts must be submitted electronically through the official{" "}
-            <a 
-              href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8" 
-              target="_blank" 
+            <a
+              href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8"
+              target="_blank"
               rel="noopener noreferrer"
               className="font-extrabold text-blue-700 underline decoration-blue-200 decoration-4 underline-offset-4 hover:text-blue-800 transition-colors"
             >
               Google Form Submission Portal
-            </a>. 
+            </a>.
             We invite researchers, academicians, and industry professionals to submit original, innovative, and high-quality research abstracts aligned with the conference thematic areas.
           </p>
 
@@ -66,29 +66,33 @@ const GuidelinesToAuthors = () => {
           </div>
 
           {/* Templates */}
-          <div className="bg-blue-900 text-white rounded-[2rem] p-8 md:p-10 shadow-xl overflow-hidden relative">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/20 rounded-full blur-3xl -mr-16 -mt-16"></div>
-            <h3 className="text-2xl font-bold mb-6 text-blue-300">Author Template</h3>
-            <div className="flex flex-col md:flex-row gap-4">
-              <a
-                href="https://docs.google.com/document/d/1VCVCFUkEnGE1ycG2VRm6tMOj1kAuV0Ct/edit?rtpof=true&sd=true&tab=t.0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-bold transition-all backdrop-blur-sm"
+          <div className="flex justify-center">
+            <a
+              href="https://docs.google.com/document/d/1VCVCFUkEnGE1ycG2VRm6tMOj1kAuV0Ct/edit?rtpof=true&sd=true&tab=t.0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-3xl font-bold text-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
-                <svg className="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                </svg>
-                Abstract Template
-              </a>
-            </div>
+                <path
+                  fillRule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Abstract Template →
+            </a>
           </div>
 
           {/* Action Call */}
           <div className="text-center pt-6">
-            <a 
-              href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8" 
-              target="_blank" 
+            <a
+              href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 bg-blue-600 text-white font-black rounded-2xl shadow-xl shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition-all active:scale-95 group"
             >
