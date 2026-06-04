@@ -3,9 +3,9 @@ import React from "react";
 const AboutNITJ = () => {
   return (
     <section className="bg-white py-16 px-4 md:px-8 lg:px-12">
-      <div className="w-full">
+      <div className="w-full max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-b-4 border-blue-600 inline-block pb-2">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 border-b-4 border-emerald-600 inline-block pb-2">
           About NIT Jalandhar
         </h2>
 

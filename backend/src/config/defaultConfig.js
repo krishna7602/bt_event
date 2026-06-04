@@ -20,7 +20,7 @@ export const defaultConfig = {
     dateValue: "October 29-31, 2026",
     notice: null,
     tagline:
-      "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts, oral and poster presentations welcome across thematic areas focused on waste valorization and environmental sustainability.",
+      "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts for oral and poster presentations are invited across thematic areas focused on waste valorization and environmental sustainability.",
     brochureUrl: "https://www.ricewves.in",
     carouselImages: [],
     sponsors: [],

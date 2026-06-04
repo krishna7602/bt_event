@@ -58,12 +58,12 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white text-gray-800 z-50 shadow-md">
-      <div className="w-full px-4 md:px-8 lg:px-12 py-3">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>
             <img src={logo} alt="RICE-WVES 2026 Logo" className="w-12 h-12 object-contain" />
-            <span className="text-sm font-semibold text-blue-900">RICE-WVES 2026</span>
+            <span className="text-sm font-semibold text-slate-900">RICE-WVES 2026</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -76,7 +76,7 @@ export default function Navbar() {
                 onMouseLeave={handleMouseLeave}
               >
                 <div 
-                  className="flex items-center gap-1 hover:text-blue-600 cursor-pointer transition-colors duration-300 py-2"
+                  className="flex items-center gap-1 hover:text-emerald-600 cursor-pointer transition-colors duration-300 py-2"
                   onClick={() => item.path && handleNavClick(item.path)}
                 >
                   <span>{item.name}</span>
@@ -93,7 +93,7 @@ export default function Navbar() {
                           e.preventDefault();
                           handleNavClick(subItem.path);
                         }}
-                        className="block px-6 py-3 hover:bg-blue-50 hover:text-blue-900 transition-colors duration-200 text-sm"
+                        className="block px-6 py-3 hover:bg-slate-50 hover:text-emerald-700 transition-colors duration-200 text-sm"
                       >
                         {subItem.name}
                       </a>
@@ -123,7 +123,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <li key={item.name}>
                   <div 
-                    className="flex items-center justify-between hover:text-blue-600 cursor-pointer transition-colors duration-300 text-base py-2"
+                    className="flex items-center justify-between hover:text-emerald-600 cursor-pointer transition-colors duration-300 text-base py-2"
                     onClick={() => {
                       if (item.dropdown) {
                         setActiveDropdown(activeDropdown === item.name ? null : item.name);
@@ -151,7 +151,7 @@ export default function Navbar() {
                             e.preventDefault();
                             handleNavClick(subItem.path);
                           }}
-                          className="block py-2 text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                          className="block py-2 text-sm text-gray-600 hover:text-emerald-600 transition-colors"
                         >
                           {subItem.name}
                         </a>

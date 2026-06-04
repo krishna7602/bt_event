@@ -29,13 +29,13 @@ export default function Hero() {
       <div
         id="home"
         className="pt-20 text-white"
-        style={{ backgroundImage: "linear-gradient(to bottom, rgb(15 23 42), rgb(30 41 59))" }}
+        style={{ backgroundImage: "linear-gradient(to bottom, #0f172a, #064e3b)" }}
       >
-        <div className="w-full px-4 md:px-8 lg:px-12 py-16">
+        <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-9">
               <div className="flex items-center gap-8 mb-10">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-green-500 overflow-hidden shadow-lg">
+                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-emerald-500 overflow-hidden shadow-lg">
                   <img src={logo} alt="RICE-WVES 2026 Logo" className="w-full h-full object-contain p-2" />
                 </div>
 
@@ -46,7 +46,7 @@ export default function Hero() {
                       NATIONAL CONFERENCE <br />
                       ON
                     </span>
-                    <span className="block text-green-400 text-3xl md:text-4xl lg:text-5xl mt-2">
+                    <span className="block text-emerald-400 text-3xl md:text-4xl lg:text-5xl mt-2">
                       RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY
                     </span>
                   </h1>
@@ -60,7 +60,7 @@ export default function Hero() {
 
               <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg mb-8">
                 <p className="text-lg font-semibold">
-                  {hero.dateLabel || "Date"}: <span className="text-green-600">{hero.dateValue || "12-13 June, 2026"}</span>
+                  {hero.dateLabel || "Date"}: <span className="text-emerald-600">{hero.dateValue || "12-13 June, 2026"}</span>
                 </p>
                 {hero.notice ? <p className="text-sm text-red-500 font-medium mt-1">{hero.notice}</p> : null}
               </div>
@@ -68,21 +68,11 @@ export default function Hero() {
               <p className="text-xl text-gray-200 max-w-4xl">
                 {hero.tagline}
               </p>
-              {/* <div className="mt-6">
-                <a
-                  href={hero.brochureUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-md transition"
-                >
-                  See Brochure
-                </a>
-              </div> */}
             </div>
 
             <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
               <div className="w-full max-w-56">
-                <h3 className="text-4xl text-green-400 font-extrabold mb-6 text-right">Sponsors</h3>
+                <h3 className="text-4xl text-emerald-400 font-extrabold mb-6 text-right">Sponsors</h3>
                 <div className="space-y-6">
                   {sponsors.map((sponsor) => (
                     <div key={sponsor.name} className="flex items-center gap-4 rounded-2xl p-3 bg-white/5 border border-white/5">
@@ -105,7 +95,7 @@ export default function Hero() {
                 <img src={currentImage.url} alt={currentImage.caption} className="w-full h-56 lg:h-72 object-cover opacity-95" />
                 <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(to top, rgba(2,6,23,0.6), rgba(2,6,23,0.2), transparent)" }} />
                 <div className="absolute bottom-5 left-5 right-5">
-                  <p className="inline-block rounded-full bg-green-500/20 px-4 py-2 text-sm font-semibold text-green-200 backdrop-blur">{currentImage.caption}</p>
+                  <p className="inline-block rounded-full bg-emerald-500/20 px-4 py-2 text-sm font-semibold text-emerald-200 backdrop-blur">{currentImage.caption}</p>
                 </div>
               </div>
             </div>
@@ -113,16 +103,16 @@ export default function Hero() {
 
           <div id="fees" className="w-full py-12 text-gray-800">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200 mb-8">
-              <div className="bg-blue-900 py-6 px-8">
+              <div className="bg-slate-900 py-6 px-8">
                 <h3 className="text-2xl font-bold text-white text-left">Registration Fee Structure</h3>
               </div>
 
               <div className="p-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {/* Category 1 */}
-                  <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100 flex flex-col justify-between text-left">
+                  <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between text-left">
                     <div>
-                      <h4 className="text-lg font-bold text-blue-900 mb-4">Students & Research Scholars</h4>
+                      <h4 className="text-lg font-bold text-slate-900 mb-4">Students & Research Scholars</h4>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• From NIT Jalandhar: <span className="font-bold">Rs. 1,500</span></li>
                         <li>• Other than NIT Jalandhar: <span className="font-bold">Rs. 2,000</span> <span className="text-xs text-gray-500">(incl. GST @18%)</span></li>
@@ -131,9 +121,9 @@ export default function Hero() {
                   </div>
 
                   {/* Category 2 */}
-                  <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100 flex flex-col justify-between text-left">
+                  <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between text-left">
                     <div>
-                      <h4 className="text-lg font-bold text-blue-900 mb-4">Faculty Members</h4>
+                      <h4 className="text-lg font-bold text-slate-900 mb-4">Faculty Members</h4>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• From NIT Jalandhar: <span className="font-bold">Rs. 2,500</span></li>
                         <li>• Other than NIT Jalandhar: <span className="font-bold">Rs. 3,000</span> <span className="text-xs text-gray-500">(incl. GST @18%)</span></li>
@@ -142,9 +132,9 @@ export default function Hero() {
                   </div>
 
                   {/* Category 3 */}
-                  <div className="bg-blue-50/50 p-6 rounded-xl border border-blue-100 flex flex-col justify-between text-left">
+                  <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between text-left">
                     <div>
-                      <h4 className="text-lg font-bold text-blue-900 mb-4">Industry Participants</h4>
+                      <h4 className="text-lg font-bold text-slate-900 mb-4">Industry Participants</h4>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Registration Fee: <span className="font-bold">Rs. 3,500</span> <span className="text-xs text-gray-500">(incl. GST @18%)</span></li>
                       </ul>

@@ -26,8 +26,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-8">
-      <div className="w-full px-4 md:px-8 lg:px-12">
+    <footer className="bg-slate-900 text-white pt-16 pb-8">
+      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
 
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
@@ -38,7 +38,7 @@ const Footer = () => {
               onClick={() => handleNavClick('/')}
             >
               <img src={logo} alt="RICE-WVES 2026 Logo" className="w-10 h-10 object-contain" />
-              <h3 className="text-2xl font-bold bg-linear-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold bg-linear-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
                 RICE-WVES 2026
               </h3>
             </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                       e.preventDefault();
                       handleNavClick(link.path);
                     }}
-                    className="text-gray-400 hover:text-green-400 transition-colors cursor-pointer block"
+                    className="text-gray-400 hover:text-emerald-400 transition-colors cursor-pointer block"
                   >
                     {link.name}
                   </a>
@@ -85,7 +85,7 @@ const Footer = () => {
                       e.preventDefault();
                       handleNavClick(resource.path);
                     }}
-                    className="text-gray-400 hover:text-green-400 transition-colors block cursor-pointer"
+                    className="text-gray-400 hover:text-emerald-400 transition-colors block cursor-pointer"
                   >
                     {resource.name}
                   </a>
@@ -96,12 +96,12 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
               <p>© 2026 RICE-WVES. All rights reserved.</p>
               <p className="mt-2 text-gray-500 italic">
-                Developed and maintained by <a href="https://www.linkedin.com/in/ramkrishna-mondal-b73b09294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-blue-400 transition-colors">Ramkrishna Mondal</a>
+                Developed and maintained by <a href="https://www.linkedin.com/in/ramkrishna-mondal-b73b09294/" target="_blank" rel="noopener noreferrer" className="text-gray-400 font-medium hover:text-teal-400 transition-colors">Ramkrishna Mondal</a>
               </p>
             </div>
 
