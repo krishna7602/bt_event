@@ -14,7 +14,7 @@ const speakers = [
     location: "Madhya Pradesh, India",
   },
   {
-    name: "Dr. Sunil Kumar",
+    name: "Prof. Sunil Kumar",
     designation:
       "Head, Centre for Industrial Ecology and Circular Economy & Professor, AcSIR",
     organization: "CSIR-NEERI",
