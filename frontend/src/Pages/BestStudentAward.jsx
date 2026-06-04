@@ -18,7 +18,7 @@ const Awards = () => {
           {/* Best Oral Presentation Award */}
           <div className="bg-white border rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Best Oral Presentation Award
+              Best Oral Presentation Awards
             </h3>
 
             <p className="text-gray-700 leading-relaxed">
@@ -34,7 +34,7 @@ const Awards = () => {
           {/* Best Poster Presentation Award */}
           <div className="bg-white border rounded-lg p-6 shadow-sm">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Best Poster Presentation Award
+              Best Poster Presentation Awards
             </h3>
 
             <p className="text-gray-700 leading-relaxed">
