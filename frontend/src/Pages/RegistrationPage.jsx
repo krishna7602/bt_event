@@ -147,6 +147,47 @@ const RegistrationPage = () => {
             </svg>
           </a>
         </div>
+        <div
+          className="mt-12 text-center rounded-3xl p-12 text-white shadow-2xl relative overflow-hidden"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, rgb(5 150 105), rgb(4 120 87))",
+          }}
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+
+          <h3 className="text-3xl font-black mb-4">
+            Ready to Complete Your Registration?
+          </h3>
+
+          <p className="text-emerald-100 mb-8 max-w-2xl mx-auto font-medium">
+            After abstract acceptance, participants can complete their registration
+            through the official payment portal. Please ensure that all registration
+            details are filled correctly before proceeding with the payment.
+          </p>
+
+          <a
+            href="YOUR_PAYMENT_LINK_HERE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-white text-emerald-800 font-black py-4 px-12 rounded-2xl shadow-lg hover:bg-emerald-50 transition-all transform hover:scale-105 active:scale-95"
+          >
+            <span>Proceed to Payment</span>
+            <svg
+              className="w-5 h-5 text-emerald-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2.5"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );

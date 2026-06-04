@@ -7,11 +7,8 @@ const PaperSubmission = () => {
         {/* Header Section */}
         <div className="mb-12 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">
-            Abstract Submission
+            Paper Submission
           </h1>
-          <h2 className="text-xl md:text-2xl font-bold text-blue-700 tracking-wide uppercase border-b-4 border-blue-600 pb-2 inline-block">
-            Conference Submission Guidelines
-          </h2>
         </div>
 
         <div className="text-center">
