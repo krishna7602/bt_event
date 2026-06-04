@@ -42,8 +42,8 @@ export default function Hero() {
                 <div className="flex-1">
                   <h1 className="font-extrabold leading-tight mb-4">
                     <span className="block text-white text-xl md:text-2xl lg:text-3xl mb-2 leading-snug">
-                      DBT-CTEP SPONSORED <br />
-                      NATIONAL CONFERENCE <br />
+                      DBT-CTEP SPONSORED
+                      NATIONAL CONFERENCE
                       ON
                     </span>
                     <span className="block text-green-400 text-3xl md:text-4xl lg:text-5xl mt-2">
@@ -51,9 +51,6 @@ export default function Hero() {
                     </span>
                   </h1>
                   <div className="flex items-center gap-4">
-                    <span className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-sm md:text-base font-semibold text-green-200">
-                      {hero.badge || "Hybrid Mode"}
-                    </span>
                     <p className="text-lg text-gray-300 max-w-3xl">
                       {hero.description}
                     </p>
