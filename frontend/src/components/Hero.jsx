@@ -43,7 +43,7 @@ export default function Hero() {
                   <h1 className="font-extrabold leading-tight mb-4">
                     <span className="block text-white text-xl md:text-2xl lg:text-3xl mb-2 leading-snug">
                       DBT-CTEP SPONSORED
-                      NATIONAL CONFERENCE
+                      NATIONAL CONFERENCE <br />
                       ON
                     </span>
                     <span className="block text-green-400 text-3xl md:text-4xl lg:text-5xl mt-2">
