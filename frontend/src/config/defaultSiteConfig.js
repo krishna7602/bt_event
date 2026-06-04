@@ -123,7 +123,7 @@ export const defaultSiteConfig = {
         event: "Registration closes",
         date: "September 30, 2026",
         description: "Last date for registrations.",
-        highlight: false,
+        highlight: true,
       },
       {
         event: "Conference Dates",

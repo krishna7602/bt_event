@@ -35,8 +35,8 @@ export default function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-9">
               <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 md:gap-8 mb-10">
-                <div className="w-32 h-32 flex-shrink-0 bg-white rounded-full flex items-center justify-center border-4 border-emerald-500 overflow-hidden shadow-lg mx-auto md:mx-0">
-                  <img src={logo} alt="RICE-WVES 2026 Logo" className="w-full h-full object-contain p-2" />
+                <div className="w-28 h-28 flex-shrink-0 flex items-center justify-center mx-auto md:mx-0">
+                  <img src={logo} alt="RICE-WVES 2026 Logo" className="w-full h-full object-contain" />
                 </div>
 
                 <div className="flex-1">
