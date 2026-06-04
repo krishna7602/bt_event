@@ -40,9 +40,15 @@ export default function Hero() {
                 </div>
 
                 <div className="flex-1">
-                  <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
-                    <span className="block text-white">{hero.titlePrefix || "National Conference on"}</span>
-                    <span className="block text-green-400">{hero.titleHighlight || "Net-Zero Energy Systems"}</span>
+                  <h1 className="font-extrabold leading-tight mb-4">
+                    <span className="block text-white text-xl md:text-2xl lg:text-3xl mb-2 leading-snug">
+                      DBT-CTEP SPONSORED <br />
+                      NATIONAL CONFERENCE <br />
+                      ON
+                    </span>
+                    <span className="block text-green-400 text-3xl md:text-4xl lg:text-5xl mt-2">
+                      RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY
+                    </span>
                   </h1>
                   <div className="flex items-center gap-4">
                     <span className="inline-flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500 rounded-full text-sm md:text-base font-semibold text-green-200">

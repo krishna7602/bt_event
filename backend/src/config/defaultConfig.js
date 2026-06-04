@@ -15,7 +15,7 @@ export const defaultConfig = {
     titleHighlight: "Circular Economy for Waste Valorization",
     badge: "October 29-31, 2026",
     description:
-      "Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES) — bringing together researchers, industry, and policymakers to discuss waste valorization, circular economy, and green technologies.",
+      "",
     dateLabel: "Conference Dates",
     dateValue: "October 29-31, 2026",
     notice: null,
