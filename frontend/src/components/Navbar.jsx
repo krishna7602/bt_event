@@ -9,8 +9,8 @@ export default function Navbar() {
 
   const navItems = [
     { name: "Home", dropdown: null, path: '/' },
-    { 
-      name: "About", 
+    {
+      name: "About",
       dropdown: [
         { name: "Objectives of the Conference", path: '/objectives-conference' },
         { name: "About NIT Jalandhar", path: '/about-nit-jalandhar' },
@@ -21,17 +21,17 @@ export default function Navbar() {
         { name: "Photo Gallery", path: '/gallery' }
       ]
     },
-    { 
-      name: "Authors", 
+    {
+      name: "Authors",
       dropdown: [
         { name: "Guidelines to Authors", path: '/guidelines' },
         { name: "Paper Submission", path: '/paper-submission' },
         { name: "Paper Publication", path: '/publication' },
-        { name: "Best Student Award", path: '/best-student-award' }
+        { name: "Awards", path: '/best-student-award' }
       ]
     },
-    { 
-      name: "Programs", 
+    {
+      name: "Programs",
       dropdown: [
         { name: "Keynote Speakers", path: '/speakers' },
         { name: "Tours", path: '/tours' }
@@ -69,20 +69,20 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <ul className="hidden lg:flex gap-8 text-base font-medium">
             {navItems.map((item) => (
-              <li 
+              <li
                 key={item.name}
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(item.name)}
                 onMouseLeave={handleMouseLeave}
               >
-                <div 
+                <div
                   className="flex items-center gap-1 hover:text-emerald-600 cursor-pointer transition-colors duration-300 py-2"
                   onClick={() => item.path && handleNavClick(item.path)}
                 >
                   <span>{item.name}</span>
                   {item.dropdown && <ChevronDown size={16} />}
                 </div>
-                
+
                 {item.dropdown && activeDropdown === item.name && (
                   <div className="absolute top-full left-0 mt-0 bg-white text-gray-800 rounded-lg shadow-xl min-w-[280px] py-3 border border-gray-100">
                     {item.dropdown.map((subItem, index) => (
@@ -107,7 +107,7 @@ export default function Navbar() {
 
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="lg:hidden p-2 hover:bg-gray-100 rounded transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
@@ -122,7 +122,7 @@ export default function Navbar() {
             <ul className="flex flex-col gap-2">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <div 
+                  <div
                     className="flex items-center justify-between hover:text-emerald-600 cursor-pointer transition-colors duration-300 text-base py-2"
                     onClick={() => {
                       if (item.dropdown) {
@@ -134,13 +134,13 @@ export default function Navbar() {
                   >
                     <span>{item.name}</span>
                     {item.dropdown && (
-                      <ChevronDown 
-                        size={16} 
+                      <ChevronDown
+                        size={16}
                         className={`transform transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
                       />
                     )}
                   </div>
-                  
+
                   {item.dropdown && activeDropdown === item.name && (
                     <div className="pl-4 mt-2 space-y-2">
                       {item.dropdown.map((subItem, index) => (
