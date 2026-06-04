@@ -167,7 +167,7 @@ const RegistrationPage = () => {
           </p>
 
           <a
-            href="YOUR_PAYMENT_LINK_HERE"
+            href="https://www.nitj.ac.in/events_registration/dbt_ctep_2026/login"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white text-emerald-800 font-black py-4 px-12 rounded-2xl shadow-lg hover:bg-emerald-50 transition-all transform hover:scale-105 active:scale-95"
