@@ -2,18 +2,15 @@ import React from "react";
 
 const PaperSubmission = () => {
   return (
-    <section className="py-20 bg-[#f8fafc] px-4 md:px-8 lg:px-24 min-h-screen">
-      <div className="max-w-4xl mx-auto shadow-2xl shadow-slate-200/50 bg-white rounded-[2.5rem] p-8 md:p-16 border border-slate-100">
-        {/* Header Section */}
-        <div className="mb-12 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 mb-4 tracking-tight">
-            Paper Submission
-          </h1>
-        </div>
+    <section className="py-24 bg-gray-50 min-h-screen flex items-center justify-center px-4">
+      <div className="text-center max-w-2xl">
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+          Paper Submission
+        </h1>
 
-        <div className="text-center">
+        <p className="text-xl md:text-2xl text-slate-600">
           We are currently in discussions with several journals regarding potential special issue collaborations. We will provide updates here as soon as additional information becomes available.
-        </div>
+        </p>
       </div>
     </section>
   );
