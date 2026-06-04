@@ -74,7 +74,7 @@ const OrganizingCommittee = () => {
     },
     {
       name: "Prof. Ajay Bansal",
-      designation: "DIIA & Formal Registrar",
+      designation: "DIIA & Former Registrar",
       institute: "Dr. B. R. Ambedkar National Institute of Technology, Jalandhar",
       photo: "https://nitj.ac.in/files/1717741345401-Passport%20Pic.jpg",
 
