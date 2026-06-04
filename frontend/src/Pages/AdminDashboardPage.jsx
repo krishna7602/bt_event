@@ -188,8 +188,8 @@ export default function AdminDashboardPage() {
   };
 
   return (
-    <section className="min-h-screen bg-slate-950 px-4 py-10 text-white md:px-8 lg:px-12">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-8">
+    <section className="min-h-screen bg-slate-950 px-4 py-10 text-white md:px-8 lg:px-12 xl:px-16">
+      <div className="flex w-full flex-col gap-8">
         <div>
           <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">Admin Dashboard</p>
           <h1 className="mt-3 text-4xl font-bold md:text-5xl">Control conference content from one place</h1>

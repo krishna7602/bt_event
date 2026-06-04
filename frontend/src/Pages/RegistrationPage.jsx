@@ -2,8 +2,8 @@ import React from "react";
 
 const RegistrationPage = () => {
   return (
-    <section className="py-20 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12">
-      <div className="w-full max-w-7xl mx-auto">
+    <section className="py-20 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12 xl:px-16">
+      <div className="w-full">
         {/* Page Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tight">

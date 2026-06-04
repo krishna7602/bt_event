@@ -64,7 +64,7 @@ const KeynoteSpeakers = () => {
   const speakers = config?.keynoteSpeakers ?? [];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen px-4 md:px-8 lg:px-12">
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white min-h-screen px-4 md:px-8 lg:px-12 xl:px-16">
       <div className="w-full">
 
         {/* Header */}

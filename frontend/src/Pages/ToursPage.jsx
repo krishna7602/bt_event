@@ -69,7 +69,7 @@ const toursData = [
 
 const Tours = () => {
   return (
-    <section className="py-20 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12">
+    <section className="py-20 bg-gray-50 min-h-screen px-4 md:px-8 lg:px-12 xl:px-16">
       <div className="w-full">
         {/* Header Section */}
         <div className="text-center mb-16">

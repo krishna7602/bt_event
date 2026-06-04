@@ -87,8 +87,8 @@ const ObjectivesConference = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 px-4 md:px-8 lg:px-12 text-justify">
-      <div className="w-full max-w-7xl mx-auto">
+    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 px-4 md:px-8 lg:px-12 xl:px-16 text-justify">
+      <div className="w-full">
         {/* Objectives Section */}
         <div className="mb-20">
           <div className="text-center mb-12">

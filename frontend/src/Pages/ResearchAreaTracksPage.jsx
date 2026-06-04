@@ -80,8 +80,8 @@ const ResearchAreaTracksPage = () => {
   ];
 
   return (
-    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen px-4 md:px-8 lg:px-12">
-      <div className="w-full max-w-7xl mx-auto">
+    <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 min-h-screen px-4 md:px-8 lg:px-12 xl:px-16">
+      <div className="w-full">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-gray-800 mb-4 tracking-tight">

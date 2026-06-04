@@ -2,7 +2,7 @@ import React from "react";
 
 const BestStudentAward = () => {
   return (
-    <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12 text-justify">
+    <section className="py-16 bg-gray-50 px-4 md:px-8 lg:px-12 xl:px-16 text-justify">
       <div className="w-full">
         {/* Heading */}
         <h2 className="text-3xl font-bold text-gray-800 mb-6">

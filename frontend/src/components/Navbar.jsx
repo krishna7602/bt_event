@@ -58,7 +58,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full bg-white text-gray-800 z-50 shadow-md">
-      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-3">
+      <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('/')}>

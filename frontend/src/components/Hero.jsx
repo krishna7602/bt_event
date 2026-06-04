@@ -31,11 +31,11 @@ export default function Hero() {
         className="pt-20 text-white"
         style={{ backgroundImage: "linear-gradient(to bottom, #0f172a, #064e3b)" }}
       >
-        <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-16">
+        <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-9">
-              <div className="flex items-center gap-8 mb-10">
-                <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center border-4 border-emerald-500 overflow-hidden shadow-lg">
+              <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-6 md:gap-8 mb-10">
+                <div className="w-32 h-32 flex-shrink-0 bg-white rounded-full flex items-center justify-center border-4 border-emerald-500 overflow-hidden shadow-lg mx-auto md:mx-0">
                   <img src={logo} alt="RICE-WVES 2026 Logo" className="w-full h-full object-contain p-2" />
                 </div>
 
@@ -50,7 +50,7 @@ export default function Hero() {
                       RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY
                     </span>
                   </h1>
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center justify-center md:justify-start gap-4">
                     <p className="text-lg text-gray-300 max-w-3xl">
                       {hero.description}
                     </p>
@@ -65,21 +65,21 @@ export default function Hero() {
                 {hero.notice ? <p className="text-sm text-red-500 font-medium mt-1">{hero.notice}</p> : null}
               </div>
 
-              <p className="text-xl text-gray-200 max-w-4xl">
+              <p className="text-xl text-gray-200 max-w-4xl mx-auto md:mx-0">
                 {hero.tagline}
               </p>
             </div>
 
-            <div className="lg:col-span-3 flex lg:justify-end lg:items-start">
-              <div className="w-full max-w-56">
-                <h3 className="text-4xl text-emerald-400 font-extrabold mb-6 text-right">Sponsors</h3>
+            <div className="lg:col-span-3 flex justify-center lg:justify-end items-center lg:items-start w-full">
+              <div className="w-full max-w-xs lg:max-w-56">
+                <h3 className="text-4xl text-emerald-400 font-extrabold mb-6 text-center lg:text-right">Sponsors</h3>
                 <div className="space-y-6">
                   {sponsors.map((sponsor) => (
                     <div key={sponsor.name} className="flex items-center gap-4 rounded-2xl p-3 bg-white/5 border border-white/5">
-                      <div className="w-28 h-16 rounded-md flex items-center justify-center bg-white/5 p-2">
+                      <div className="w-28 h-16 rounded-md flex items-center justify-center bg-white/5 p-2 flex-shrink-0">
                         <img src={sponsor.imageUrl} alt={sponsor.name} className="max-h-12 object-contain" />
                       </div>
-                      <div className="flex-1 text-right">
+                      <div className="flex-1 text-left lg:text-right">
                         <p className="text-sm font-semibold text-gray-200">{sponsor.name}</p>
                       </div>
                     </div>

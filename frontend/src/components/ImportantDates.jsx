@@ -8,7 +8,7 @@ export default function ImportantDates() {
 
   return (
     <section id="registration" className="py-16 bg-white">
-      <div className="w-full max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+      <div className="w-full px-4 md:px-8 lg:px-12 xl:px-16">
         <div className="rounded-3xl overflow-hidden shadow-xl">
           <div className="bg-gradient-to-r from-slate-900 to-emerald-900 px-6 py-6">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center">{title}</h2>
