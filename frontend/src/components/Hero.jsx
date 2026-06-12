@@ -40,13 +40,38 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+<div className="flex flex-col md:flex-row gap-4 mb-8">
+  {/* Conference Date Card */}
+  <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg">
+    <p className="text-lg font-semibold">
+      {hero.dateLabel || "Date"}:{" "}
+      <span className="text-emerald-600">
+        {hero.dateValue || "12-13 June, 2026"}
+      </span>
+    </p>
+    {hero.notice ? (
+      <p className="text-sm text-red-500 font-medium mt-1">
+        {hero.notice}
+      </p>
+    ) : null}
+  </div>
 
-              <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg mb-8">
-                <p className="text-lg font-semibold">
-                  {hero.dateLabel || "Date"}: <span className="text-emerald-600">{hero.dateValue || "12-13 June, 2026"}</span>
-                </p>
-                {hero.notice ? <p className="text-sm text-red-500 font-medium mt-1">{hero.notice}</p> : null}
-              </div>
+  {/* Brochure Card */}
+  <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl p-5 inline-block shadow-lg">
+    <p className="text-lg font-semibold mb-2">
+      Conference Brochure
+    </p>
+
+    <a
+      href="https://drive.google.com/file/d/1XlqsKYaVpJPaadWbqOS0OusR8jCHxBlO/view?usp=sharing"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition"
+    >
+      📄 Brochure
+    </a>
+  </div>
+</div>
 
               <p className="text-xl text-gray-200 max-w-4xl mx-auto md:mx-0">
                 {hero.tagline}
