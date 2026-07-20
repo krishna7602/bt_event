@@ -7,7 +7,7 @@ import haveli from "../assets/gallery/haveli.png";
 import durgianaMandir from "../assets/gallery/durgiana_mandir.jpg";
 import ramTirath from "../assets/gallery/ram_tirath.jpg";
 import gurudwara from "../assets/gallery/gurudwara.jpg";
-import statue from "../assets/gallery/statue.png";
+import statute from "../assets/gallery/statute.jpg";
 
 const toursData = [
   {
@@ -23,36 +23,36 @@ const toursData = [
       "A memorial of national importance, Jallianwala Bagh commemorates the hundreds of innocent civilians killed by British troops in 1919. The site preserves bullet marks on the walls and the historic well within the park.",
   },
   {
-    title: "Pushpa Gujral Science City, Kapurthala",
+    title: "Jang-e-Azadi Memorial, Kartarpur",
     photo: scienceCity,
     description:
-      "Located near Jalandhar, this science city is one of the largest in North India. It features a planetarium, flight simulator, earthquake simulator, and various interactive galleries exploring physical, liquid, and life sciences.",
+      "This Memorial is conceptualized in commemoration of the unparalleled sacrifices of Indian’s & Punjabi’s for the independence of India. The Memorial disseminates knowledge about the rich cultural heritage of the State in the minds of youngsters.",
   },
 
   {
-    title: "Durgiana Temple, Amritsar",
-    photo: durgianaMandir,
-    description:
-      "Dedicated to Goddess Durga, this temple's architecture is inspired by the Golden Temple. It is built in the middle of a sacred lake and is famous for its exquisite silver doors, earning it the name 'Silver Temple'.",
-  },
-  {
     title: "Bhagwan Valmiki Tirath Sthal (Ram Tirath)",
-    photo: ramTirath,
+    photo: durgianaMandir,
     description:
       "An ancient temple complex believed to be the birthplace of Luv and Kush. It is deeply associated with the Ramayana and features a large holy sarovar and beautifully designed monuments.",
   },
   {
-    title: "Wagah Border, Amritsar",
-    photo: statue, // Using the statue image as a symbolic represention
-    description:
-      "Famous for its ceremonial 'Beating Retreat' ceremony, the Wagah border between India and Pakistan is a major attraction. The event is marked by patriotic fervor and synchronized military maneuvers.",
-  },
-  {
     title: "Devi Talab Mandir, Jalandhar",
-    photo: gurudwara, // Using a symbolic place of worship image
+    photo: ramTirath,
     description:
       "One of the most sacred Hindu temples in North India, Devi Talab Mandir is dedicated to Goddess Durga. It is believed to be more than 200 years old and features a sacred pool (talab) that is older than the temple itself.",
   },
+  {
+    title: "Wagah Border, Amritsar",
+    photo: statute, // Using the statue image as a symbolic represention
+    description:
+      "Famous for its ceremonial 'Beating Retreat' ceremony, the Wagah border between India and Pakistan is a major attraction. The event is marked by patriotic fervor and synchronized military maneuvers.",
+  },
+  // {
+  //   title: "Devi Talab Mandir, Jalandhar",
+  //   photo: gurudwara, // Using a symbolic place of worship image
+  //   description:
+  //     "One of the most sacred Hindu temples in North India, Devi Talab Mandir is dedicated to Goddess Durga. It is believed to be more than 200 years old and features a sacred pool (talab) that is older than the temple itself.",
+  // },
   {
     title: "Jalandhar City Landmarks",
     photo: gurudwara,

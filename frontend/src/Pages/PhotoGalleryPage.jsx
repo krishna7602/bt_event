@@ -3,7 +3,7 @@ import React from "react";
 import goldenTempleDay from '../assets/gallery/golden_temple_day.jpg';
 import goldenTempleNight from '../assets/gallery/golden_temple_night.jpg';
 import durgianaMandir from '../assets/gallery/durgiana_mandir.jpg';
-import statue from '../assets/gallery/statue.png';
+import statue from '../assets/gallery/statute.jpg';
 import jallianwalaBagh from '../assets/gallery/jallianwala_bagh.png';
 import scienceCity from '../assets/gallery/science_city.jpg';
 import ramTirath from '../assets/gallery/ram_tirath.jpg';
