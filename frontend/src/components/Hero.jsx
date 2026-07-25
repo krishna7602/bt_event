@@ -25,7 +25,7 @@ export default function Hero() {
                 <div className="flex-1">
                   <h1 className="font-extrabold leading-tight mb-4">
                     <span className="block text-white text-xl md:text-2xl lg:text-3xl mb-2 leading-snug">
-                      DBT-CTEP SPONSORED
+                      DBT-CTEP and ANRF SPONSORED
                       NATIONAL CONFERENCE <br />
                       ON
                     </span>

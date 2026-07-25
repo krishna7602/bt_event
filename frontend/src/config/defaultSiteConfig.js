@@ -53,7 +53,7 @@ export const defaultSiteConfig = {
     ],
   },
   hero: {
-    titlePrefix: "DBT-CTEP Sponsored National Conference on",
+    titlePrefix: "DBT-CTEP and ANRF Sponsored National Conference on",
     titleHighlight: "Circular Economy for Waste Valorization",
     // badge: "October 29-31, 2026",
     description:

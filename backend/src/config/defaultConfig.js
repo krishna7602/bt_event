@@ -1,7 +1,7 @@
 export const defaultConfig = {
   site: {
     title: "RICE-WVES 2026",
-    description: "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
+    description: "DBT-CTEP and ANRF Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
     logoText: "RICE-WVES 2026",
     brochureUrl: "https://www.ricewves.in",
   },
