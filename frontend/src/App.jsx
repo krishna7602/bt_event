@@ -19,7 +19,6 @@ import PhotoGallery from "./Pages/PhotoGalleryPage";
 import KeynoteSpeakers from "./Pages/KeynoteSpeakers";
 import Tours from "./Pages/ToursPage";
 import GuidelinesToAuthors from "./Pages/GuidelinesToAuthors";
-import PaperSubmission from "./Pages/PaperSubmissionPage";
 import RegistrationPage from "./Pages/RegistrationPage";
 import BestStudentAward from "./Pages/BestStudentAward";
 import PaperPublication from "./Pages/PaperPublicationPage";
@@ -60,7 +59,6 @@ export default function App() {
 
         {/* AUTHORS */}
         <Route path="/guidelines" element={<ManagedPage pageKey="guidelines" fallback={GuidelinesToAuthors} />} />
-        <Route path="/paper-submission" element={<ManagedPage pageKey="paper-submission" fallback={PaperSubmission} />} />
         <Route path="/publication" element={<ManagedPage pageKey="publication" fallback={PaperPublication} />} />
         <Route path="/best-student-award" element={<ManagedPage pageKey="best-student-award" fallback={BestStudentAward} />} />
 

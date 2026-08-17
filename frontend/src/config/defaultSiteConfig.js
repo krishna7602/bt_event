@@ -36,7 +36,6 @@ export const defaultSiteConfig = {
         name: "Authors",
         dropdown: [
           { name: "Guidelines to Authors", path: "/guidelines" },
-          { name: "Paper Submission", path: "/paper-submission" },
           { name: "Paper Publication", path: "/publication" },
           { name: "Best Student Award", path: "/best-student-award" },
         ],
