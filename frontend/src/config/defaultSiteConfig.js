@@ -12,7 +12,7 @@ export const defaultSiteConfig = {
     description:
       "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
     logoText: "RICE-WVES 2026",
-    brochureUrl: "https://www.ricewves.in",
+    brochureUrl: "https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view",
     logoUrl: logo,
   },
   navigation: {
@@ -62,7 +62,7 @@ export const defaultSiteConfig = {
     notice: null,
     tagline:
       "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts for oral and poster presentations are invited across thematic areas focused on waste valorization and environmental sustainability.",
-    brochureUrl: "https://www.ricewves.in",
+    brochureUrl: "https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view",
     carouselImages: [
       { url: track1Img, caption: "Waste Valorization and Bio-based Materials" },
       { url: track2Img, caption: "Water, Wastewater and Sludge Management" },

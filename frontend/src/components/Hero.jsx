@@ -2,6 +2,7 @@ import React from "react";
 import { defaultSiteConfig } from "../config/defaultSiteConfig";
 import logo from "../assets/logo.png";
 import heroPhoto from "../assets/track_1_renewable.png";
+import specialIssueImg from "../assets/paper_publication_theme/Picture1.jpg";
 
 export default function Hero() {
   const hero = defaultSiteConfig.hero;
@@ -40,7 +41,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-<div className="flex flex-col md:flex-row gap-4 mb-8">
+<div className="flex flex-col md:flex-row gap-4 mb-8 items-start flex-wrap">
   {/* Conference Date Card */}
   <div className="bg-white text-gray-800 rounded-xl p-5 inline-block shadow-lg">
     <p className="text-lg font-semibold">
@@ -63,7 +64,7 @@ export default function Hero() {
     </p>
 
     <a
-      href="https://drive.google.com/file/d/1XlqsKYaVpJPaadWbqOS0OusR8jCHxBlO/view?usp=sharing"
+      href="https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition"
@@ -78,9 +79,8 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="lg:col-span-3 flex justify-center lg:justify-end items-center lg:items-start w-full">
+            <div className="lg:col-span-3 flex flex-col justify-start items-center lg:items-end w-full gap-6">
               <div className="w-full max-w-xs lg:max-w-56">
-                <h3 className="text-4xl text-emerald-400 font-extrabold mb-6 text-center lg:text-right">Sponsors</h3>
                 <div className="space-y-6">
                   {sponsors.map((sponsor) => (
                     <div key={sponsor.name} className="flex items-center gap-4 rounded-2xl p-3 bg-white/5 border border-white/5">
@@ -92,6 +92,20 @@ export default function Hero() {
                       </div>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Special Issue Card */}
+              <div className="bg-gradient-to-br from-emerald-700 to-teal-800 text-white rounded-xl p-5 shadow-lg w-full max-w-xs lg:max-w-56">
+                <div className="text-center">
+                  <p className="text-lg font-bold mb-2">Special Issue in</p>
+                  <img
+                    src={specialIssueImg}
+                    alt="Biofpr - Biofuels, Bioproducts & Biorefining Journal Cover"
+                    className="w-full h-auto rounded-lg shadow-md mx-auto mb-3 border-2 border-white/20"
+                  />
+                  <p className="text-sm font-semibold text-emerald-200">Publisher: SCI, Wiley</p>
+                  <p className="text-sm font-semibold text-emerald-200">Impact Factor: 3.8</p>
                 </div>
               </div>
             </div>
