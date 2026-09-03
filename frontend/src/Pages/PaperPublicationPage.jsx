@@ -21,6 +21,27 @@ const journals = [
       closeDate: "March 31, 2027",
     },
   },
+  {
+    id: 2,
+    name: "International Journal of Sustainable Energy",
+    image: null,
+    publisher: "Taylor & Francis",
+    impactFactor: "4.2",
+    siTitle:
+      "Recent Innovations in Waste Valorization for Sustainable Energy: Technological Advances, Circularity, and Life-Cycle Perspectives",
+    scope: [
+      "Waste-to-Energy Technologies",
+      "Bioenergy and Biofuel",
+      "Energy Recovery from Wastewater",
+      "Life-Cycle Assessment",
+      "Environmental Sustainability",
+    ],
+    website:
+      "https://think.taylorandfrancis.com/article_collections/international-journal-of-sustainable-energy-recent-innovations-in-waste-valorization-for-sustainable-energy-technological-advances-circularity-and-life-cycle-perspectives/",
+    specialIssue: {
+      closeDate: "July 31, 2027",
+    },
+  },
 ];
 
 const PaperPublication = () => {
@@ -56,11 +77,20 @@ const PaperPublication = () => {
               {/* Journal Cover Image */}
               <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-cyan-50 p-4 flex items-center justify-center h-56">
                 <div className="absolute inset-0 bg-gradient-to-t from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <img
-                  src={journal.image}
-                  alt={journal.name}
-                  className="h-full w-auto object-contain rounded-lg shadow-md group-hover:scale-105 transition-transform duration-500"
-                />
+                {journal.image ? (
+                  <img
+                    src={journal.image}
+                    alt={journal.name}
+                    className="h-full w-auto object-contain rounded-lg shadow-md group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center h-full w-full group-hover:scale-105 transition-transform duration-500">
+                    <svg className="w-16 h-16 text-blue-400 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <span className="text-sm font-semibold text-blue-500 text-center px-4">{journal.name}</span>
+                  </div>
+                )}
               </div>
 
               {/* Journal Info */}
@@ -134,14 +164,25 @@ const PaperPublication = () => {
                       </span>
                     </div>
                     <p className="text-xs text-gray-600 leading-relaxed">
-                      Special issue opens on{" "}
-                      <span className="font-semibold text-gray-800">
-                        {journal.specialIssue.openDate}
-                      </span>{" "}
-                      and closes on{" "}
-                      <span className="font-semibold text-gray-800">
-                        {journal.specialIssue.closeDate}
-                      </span>
+                      {journal.specialIssue.openDate ? (
+                        <>
+                          Special issue opens on{" "}
+                          <span className="font-semibold text-gray-800">
+                            {journal.specialIssue.openDate}
+                          </span>{" "}
+                          and closes on{" "}
+                          <span className="font-semibold text-gray-800">
+                            {journal.specialIssue.closeDate}
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          Special issue closes on{" "}
+                          <span className="font-semibold text-gray-800">
+                            {journal.specialIssue.closeDate}
+                          </span>
+                        </>
+                      )}
                     </p>
                   </div>
                 )}

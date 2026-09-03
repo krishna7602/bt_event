@@ -135,17 +135,30 @@ const RegistrationPage = () => {
           <p className="text-blue-100 mb-8 max-w-2xl mx-auto font-medium">
             Abstracts can be submitted via the official Google Form. The payment and registration links will be sent to your email upon acceptance of your abstract.
           </p>
-          <a
-            href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-white text-blue-900 font-black py-4 px-12 rounded-2xl shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95"
-          >
-            <span>Submit Abstract via Google Form</span>
-            <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </a>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://docs.google.com/document/d/1VCVCFUkEnGE1ycG2VRm6tMOj1kAuV0Ct/edit?usp=sharing&ouid=116207482681575669178&rtpof=true&sd=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-white/15 backdrop-blur-sm text-white border-2 border-white/40 font-black py-4 px-10 rounded-2xl shadow-lg hover:bg-white/25 transition-all transform hover:scale-105 active:scale-95"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>Download Abstract Template</span>
+            </a>
+            <a
+              href="https://forms.gle/pJ1FgBnWGSsJ9Rdu8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-white text-blue-900 font-black py-4 px-10 rounded-2xl shadow-lg hover:bg-blue-50 transition-all transform hover:scale-105 active:scale-95"
+            >
+              <span>Submit Abstract via Google Form</span>
+              <svg className="w-5 h-5 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+          </div>
         </div>
         <div
           className="mt-12 text-center rounded-3xl p-12 text-white shadow-2xl relative overflow-hidden"
