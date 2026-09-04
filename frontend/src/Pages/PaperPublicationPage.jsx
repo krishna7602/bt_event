@@ -1,5 +1,6 @@
 import React from "react";
 import biofprCover from "../assets/paper_publication_theme/Picture1.jpg";
+import ijseCover from "../assets/images.jpg";
 
 const journals = [
   {
@@ -24,7 +25,7 @@ const journals = [
   {
     id: 2,
     name: "International Journal of Sustainable Energy",
-    image: null,
+    image: ijseCover,
     publisher: "Taylor & Francis",
     impactFactor: "4.2",
     siTitle:
