@@ -1,6 +1,7 @@
 import React from "react";
 import biofprCover from "../assets/paper_publication_theme/Picture1.jpg";
 import ijseCover from "../assets/images.jpg";
+import biomassFuturesCover from "../assets/X30514444.jpg.jpeg";
 
 const journals = [
   {
@@ -41,6 +42,24 @@ const journals = [
       "https://think.taylorandfrancis.com/article_collections/international-journal-of-sustainable-energy-recent-innovations-in-waste-valorization-for-sustainable-energy-technological-advances-circularity-and-life-cycle-perspectives/",
     specialIssue: {
       closeDate: "July 31, 2027",
+    },
+  },
+  {
+    id: 3,
+    name: "Biomass Futures",
+    image: biomassFuturesCover,
+    publisher: "Elsevier",
+    siTitle: "RICE-WVES",
+    scope: [
+      "Biomass Characterization, Pretreatment and Conversion Technologies",
+      "Biochar Production, Activation and Applications",
+      "Energy, Materials, and Chemicals",
+      "Decarbonization Technologies",
+      "Emerging Technologies",
+    ],
+    website: "https://www.sciencedirect.com/journal/biomass-futures",
+    specialIssue: {
+      closeDate: "April 01, 2027",
     },
   },
 ];
