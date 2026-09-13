@@ -108,7 +108,7 @@ export const defaultSiteConfig = {
       },
       {
         event: "Abstract submission closes",
-        date: "September 10, 2026",
+        date: "September 25, 2026",
         description: "Last date to submit abstracts.",
         highlight: true,
       },

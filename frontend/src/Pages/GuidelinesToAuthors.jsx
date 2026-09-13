@@ -3,7 +3,7 @@ import React from "react";
 const GuidelinesToAuthors = () => {
   const deadlines = [
     { event: "Abstract Submission Starts", date: "June 01, 2026" },
-    { event: "Abstract Submission Closes", date: "September 10, 2026", highlight: true },
+    { event: "Abstract Submission Closes", date: "September 25, 2026", highlight: true },
   ];
 
   return (
