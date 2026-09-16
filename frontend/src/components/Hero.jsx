@@ -31,7 +31,10 @@ export default function Hero() {
                       ON
                     </span>
                     <span className="block text-emerald-400 text-3xl md:text-4xl lg:text-5xl mt-2">
-                      RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY (HYBRID MODE)
+                      RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY
+                    </span>
+                    <span className="inline-block mt-3 text-red-500 text-2xl md:text-3xl lg:text-4xl font-extrabold animate-blink">
+                      (HYBRID MODE)
                     </span>
                   </h1>
                   <div className="flex items-center justify-center md:justify-start gap-4">
