@@ -38,6 +38,7 @@ export default function Navbar() {
       ]
     },
     { name: "Registration", dropdown: null, path: '/registration' },
+    { name: "Sponsors", dropdown: null, path: '/sponsors' },
     { name: "Contact", dropdown: null, path: '/contact' }
   ];
 

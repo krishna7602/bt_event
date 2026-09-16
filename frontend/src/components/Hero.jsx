@@ -31,7 +31,7 @@ export default function Hero() {
                       ON
                     </span>
                     <span className="block text-emerald-400 text-3xl md:text-4xl lg:text-5xl mt-2">
-                      RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY
+                      RECENT INNOVATIONS IN CIRCULAR ECONOMY FOR WASTE VALORIZATION AND ENVIRONMENTAL SUSTAINABILITY (HYBRID MODE)
                     </span>
                   </h1>
                   <div className="flex items-center justify-center md:justify-start gap-4">
@@ -64,7 +64,7 @@ export default function Hero() {
     </p>
 
     <a
-      href="https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view"
+      href="https://drive.google.com/file/d/1XQitQFxygIiaUapJoyWAz9vHZZMnUCG6/view?usp=sharing"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-2 bg-white text-blue-700 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition"
@@ -136,7 +136,7 @@ export default function Hero() {
               </div>
 
               <div className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {/* Category 1 */}
                   <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between text-left">
                     <div>
@@ -165,6 +165,16 @@ export default function Hero() {
                       <h4 className="text-lg font-bold text-slate-900 mb-4">Industry Participants</h4>
                       <ul className="space-y-2 text-sm text-gray-700">
                         <li>• Registration Fee: <span className="font-bold">Rs. 3,500</span> <span className="text-xs text-gray-500">(incl. GST @18%)</span></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Category 4 */}
+                  <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between text-left">
+                    <div>
+                      <h4 className="text-lg font-bold text-slate-900 mb-4">Online Participants External (Outside NITJ)</h4>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li>• Registration Fee: <span className="font-bold">Rs. 1,200</span> <span className="text-xs text-gray-500">(incl. GST @18%)</span></li>
                       </ul>
                     </div>
                   </div>

@@ -27,6 +27,7 @@ import Contact from "./components/Contact";
 import ObjectivesConference from "./Pages/ObjectivesConference";
 import ResearchAreaTracksPage from "./Pages/ResearchAreaTracksPage";
 import AdminDashboardPage from "./Pages/AdminDashboardPage";
+import SponsorsPage from "./Pages/SponsorsPage";
 
 export default function App() {
   return (
@@ -71,6 +72,9 @@ export default function App() {
 
         {/* REGISTRATION */}
         <Route path="/registration" element={<ManagedPage pageKey="registration" fallback={RegistrationPage} />} />
+
+        {/* SPONSORS */}
+        <Route path="/sponsors" element={<ManagedPage pageKey="sponsors" fallback={SponsorsPage} />} />
 
         {/* CONTACT */}
         <Route path="/contact" element={<ManagedPage pageKey="contact" fallback={Contact} />} />

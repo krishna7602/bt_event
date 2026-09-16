@@ -12,7 +12,7 @@ export const defaultSiteConfig = {
     description:
       "DBT-CTEP Sponsored National Conference on Recent Innovations in Circular Economy for Waste Valorisation and Environmental Sustainability (RICE-WVES)",
     logoText: "RICE-WVES 2026",
-    brochureUrl: "https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view",
+    brochureUrl: "https://drive.google.com/file/d/1XQitQFxygIiaUapJoyWAz9vHZZMnUCG6/view?usp=sharing",
     logoUrl: logo,
   },
   navigation: {
@@ -48,6 +48,7 @@ export const defaultSiteConfig = {
         ],
       },
       { name: "Registration", path: "/registration" },
+      { name: "Sponsors", path: "/sponsors" },
       { name: "Contact", path: "/contact" },
     ],
   },
@@ -62,7 +63,7 @@ export const defaultSiteConfig = {
     notice: null,
     tagline:
       "Hosted by the Department of Biotechnology, NIT Jalandhar. Abstracts for oral and poster presentations are invited across thematic areas focused on waste valorization and environmental sustainability.",
-    brochureUrl: "https://drive.google.com/file/d/1PGXxFQHbHPBywFQWsjdr8lGjBhXpyjEy/view",
+    brochureUrl: "https://drive.google.com/file/d/1XQitQFxygIiaUapJoyWAz9vHZZMnUCG6/view?usp=sharing",
     carouselImages: [
       { url: track1Img, caption: "Waste Valorization and Bio-based Materials" },
       { url: track2Img, caption: "Water, Wastewater and Sludge Management" },
@@ -108,7 +109,7 @@ export const defaultSiteConfig = {
       },
       {
         event: "Abstract submission closes",
-        date: "September 25, 2026",
+        date: "September 30, 2026",
         description: "Last date to submit abstracts.",
         highlight: true,
       },
