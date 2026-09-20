@@ -74,7 +74,7 @@ const RegistrationPage = () => {
           </div>
 
           <div className="p-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Students Card */}
               <div className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/50 flex flex-col justify-between text-left">
                 <div>
@@ -121,74 +121,23 @@ const RegistrationPage = () => {
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
 
-        {/* Online Participation Section */}
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-200 mb-12">
-          <div className="bg-gradient-to-r from-purple-700 to-indigo-700 py-6 px-8 text-left">
-            <h3 className="text-2xl font-bold text-white flex items-center gap-3">
-              <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Registration for Online Participants
-            </h3>
-          </div>
-
-          <div className="p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Info */}
-              <div className="text-left">
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  Participants who are unable to attend the conference in person can register for <strong>online participation</strong>. Online participants will be able to attend all technical sessions, keynote talks, and presentations virtually through the conference platform.
-                </p>
-                <ul className="space-y-3 text-gray-700">
-                  <li className="flex gap-3 items-start">
-                    <span className="text-purple-600 font-extrabold mt-0.5">✔</span>
-                    <span>Access to all live-streamed technical sessions and keynote talks</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-purple-600 font-extrabold mt-0.5">✔</span>
-                    <span>Online presentation opportunity for accepted papers</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-purple-600 font-extrabold mt-0.5">✔</span>
-                    <span>E-certificate of participation will be provided</span>
-                  </li>
-                  <li className="flex gap-3 items-start">
-                    <span className="text-purple-600 font-extrabold mt-0.5">✔</span>
-                    <span>Conference proceedings and digital materials access</span>
-                  </li>
-                </ul>
-              </div>
-
-              {/* CTA Card */}
-              <div className="bg-purple-50 rounded-2xl border border-purple-100 p-8 flex flex-col items-center justify-center text-center">
-                <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                  <svg className="w-8 h-8 text-purple-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+              {/* Online Participants External Card */}
+              <div className="bg-blue-50/40 p-6 rounded-2xl border border-blue-100/50 flex flex-col justify-between text-left">
+                <div>
+                  <h4 className="text-xl font-bold text-blue-900 mb-4">Online Participants External (Outside NITJ)</h4>
+                  <ul className="space-y-3 text-sm text-gray-700">
+                    <li className="flex justify-between">
+                      <span className="font-medium">Registration Fee:</span>
+                      <span className="font-extrabold text-blue-950">Rs. 1,200 <span className="text-[10px] text-gray-500 font-normal">(incl. GST @18%)</span></span>
+                    </li>
+                  </ul>
                 </div>
-                <h4 className="text-xl font-bold text-purple-900 mb-2">Join Virtually</h4>
-                <p className="text-sm text-gray-600 mb-6">
-                  Register as an online participant to attend the conference remotely. The registration link will be shared upon abstract acceptance.
-                </p>
-                <a
-                  href="https://www.nitj.ac.in/events_registration/dbt_ctep_2026/login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:scale-105 active:scale-95"
-                >
-                  <span>Register Online</span>
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
         </div>
+
 
         {/* CTA Section */}
         <div
