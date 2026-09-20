@@ -3,6 +3,8 @@ import { defaultSiteConfig } from "../config/defaultSiteConfig";
 import logo from "../assets/logo.png";
 import heroPhoto from "../assets/track_1_renewable.png";
 import specialIssueImg from "../assets/paper_publication_theme/Picture1.jpg";
+import ijseCover from "../assets/images.jpg";
+import biomassFuturesCover from "../assets/X30514444.jpg.jpeg";
 
 export default function Hero() {
   const hero = defaultSiteConfig.hero;
@@ -98,17 +100,53 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Special Issue Card */}
-              <div className="bg-gradient-to-br from-emerald-700 to-teal-800 text-white rounded-xl p-5 shadow-lg w-full max-w-xs lg:max-w-56">
-                <div className="text-center">
-                  <p className="text-lg font-bold mb-2">Special Issue in</p>
-                  <img
-                    src={specialIssueImg}
-                    alt="Biofpr - Biofuels, Bioproducts & Biorefining Journal Cover"
-                    className="w-full h-auto rounded-lg shadow-md mx-auto mb-3 border-2 border-white/20"
-                  />
-                  <p className="text-sm font-semibold text-emerald-200">Publisher: SCI, Wiley</p>
-                  <p className="text-sm font-semibold text-emerald-200">Impact Factor: 3.8</p>
+              {/* Special Issue Cards */}
+              <div className="w-full max-w-xs lg:max-w-72">
+                <p className="text-lg font-bold mb-3 text-center text-white">Special Issue in</p>
+                <div className="grid grid-cols-3 gap-2">
+                  {/* Biofpr */}
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-lg border border-white/10 flex flex-col">
+                    <div className="aspect-[3/4] overflow-hidden">
+                      <img
+                        src={specialIssueImg}
+                        alt="Biofpr - Biofuels, Bioproducts & Biorefining Journal Cover"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-2 text-center bg-white/5 border-t border-white/10">
+                      <p className="text-[10px] font-semibold text-gray-200">Publisher: Wiley</p>
+                      <p className="text-[10px] font-semibold text-emerald-400">Impact Factor: 3.8</p>
+                    </div>
+                  </div>
+
+                  {/* IJSE */}
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-lg border border-white/10 flex flex-col">
+                    <div className="aspect-[3/4] overflow-hidden">
+                      <img
+                        src={ijseCover}
+                        alt="International Journal of Sustainable Energy Cover"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-2 text-center bg-white/5 border-t border-white/10">
+                      <p className="text-[10px] font-semibold text-gray-200">Publisher: Taylor and Francis</p>
+                      <p className="text-[10px] font-semibold text-emerald-400">Impact Factor: 4.2</p>
+                    </div>
+                  </div>
+
+                  {/* Biomass Futures */}
+                  <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden shadow-lg border border-white/10 flex flex-col">
+                    <div className="aspect-[3/4] overflow-hidden">
+                      <img
+                        src={biomassFuturesCover}
+                        alt="Biomass Futures - Elsevier Journal Cover"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-2 text-center bg-white/5 border-t border-white/10">
+                      <p className="text-[10px] font-semibold text-gray-200">Publisher: Elsevier</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
