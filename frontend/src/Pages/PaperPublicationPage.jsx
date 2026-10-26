@@ -1,5 +1,8 @@
 import React from "react";
 import biofprCover from "../assets/paper_publication_theme/Picture1.jpg";
+import frontiersCover from "../assets/paper_publication_theme/frontiers.jpeg";
+import picture2Cover from "../assets/paper_publication_theme/picture2.jpeg";
+import picture3Cover from "../assets/paper_publication_theme/picture3.jpeg";
 import ijseCover from "../assets/images.jpg";
 import biomassFuturesCover from "../assets/X30514444.jpg.jpeg";
 
@@ -62,6 +65,56 @@ const journals = [
       closeDate: "April 01, 2027",
     },
   },
+  {
+    id: 4,
+    name: "Frontiers in Bioengineering and Biotechnology",
+    image: frontiersCover,
+    publisher: "SCI, Frontiers",
+    impactFactor: "5.8",
+    siTitle: " Industrial Biotechnology for Sustainable Manufacturing: Advances in Waste Valorisation, Biocatalysis and Precision Fermentation",
+    scope: [
+      "Industrial biotechnology, and microbial cell factories",
+      "Biocatalysis, enzyme catalysis, and applied metabolic engineering",
+      "Sustainable production of bio-based chemicals, materials, and polymers",
+      "Waste, wastewater, and industrial by-product valorization",
+      "Biofuels and bioenergy"
+    ],
+    website: " https://www.frontiersin.org/research-topics/83708/industrial-biotechnology-for-sustainable-manufacturing-advances-in-waste-valorisation-biocatalysis-and-precision-fermentation",
+    specialIssue: {
+      
+      closeDate: "December 31, 2026",
+    },
+  },
+  {
+    id: 5,
+    name: "Materials Circular Economy",
+    image: picture2Cover,
+    publisher: "Springer",
+    siTitle: "Recent Innovations in Circular Economy for Waste Valorization and Environmental Sustainability (RICE-WVES 2026)",
+    scope: [
+      " Waste valorization technologies",
+      "Energy recovery from waste, water, wastewater, and sludge management",
+      " Bioeconomy and biorefinery approaches.",
+      "Emerging technologies supporting the circular economy, climate change mitigation, environmental protection.",
+      "Advance sustainable resource management and environmental resilience."
+    ],
+    website: "  https://link.springer.com/collections/hidccdiihi",
+    specialIssue: {
+      
+      closeDate: "December 31, 2026",
+    },
+  },
+  {
+    id: 6,
+    name: "Conference Proceedings (Springer)",
+    image: picture3Cover,
+    publisher: "Springer Nature",
+    description: [
+      "Select papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published.",
+      "We do not publish abstracts, extended abstracts, literature review articles, policy reviews, questionnaires/survey based papers. We only publish full papers, original articles with new outcomes in proceedings (not less than 6 pages).",
+      "Springer Nature does not charge any money for publication of Non-Open Access content."
+    ],
+  }
 ];
 
 const PaperPublication = () => {
@@ -120,18 +173,22 @@ const PaperPublication = () => {
                 </h3>
 
                 <div className="space-y-2.5 text-sm text-gray-700 mb-4">
-                  <p>
-                    <span className="font-semibold text-gray-900">
-                      Publisher:
-                    </span>{" "}
-                    {journal.publisher}
-                  </p>
-                  <p>
-                    <span className="font-semibold text-gray-900">
-                      Impact Factor:
-                    </span>{" "}
-                    {journal.impactFactor}
-                  </p>
+                  {journal.publisher && (
+                    <p>
+                      <span className="font-semibold text-gray-900">
+                        Publisher:
+                      </span>{" "}
+                      {journal.publisher}
+                    </p>
+                  )}
+                  {journal.impactFactor && (
+                    <p>
+                      <span className="font-semibold text-gray-900">
+                        Impact Factor:
+                      </span>{" "}
+                      {journal.impactFactor}
+                    </p>
+                  )}
                   {journal.siTitle && (
                     <p>
                       <span className="font-semibold text-gray-900">
@@ -161,18 +218,33 @@ const PaperPublication = () => {
                   </div>
                 )}
 
+                {/* Description */}
+                {journal.description && (
+                  <div className="space-y-3 text-sm text-gray-600 mb-4 leading-relaxed">
+                    {Array.isArray(journal.description) ? (
+                      journal.description.map((paragraph, idx) => (
+                        <p key={idx}>{paragraph}</p>
+                      ))
+                    ) : (
+                      <p>{journal.description}</p>
+                    )}
+                  </div>
+                )}
+
                 {/* Website Link */}
-                <p className="text-sm mb-4">
-                  <span className="font-semibold text-gray-900">Website:</span>{" "}
-                  <a
-                    href={journal.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors"
-                  >
-                    Visit Journal
-                  </a>
-                </p>
+                {journal.website && (
+                  <p className="text-sm mb-4">
+                    <span className="font-semibold text-gray-900">Website:</span>{" "}
+                    <a
+                      href={journal.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors"
+                    >
+                      Visit Journal
+                    </a>
+                  </p>
+                )}
 
                 {/* Special Issue Box */}
                 {journal.specialIssue && (

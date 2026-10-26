@@ -1,4 +1,7 @@
 import React from "react";
+import klorofilLogo from "../assets/sponsors/klorofil.png";
+import lifetronicsLogo from "../assets/sponsors/lifetronics.png";
+import srlLogo from "../assets/sponsors/srl.png";
 
 export default function SponsorsPage() {
   return (
@@ -20,7 +23,7 @@ export default function SponsorsPage() {
                 <span className="text-2xl font-bold text-slate-800">DBT-CTEP</span>
               </div>
               <h3 className="text-xl font-bold text-white mt-2">DBT-CTEP</h3>
-              <p className="text-gray-300 text-sm mt-1">Department of Biotechnology - Centre for Technology, Education & Partnership</p>
+              <p className="text-gray-300 text-sm mt-1">Department of Biotechnology - Conference, Travel, Exhibition and Popular Lectures</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all duration-300">
               <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-4">
@@ -28,6 +31,84 @@ export default function SponsorsPage() {
               </div>
               <h3 className="text-xl font-bold text-white mt-2">ANRF</h3>
               <p className="text-gray-300 text-sm mt-1">Anusandhan National Research Foundation</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Conference Sponsors */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-emerald-400 text-center mb-8">Conference Sponsors</h2>
+          
+          {/* Gold & Silver Sponsors */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
+            {/* Gold Sponsor Card */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all duration-300">
+              <span className="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/30 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
+                Gold Sponsor
+              </span>
+              <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-3 shadow-md">
+                <img
+                  src={klorofilLogo}
+                  alt="Klorofil Scientific"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-white mt-2">Klorofil Scientific</h3>
+              <p className="text-gray-300 text-sm mt-1">...facilitating research</p>
+            </div>
+
+            {/* Silver Sponsor Card */}
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all duration-300">
+              <span className="inline-block px-3 py-1 bg-slate-300/20 text-slate-200 border border-slate-300/30 rounded-full text-xs font-bold uppercase tracking-wider mb-5">
+                Silver Sponsor
+              </span>
+              <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-4 shadow-md">
+                <span className="text-xl font-bold text-slate-800 leading-snug">Ocean Scientific</span>
+              </div>
+              <h3 className="text-xl font-bold text-white mt-2">Ocean Scientific</h3>
+              <p className="text-gray-300 text-sm mt-1">Ludhiana</p>
+            </div>
+          </div>
+
+          {/* Associate Sponsor Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 flex flex-col items-center justify-center text-center hover:bg-white/15 transition-all duration-300">
+              <span className="inline-block px-3 py-1 bg-teal-500/20 text-teal-300 border border-teal-500/30 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                Associate Sponsors
+              </span>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-4xl mx-auto justify-items-center">
+                <div className="flex flex-col items-center">
+                  <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-3 shadow-md">
+                    <img
+                      src={lifetronicsLogo}
+                      alt="Lifetronics"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-2">Lifetronics</h3>
+                  <p className="text-gray-300 text-sm mt-1">Makes Life Easier......</p>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-3 shadow-md">
+                    <img
+                      src={srlLogo}
+                      alt="SRL"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-2">SRL</h3>
+                  <p className="text-gray-300 text-sm mt-1">Sisco Research Laboratories</p>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <div className="w-32 h-32 bg-white rounded-xl flex items-center justify-center mb-4 p-4 shadow-md">
+                    <span className="text-xl font-bold text-slate-800 leading-snug">Akay Scientific</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-white mt-2">Akay Scientific</h3>
+                  <p className="text-gray-300 text-sm mt-1">Jalandhar</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

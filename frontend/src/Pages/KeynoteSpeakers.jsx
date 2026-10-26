@@ -80,6 +80,13 @@ const speakers = [
     organization: "Indian Institute of Technology Delhi",
     location: "New Delhi, India",
   },
+  {
+    name: "Dr. Sankar Chakma",
+    designation:
+      "Associate Professor, Department of Chemical Engineering",
+    organization: "Indian Institute of Science Education and Research Bhopal",
+    location: "Bhopal, Madhya Pradesh, India",
+  }
 ];
 
 const KeynoteSpeakers = () => {
